@@ -27,7 +27,7 @@ Laravel-QuickStart has a **.env.example** file in the root of the project.
 Rename **.env.example** to **.env**  make sure that the **.env** file must be in root directory. 
 Open **.env** file in your preferred choice of editor and add database credentials.
 
-- Database configuration
+Database configuration
 
 ```dotenv
 DB_CONNECTION=mysql
