@@ -2,6 +2,7 @@
 /node_modules
 /public/css
 /public/assets
+/public/images/vendor
 /public/js
 /public/fonts
 /public/hot
