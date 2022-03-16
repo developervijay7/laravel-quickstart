@@ -1,5 +1,5 @@
 
-[![](https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg=x250)](https://laravel-quickstart.co)
+[![](https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg =x250)](https://laravel-quickstart.co)
 
 ![License](https://img.shields.io/packagist/l/laravel/framework)
 
