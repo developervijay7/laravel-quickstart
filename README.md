@@ -92,14 +92,22 @@ If you are deploying it on your local development computer run:
 
 <code>npm run dev</code>
 
-## Laravel Sponsors
+### 8. Demo Credentials
 
-We would like to extend our thanks to the following sponsors for funding Laravel development.  If you are interested in becoming a sponsor,  please visit the James L. Masi  [Patreon page](https://www.patreon.com/jlmasi).
+Master: master@example.com
 
-### Other Packages Included
+Password: M@aster
 
--   **[Laravel CORS](https://github.com/fruitcake/laravel-cors)**
+Admin: admin@example.com
 
+Password: Adm!n
+
+User: user@example.com
+
+Password: Us@r
+
+##Official Documentation
+[Laravel-QuickStart Documentation]()
 
 ## Contributing
 
