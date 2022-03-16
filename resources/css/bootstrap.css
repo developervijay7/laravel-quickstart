@@ -10,6 +10,9 @@
     nav ul li a {
         @apply text-sm leading-6 font-semibold mx-6;
     }
+    #main-nav li a.active {
+        @apply text-4xl;
+    }
 }
 
 /*AlpineJS helper to hide floating elements during page load*/

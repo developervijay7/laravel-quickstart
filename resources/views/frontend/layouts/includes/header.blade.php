@@ -7,8 +7,7 @@
             <nav id="main-nav">
                 <ul class="hidden md:flex">
                     <li>
-                        <a class="{{ activeClass(Route::is('frontend.index')) }}"
-                           href="{{ route('frontend.index') }}">Home</a>
+                        <a href="{{ route('frontend.index') }}" class="{{ activeClass(Route::is('frontend.index')) }}">{{ __('Home') }}</a>
                     </li>
                     <li x-data="{showPages: false}" class="relative">
                         <a href="#" @click.prevent="showPages = !showPages">Pages</a>
@@ -18,7 +17,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="{{ route('frontend.contact') }}" class="{{ activeClass(Route::is('frontend.contact')) }}">{{ __('Contact') }}</a>
                     </li>
                 </ul>
             </nav>
