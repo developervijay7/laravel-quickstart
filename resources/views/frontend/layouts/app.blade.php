@@ -22,7 +22,7 @@
 >
 @include('includes.partials.google-tag-manager-body')
 <div class="h-5 w-5 hidden h-8 w-8">temporary just to add class will remove soon</div>
-<div id="app" class="px-5 py-6 dark:bg-gray-900">
+<div id="app" class="px-5 py-6 dark:bg-gray-900 dark:text-white">
     @include('frontend.layouts.includes.header')
     @yield('content')
     @include('frontend.layouts.includes.footer')

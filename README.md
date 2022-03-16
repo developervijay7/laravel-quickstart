@@ -63,7 +63,7 @@ This will set your APP_KEY in your **.env** file
 
 <code>php artisan key:generate</code>
 
-###5. Migrate Database
+### 5. Migrate Database
 
 <code>php artisan migrate</code>
 
@@ -73,7 +73,7 @@ if you also want to import demo users, permissions, and roles run:
 
 ## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development.  If you are interested in becoming a sponsor,  please visit the Laravel  [Patreon page](https://patreon.com/taylorotwell).
+We would like to extend our thanks to the following sponsors for funding Laravel development.  If you are interested in becoming a sponsor,  please visit the James L. Masi  [Patreon page](https://www.patreon.com/jlmasi).
 
 ### Other Packages Included
 
