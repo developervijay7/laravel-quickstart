@@ -26,8 +26,8 @@
                 @include('includes.partials.lang')
                 <ul class="flex items-center gap-x-5 relative" x-data="{ showUserMenu: false }">
                     @guest
-                        <li><a href="{{ route('login') }}">{{ __('links.login') }}</a></li>
-                        <li><a href="{{ route('register') }}">{{ __('links.register') }}</a></li>
+                        <li><a href="{{ route('login') }}">{{ __('labels.login') }}</a></li>
+                        <li><a href="{{ route('register') }}">{{ __('labels.register') }}</a></li>
                     @else
                         <button class="focus:ring-4 focus:ring-blue-300 rounded-full"
                                 @click="showUserMenu = !showUserMenu; sweetalert = true;">

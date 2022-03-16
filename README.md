@@ -1,5 +1,5 @@
 
-[![](https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg)](https://laravel.com)
+[![](http://laravel-quickstart.test/images/logo-dark.svg)](https://laravel.com)
 
 ![License](https://img.shields.io/packagist/l/laravel/framework)
 

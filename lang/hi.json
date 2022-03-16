@@ -4,6 +4,7 @@
     "The :attribute must contain at least one symbol.": ":attribute में कम से कम एक प्रतीक होना चाहिए।",
     "The :attribute must contain at least one uppercase and one lowercase letter.": ":attribute में कम से कम एक अपरकेस और एक लोअरकेस अक्षर होना चाहिए।",
     "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "दी गई :attribute डेटा लीक में दिखाई दी है। कृपया कोई भिन्न चुनें: विशेषता।",
+    "The only laravel boilerplate that you will ever need to start your next laravel project.": "एकमात्र लार्वा बॉयलरप्लेट जिसे आपको अपना अगला लार्वा प्रोजेक्ट शुरू करने की आवश्यकता होगी।",
     "English": "अंग्रेज़ी",
     "Hindi": "हिंदी",
     "Urdu": "उर्दू",

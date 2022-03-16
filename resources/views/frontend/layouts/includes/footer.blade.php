@@ -1,11 +1,11 @@
 <footer>
     <div class="container">
         <div class="bg-gray-200 dark:bg-gray-600 rounded-xl px-5 py-2 flex items-center justify-between shadow-xl">
-            <div>{{ __('links.copyright') }} &copy; <?php echo(date('Y')) ?>
+            <div>{{ __('labels.copyright') }} &copy; <?php echo(date('Y')) ?>
                 <a href="https://www.attrixtech.com" target="_blank"
-                   rel="nofollow noopener">{{ __('links.attrix') }}</a>.
-                Developed by <a href="https://vijaygoswami.in">{{ __('links.vijay') }}</a> & <a
-                    href="#">{{ __('links.james') }}</a>
+                   rel="nofollow noopener">{{ __('labels.attrix') }}</a>.
+                Developed by <a href="https://vijaygoswami.in">{{ __('labels.vijay') }}</a> & <a
+                    href="#">{{ __('labels.james') }}</a>
             </div>
             <div>
                 <ul class="flex items-center gap-x-2">

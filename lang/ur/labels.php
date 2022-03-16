@@ -10,10 +10,10 @@ return [
     |
     */
 
-    'login' => 'Login',
-    'register' => 'Register',
-    'copyright' => 'Copyright',
-    'attrix' => 'Attrix Technologies',
-    'vijay' => 'Vijay Goswami',
-    'james' => 'James L. Masi'
+    'login' => 'لاگ ان کریں',
+    'register' => 'رجسٹر کریں',
+    'copyright' => 'کاپی رائٹ',
+    'attrix' => 'ایٹرکس ٹیکنالوجیز',
+    'vijay' => 'وجے گوسوامی',
+    'james' => 'جیمز لوئس ماسی'
 ];
