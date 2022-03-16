@@ -25,6 +25,30 @@ Choose your preferred method
 Laravel-QuickStart has a **.env.example** file in the root of the project.
 
 Rename **.env.example** to **.env**  make sure that the **.env** file must be in root directory. 
+Open **.env** file in your preferred choice of editor and add database credentials.
+
+- Database configuration
+
+```dotenv
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USERNAME=root
+DB_PASSWORD=password
+```
+
+Also, don't forget to set up mail configuration.
+
+```dotenv
+MAIL_MAILER=smtp
+MAIL_HOST=mailhog
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@laravel-quickstart.co"
+MAIL_TO_ADDRESS="${APP_NAME}"
+```
 
 **Note:** Make sure your operating system is not configured to display hidden files to show **.env** file.
 
@@ -33,6 +57,14 @@ In order to install php [composer]() dependencies you first need to [set up comp
 Once your system is compatible with php composer run the following command in your Terminal/ Windows Command Prompt/ Windows powershell/ git bash.
 
 <code>composer install</code>
+
+### 4. Generate Application Keys
+This will set your APP_KEY in your **.env** file
+
+<code>php artisan key:generate</code>
+
+###5. Migrate Database
+
 
 
 ## Laravel Sponsors
