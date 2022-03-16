@@ -1,6 +1,5 @@
 
-[![image](https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg|width=250px)](https://laravel-quickstart.co)
-
+<img src="https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg" width="250">
 ![License](https://img.shields.io/packagist/l/laravel/framework)
 
 # About Laravel Quick-Start
