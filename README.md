@@ -65,7 +65,11 @@ This will set your APP_KEY in your **.env** file
 
 ###5. Migrate Database
 
+<code>php artisan migrate</code>
 
+if you also want to import demo users, permissions, and roles run:
+
+<code>php artisan db:seed</code>
 
 ## Laravel Sponsors
 
