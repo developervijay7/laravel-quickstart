@@ -1,11 +1,11 @@
 
-[![](http://laravel-quickstart.test/images/logo-dark.svg)](https://laravel.com)
+[![](https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg)](https://laravel-quickstart.co)
 
 ![License](https://img.shields.io/packagist/l/laravel/framework)
 
 # About Laravel Quick-Start
 
-Laravel Quickstart is a bolierplate for Laravel Application with typical packages preinstalled and configured to extend a full fledged application. We tried to make it as minimal as possible.
+Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.
 
 Here are some of its features:
 - Separate Views, Routes, Controllers directories for Frontend(Public Interface) and Backend(Admin Interface)
