@@ -1,11 +1,4 @@
 @props(['size' => 5, 'color' => 'currentColor', 'class' => ''])
-<svg xmlns="http://www.w3.org/2000/svg"
-     {{ $attributes->merge(['class' => 'h-' . $size . ' w-' . $size . ' ' . $class]) }} viewBox="0 0 20 20"
-     fill="{{ $color }}">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-    <line x1="8" y1="11" x2="8" y2="16"></line>
-    <line x1="8" y1="8" x2="8" y2="8.01"></line>
-    <line x1="12" y1="16" x2="12" y2="11"></line>
-    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+<svg {{ $attributes->merge(['class' => 'h-' . $size . ' w-' . $size . ' ' . $class]) }} fill="{{ $color }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
 </svg>

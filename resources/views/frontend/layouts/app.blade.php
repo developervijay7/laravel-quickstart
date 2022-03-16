@@ -24,6 +24,13 @@
 <div class="h-5 w-5 hidden h-8 w-8">temporary just to add class will remove soon</div>
 <div id="app" class="px-5 py-6 dark:bg-gray-900 dark:text-white">
     @include('frontend.layouts.includes.header')
+    @if (Breadcrumbs::has() && !Route::is('frontend.index'))
+    <div class="container">
+        <div class="bg-gray-200 dark:bg-gray-600 rounded-xl px-5 py-4 flex items-center justify-between shadow-xl my-6">
+            @include('frontend.includes.partials.breadcrumbs')
+        </div>
+    </div>
+    @endif
     @yield('content')
     @include('frontend.layouts.includes.footer')
 </div>

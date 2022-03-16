@@ -11,7 +11,7 @@
         @apply text-sm leading-6 font-semibold mx-6;
     }
     #main-nav li a.active {
-        @apply text-4xl;
+        @apply bg-gray-300 dark:bg-gray-900 rounded-md px-4 py-2;
     }
 }
 

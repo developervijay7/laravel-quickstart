@@ -11,7 +11,7 @@ use Tabuna\Breadcrumbs\Trail;
 Route::get('/', [HomeController::class, 'index'])
     ->name('index')
     ->breadcrumbs(function(Trail $trail) {
-        $trail->push(__('Home', route('frontend.index')));
+        $trail->push(__('Home'), route('frontend.index'));
     });
 
 Route::get('/contact', [HomeController::class, 'contact'])

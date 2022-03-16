@@ -1,15 +1,11 @@
-@extends('auth.layouts.app')
+@extends('frontend.layouts.app')
 
 @section('title', 'Login at ' . appName())
 
 @section('content')
     <section>
-        <div class="container flex justify-end place-items-center min-h-screen">
+        <div class="container flex justify-end place-items-center my-12">
             <div class="box shadow-xl bg-gray-200 dark:bg-gray-600 rounded-xl p-5 w-[30rem]">
-                <div class="flex items-center justify-between">
-                    @include('includes.partials.logo')
-                    @include('includes.partials.switch')
-                </div>
                 <h1 class="font-bold text-2xl my-3">Login to {{ appName() }} Account</h1>
 
                 <form action="{{ route('login') }}" method="post">
