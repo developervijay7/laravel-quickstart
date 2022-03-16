@@ -18,6 +18,17 @@ We are trying to make the package easier to deploy.
 
 ## How to Install
 
+### 1. Download Laravel-QuickStart 
+Choose your preferred method
+- Download [Zipped Archive](https://github.com/developervijay7/laravel-quickstart/archive/refs/heads/main.zip).
+- Clone from GitHub <code>git clone https://github.com/developervijay7/laravel-quickstart.git</code>
+
+### 2. Setup .env file
+Laravel-QuickStart has a **.env.example** file in the root of the project.
+
+Rename **.env.example** to **.env**  make sure that the **.env** file must be in root directory. 
+
+**Note:** Make sure your operating system is not configured to display hidden files to show **.env** file.
 
 ## Laravel Sponsors
 
