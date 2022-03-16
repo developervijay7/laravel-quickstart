@@ -1,5 +1,5 @@
 
-[![](https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg)](https://laravel-quickstart.co)
+[![](https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg=x250)](https://laravel-quickstart.co)
 
 ![License](https://img.shields.io/packagist/l/laravel/framework)
 
@@ -48,14 +48,3 @@ project! Please feel free to make any pull requests, or e-mail me a feature requ
 
 The Laravel framework is open-sourced software licensed under the  [MIT license](https://opensource.org/licenses/MIT).
 
-
-
-
-
-
-
-<style type="text/css">
-    img {
-        height: 250px;    
-    }
-</style>
