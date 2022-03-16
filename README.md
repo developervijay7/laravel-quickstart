@@ -28,6 +28,13 @@ Rename **.env.example** to **.env**  make sure that the **.env** file must be in
 
 **Note:** Make sure your operating system is not configured to display hidden files to show **.env** file.
 
+### 3. Composer
+In order to install php [composer]() dependencies you first need to [set up composer on your operating system]().
+Once your system is compatible with php composer run the following command in your Terminal/ Windows Command Prompt/ Windows powershell/ git bash.
+
+<code>composer install</code>
+
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development.  If you are interested in becoming a sponsor,  please visit the Laravel  [Patreon page](https://patreon.com/taylorotwell).
