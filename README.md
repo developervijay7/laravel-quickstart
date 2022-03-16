@@ -1,5 +1,5 @@
 
-<img src="https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg" width="250">(https://laravel-quickstart.co)
+[<img src="https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg" width="250">](https://laravel-quickstart.co)
 
 # About Laravel Quick-Start
 
