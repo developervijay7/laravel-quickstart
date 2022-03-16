@@ -71,6 +71,27 @@ if you also want to import demo users, permissions, and roles run:
 
 <code>php artisan db:seed</code>
 
+
+### 6. NPM/Yarn
+In order to install JavaScript dependencies in your application you will need to install [Node Package Manager]()
+and optionally you can use [yarn]() to install them.
+
+Once you have NPM installed run this command
+<code>npm install</code>
+
+or if you want to install using yarn run:
+<code>yarn</code>
+
+
+### 7. NPM run prod/dev
+If you are deploying Laravel-QuickStart on your production environment run:
+
+<code>npm run prod</code>
+
+If you are deploying it on your local development computer run:
+
+<code>npm run dev</code>
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development.  If you are interested in becoming a sponsor,  please visit the James L. Masi  [Patreon page](https://www.patreon.com/jlmasi).
