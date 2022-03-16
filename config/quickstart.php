@@ -165,7 +165,7 @@ return [
         'languages' => [
             'en' => ['name' => 'English', 'rtl' => false, 'flag' => 'us'],
             'hi' => ['name' => 'Hindi', 'rtl' => false, 'flag' => 'in'],
-            'ar' => ['name' => 'Arabic', 'rtl' => true, 'flag' => 'pk'],
+            'ur' => ['name' => 'Urdu', 'rtl' => true, 'flag' => 'pk'],
         ],
     ],
 

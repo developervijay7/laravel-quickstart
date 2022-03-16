@@ -3,9 +3,9 @@
         <div class="bg-gray-200 dark:bg-gray-600 rounded-xl px-5 py-2 flex items-center justify-between shadow-xl">
             <div>{{ __('links.copyright') }} &copy; <?php echo(date('Y')) ?>
                 <a href="https://www.attrixtech.com" target="_blank"
-                   rel="nofollow noopener">{{ __('links.attrix_technologies') }}</a>.
-                Developed by <a href="https://vijaygoswami.in">{{ __('links.vijay_goswami') }}</a> & <a
-                    href="#">{{ __('links.james_l_masi') }}</a>
+                   rel="nofollow noopener">{{ __('links.attrix') }}</a>.
+                Developed by <a href="https://vijaygoswami.in">{{ __('links.vijay') }}</a> & <a
+                    href="#">{{ __('links.james') }}</a>
             </div>
             <div>
                 <ul class="flex items-center gap-x-2">

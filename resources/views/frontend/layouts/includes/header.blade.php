@@ -7,7 +7,7 @@
             <nav id="main-nav">
                 <ul class="hidden md:flex">
                     <li>
-                        <a class=""
+                        <a class="{{ activeClass(Route::is('frontend.index')) }}"
                            href="{{ route('frontend.index') }}">Home</a>
                     </li>
                     <li x-data="{showPages: false}" class="relative">
