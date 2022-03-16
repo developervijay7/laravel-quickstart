@@ -1,0 +1,26 @@
+/* TEAM */
+Your title: Vijay Goswami
+Site: https://vijaygoswami.in
+Twitter: hexpit
+Location: Agra, Uttar Pradesh India
+
+
+
+
+/* THANKS */
+Name: Amit Jain
+Role: Logo Designer
+
+Name: James L. Masi
+Role: Full Stack Developer
+
+Name: Chandrika Goswami
+Role: Inspiration
+
+
+
+/* SITE */
+Last update: 2021/05/15
+Standards: HTML5, CSS3, Laravel
+Components: Modernizr, jQuery, etc.
+Software: PHPStorm
