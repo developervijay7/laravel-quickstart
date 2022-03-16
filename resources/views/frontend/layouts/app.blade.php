@@ -10,6 +10,7 @@
     <title>@yield('title', appName())</title>
     <meta name="author" content="@yield('author', 'Vijay Goswami')"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
+    @include('includes.partials.favicons')
     @stack('before-styles')
     <link rel="stylesheet" href="{{ mix('css/frontend.css') }}"/>
     @stack('after-styles')
