@@ -5,7 +5,7 @@
                 @include('includes.partials.logo')
             </div>
             <nav id="main-nav">
-                <ul class="hidden md:flex">
+                <ul class="hidden lg:flex">
                     <li>
                         <a href="{{ route('frontend.index') }}" class="{{ activeClass(Route::is('frontend.index')) }}">{{ __('Home') }}</a>
                     </li>
@@ -21,10 +21,12 @@
                     </li>
                 </ul>
             </nav>
-            <nav id="actions-nav" class="flex gap-x-12 items-center" x-cloak>
+            <div>
                 @include('includes.partials.switch')
+            </div>
+            <nav id="actions-nav" class="flex gap-x-12 items-center" x-cloak>
                 @include('includes.partials.lang')
-                <ul class="flex items-center gap-x-5 relative" x-data="{ showUserMenu: false }">
+                <ul class="hidden lg:flex items-center gap-x-5 relative" x-data="{ showUserMenu: false }">
                     @guest
                         <li><a href="{{ route('login') }}">{{ __('labels.login') }}</a></li>
                         <li><a href="{{ route('register') }}">{{ __('labels.register') }}</a></li>
@@ -63,6 +65,16 @@
                     @endguest
                 </ul>
             </nav>
+            <div x-data="{showMobileMenu: false}" class="flex items-center">
+                <button @click="showMobileMenu = !showMobileMenu" class="bg-gray-300 dark:bg-gray-900 rounded-md p-1">
+                    <svg class="w-6 h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
+                        <path class="transform transition origin-center duration-250" :class="showMobileMenu == true ? 'rotate-45 translate-y-2 -translate-x-2' : ''" d="M7.94977 11.9498H39.9498" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path class="transform transition duration-250" :class="showMobileMenu == true ? 'hidden' : 'block'" d="M7.94977 23.9498H39.9498" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path class="transform transition origin-center duration-250" :class="showMobileMenu == true ? '-rotate-45 -translate-y-2 -translate-x-2' : ''" d="M7.94977 35.9498H39.9498" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 </header>

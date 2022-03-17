@@ -7,30 +7,30 @@
                 Developed by <a href="https://vijaygoswami.in">{{ __('labels.vijay') }}</a> & <a
                     href="#">{{ __('labels.james') }}</a>
             </div>
-            <div>
-                <ul class="flex items-center gap-x-2">
+            <div class="prevent-external">
+                <ul class="flex items-center gap-x-2 text-white">
                     <li>
-                        <a href="#" class="facebook rounded-full p-2 inline-flex">
+                        <a href="#" class="facebook rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
                             <x-icons.facebook/>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="twitter rounded-full p-2 inline-flex">
+                        <a href="#" class="twitter rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
                             <x-icons.twitter/>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="linkedin rounded-full p-2 inline-flex">
+                        <a href="#" class="linkedin rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
                             <x-icons.linkedin/>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="youtube rounded-full p-2 inline-flex">
+                        <a href="#" class="youtube rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
                             <x-icons.youtube/>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="instagram rounded-full p-2 inline-flex">
+                        <a href="#" class="instagram rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
                             <x-icons.instagram/>
                         </a>
                     </li>

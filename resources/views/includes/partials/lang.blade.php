@@ -7,9 +7,8 @@
                 class="flag-icon flag-icon-{{ config('quickstart.locale.languages')[app()->getLocale()]['flag'] }}"></span>
         </x-slot>
     </x-utils.link>
-{{--    <div x-show="showLang" class="absolute top-5 right-0 z-30 bg-gray-100 dark:bg-gray-900 p-2">--}}
     <div x-show="showLang"
-         class="absolute top-14 right-0 mt-2 w-48 rounded-md shadow-lg z-90 bg-gray-100 dark:bg-gray-900 ring-1 ring-black ring-opacity-5 focus:outline-none px-4"
+         class="absolute top-14 left-0 mt-2 w-48 rounded-md shadow-lg z-90 bg-gray-100 dark:bg-gray-900 ring-1 ring-black ring-opacity-5 focus:outline-none px-4"
          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
         @foreach(collect(config('quickstart.locale.languages'))->sortBy('name') as $code => $details)
             @if($code !== app()->getLocale())

@@ -21,7 +21,7 @@
       :class="{'dark': currentTheme === 'dark' || (currentTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
 >
 @include('includes.partials.google-tag-manager-body')
-<div class="h-5 w-5 hidden h-8 w-8">temporary just to add class will remove soon</div>
+<div class="h-5 w-5 hidden h-8 w-8 rotate-45 -rotate-45 origin-center duration-500">temporary just to add class will remove soon</div>
 <div id="app" class="px-5 py-6 dark:bg-gray-900 dark:text-white">
     @include('frontend.layouts.includes.header')
     @if (Breadcrumbs::has() && !Route::is('frontend.index'))
