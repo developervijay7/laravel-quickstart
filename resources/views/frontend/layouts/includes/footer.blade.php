@@ -9,31 +9,41 @@
             </div>
             <div class="prevent-external">
                 <ul class="flex items-center gap-x-2 text-white">
-                    <li>
-                        <a href="#" class="facebook rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
-                            <x-icons.facebook/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
-                            <x-icons.twitter/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="linkedin rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
-                            <x-icons.linkedin/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="youtube rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
-                            <x-icons.youtube/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="instagram rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
-                            <x-icons.instagram/>
-                        </a>
-                    </li>
+                    @if(config('quickstart.social.facebook'))
+                        <li>
+                            <a href="{{ config('quickstart.social.facebook') }}" class="facebook rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
+                                <x-icons.facebook/>
+                            </a>
+                        </li>
+                    @endif
+                        @if(config('quickstart.social.twitter'))
+                            <li>
+                                <a href="{{ config('quickstart.social.twitter') }}" class="twitter rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
+                                    <x-icons.twitter/>
+                                </a>
+                            </li>
+                        @endif
+                        @if(config('quickstart.social.linkedin'))
+                            <li>
+                                <a href="{{ config('quickstart.social.linkedin') }}" class="linkedin rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
+                                    <x-icons.linkedin/>
+                                </a>
+                            </li>
+                        @endif
+                        @if(config('quickstart.social.youtube'))
+                            <li>
+                                <a href="{{ config('quickstart.social.youtube') }}" class="youtube rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
+                                    <x-icons.youtube/>
+                                </a>
+                            </li>
+                        @endif
+                        @if(config('quickstart.social.instagram'))
+                            <li>
+                                <a href="{{ config('quickstart.social.instagram') }}" class="instagram rounded-full p-2 inline-flex" target="_blank" rel="nofollow noopener">
+                                    <x-icons.instagram/>
+                                </a>
+                            </li>
+                        @endif
                 </ul>
             </div>
         </div>

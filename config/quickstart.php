@@ -95,6 +95,22 @@ return [
         ],
     ],
 
+
+    /*
+    |--------------------------------------------------------------------------
+    | Social Settings
+    |--------------------------------------------------------------------------
+    |
+    | Configurations your application's social pages
+    */
+    'social' => [
+        'facebook' => env('FACEBOOK_PAGE', false),
+        'twitter' => env('TWITTER_HANDLE', false),
+        'linkedin' => env('LINKEDIN_PAGE', false),
+        'youtube' => env('YOUTUBE_CHANNEL', false),
+        'instagram' => env('INSTAGRAM_PROFILE', false),
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Avatar
