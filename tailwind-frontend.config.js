@@ -9,7 +9,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                purple: colors.blue,
+                accent: '#0872b4',
             },
         },
         container: {

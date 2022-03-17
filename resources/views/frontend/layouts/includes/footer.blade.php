@@ -3,9 +3,9 @@
         <div class="bg-gray-200 dark:bg-gray-600 rounded-xl px-5 py-4 flex items-center justify-between shadow-xl">
             <div>{{ __('labels.copyright') }} &copy; <?php echo(date('Y')) ?>
                 <a href="https://www.attrixtech.com" target="_blank"
-                   rel="nofollow noopener">{{ __('labels.attrix') }}</a>.
-                Developed by <a href="https://vijaygoswami.in">{{ __('labels.vijay') }}</a> & <a
-                    href="#">{{ __('labels.james') }}</a>
+                   class="text-accent" rel="nofollow noopener">{{ __('labels.attrix') }}</a>.
+                Developed by <a href="https://vijaygoswami.in" class="text-accent" target="_blank" rel="nofollow noopener">{{ __('labels.vijay') }}</a> & <a
+                    class="text-accent" href="https://www.facebook.com/jlmasi27" target="_blank" rel="nofollow noopener">{{ __('labels.james') }}</a>
             </div>
             <div class="prevent-external">
                 <ul class="flex items-center gap-x-2 text-white">
