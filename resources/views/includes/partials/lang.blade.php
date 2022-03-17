@@ -15,7 +15,7 @@
                 @if($code !== app()->getLocale())
                     <li>
                         <x-utils.link href="{{ route('locale.change', $code) }}" :text="__(getLocaleName($code))"
-                                      class="text-sm hover:bg-accent text-gray-700 block py-2 mx-0 px-6" role="menuitem"
+                                      class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6" role="menuitem"
                                       tabindex="-1">
                             <x-slot name="icon">
                                 <span class="flag-icon flag-icon-{{ $details['flag'] }}"></span>

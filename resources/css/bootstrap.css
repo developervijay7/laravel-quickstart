@@ -13,6 +13,9 @@
     #main-nav li a.active {
         @apply bg-gray-300 dark:bg-gray-900 rounded-md px-4 py-2;
     }
+    a.link {
+        @apply opacity-70 hover:opacity-100 hover:shadow
+    }
 }
 
 /*AlpineJS helper to hide floating elements during page load*/
