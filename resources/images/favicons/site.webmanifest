@@ -1,6 +1,6 @@
 {
     "name": "Laravel-QuickStart",
-    "short_name": "Laravel-QuickStart",
+    "short_name": "QuickStart",
     "icons": [
         {
             "src": "/android-chrome-36x36.png",
