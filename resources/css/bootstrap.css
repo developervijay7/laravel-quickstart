@@ -8,13 +8,16 @@
 
 @layer components {
     nav ul li a {
-        @apply text-sm leading-6 font-semibold mx-6;
+        @apply rounded-md px-4 py-2 text-sm leading-6 font-semibold mx-6 hover:bg-zinc-300 dark:hover:bg-zinc-500;
     }
     #main-nav li a.active {
-        @apply bg-gray-300 dark:bg-gray-900 rounded-md px-4 py-2;
+        @apply bg-gray-300 dark:bg-gray-900 hover:bg-zinc-300 dark:hover:bg-zinc-500;
     }
+
+
+
     a.link {
-        @apply opacity-70 hover:opacity-100 hover:shadow
+        @apply opacity-70 hover:opacity-100 hover:shadow;
     }
 }
 

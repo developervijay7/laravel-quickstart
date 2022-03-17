@@ -4,8 +4,8 @@
             <div>{{ __('labels.copyright') }} &copy; <?php echo(date('Y')) ?>
                 <a href="https://www.attrixtech.com" target="_blank"
                    class="text-accent link font-bold" rel="nofollow noopener">{{ __('labels.attrix') }}</a>.
-                Developed by <a href="https://vijaygoswami.in" class="text-accent link font-bold" target="_blank" rel="nofollow noopener">{{ __('labels.vijay') }}</a> & <a
-                    class="text-accent link font-bold" href="https://www.facebook.com/jlmasi27" target="_blank" rel="nofollow noopener">{{ __('labels.james') }}</a>
+                Developed by <a href="https://vijaygoswami.in" class="text-accent link font-bold prevent-external" target="_blank" rel="nofollow noopener">{{ __('labels.vijay') }}</a> & <a
+                    class="text-accent link font-bold prevent-external" href="https://www.facebook.com/jlmasi27" target="_blank" rel="nofollow noopener">{{ __('labels.james') }}</a>
             </div>
             <div class="prevent-external">
                 <ul class="flex items-center gap-x-2 text-white">

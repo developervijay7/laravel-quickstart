@@ -5,15 +5,24 @@
                 @include('includes.partials.logo')
             </div>
             <nav id="main-nav">
-                <ul class="hidden lg:flex">
+                <ul class="hidden lg:flex items-center">
                     <li>
                         <a href="{{ route('frontend.index') }}" class="{{ activeClass(Route::is('frontend.index')) }}">{{ __('Home') }}</a>
                     </li>
                     <li x-data="{showPages: false}" class="relative">
-                        <a href="#" @click.prevent="showPages = !showPages">Pages</a>
-                        <ul x-show="showPages" class="absolute w-40">
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                        <a href="#" @click.prevent="showPages = !showPages" class="flex items-center {{ activeClass(Route::is('frontend.pages.*')) }}">
+                            {{ __('labels.pages') }}
+                            <span>
+                                <x-icons.chevron-down :size="5" class="transform transition origin-center duration-250" ::class="showPages ? '-rotate-180' : ''" />
+                            </span>
+                        </a>
+                        <ul x-show="showPages" class="absolute top-14 right-0 md:left-0 mt-2 w-48 rounded-md shadow-lg z-90 bg-gray-200 dark:bg-gray-600 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.login') }}</a></li>
+                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.register') }}</a></li>
+                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.reset-password') }}</a></li>
+                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.forgot-password') }}</a></li>
+                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.privacy-policy') }}</a></li>
+                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.terms-of-service') }}</a></li>
                         </ul>
                     </li>
                     <li>
