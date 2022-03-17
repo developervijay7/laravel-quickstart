@@ -1,5 +1,5 @@
 @if(config('quickstart.locale.status') && count(config('quickstart.locale.languages')) > 1)
-    <button x-data="{'showLang': false}" class="relative flex items-center rounded-md bg-gray-300 dark:bg-gray-900 py-1 px-3">
+    <button x-data="{'showLang': false}" class="relative flex items-center rounded-md bg-gray-300 dark:bg-gray-900 py-1 px-3" title="{{ __('labels.lang-switch') }}">
         <x-utils.link :text="__(getLocaleName(app()->getLocale()))" id="langPicker" @click.prevent="showLang = !showLang"
                       @click.away="showLang = false" aria-expanded="true" aria-haspopup="true">
             <x-slot name="icon">

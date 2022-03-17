@@ -24,4 +24,5 @@ return [
     'dark-mode' => 'Dark Mode',
     'light-mode' => 'Light Mode',
     'system-mode' => 'System Controlled Display Mode',
+    'lang-switch' => 'Change Language'
 ];

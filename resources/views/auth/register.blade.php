@@ -1,12 +1,17 @@
-@extends('frontend.layouts.app')
+@extends('auth.layouts.app')
 
 @section('title', 'Create your account at ' . appName())
 
 @section('content')
     <section>
-        <div class="container flex justify-end place-items-center my-12">
+        <div class="container flex justify-end place-items-center min-h-screen">
             <div class="box shadow-xl bg-gray-200 dark:bg-gray-600 rounded-xl p-5 w-[45rem]">
-                <h1 class="font-bold text-2xl my-3">Register at {{ appName() }}</h1>
+                <div class="flex items-center justify-between">
+                    @include('includes.partials.logo')
+                    @include('includes.partials.lang')
+                    @include('includes.partials.switch')
+                </div>
+                <h1 class="font-bold text-2xl my-3">{{ __('headings.register', ['application' => __('labels.app-name')]) }}</h1>
 
                 <form action="{{ route('register') }}" method="post">
                     @csrf
