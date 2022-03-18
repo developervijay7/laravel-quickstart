@@ -86,7 +86,7 @@
                         <x-icons.twitter/>
                     </a>
                     <a href="#" class="google rounded py-2">
-                        {{--                        <x-icons.google />--}}
+                        <x-icons.google />
                     </a>
                     <a href="#" class="linkedin rounded py-2">
                         <x-icons.linkedin/>
