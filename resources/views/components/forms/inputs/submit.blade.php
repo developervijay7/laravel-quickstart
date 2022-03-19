@@ -1,0 +1,1 @@
+<button type="submit" {{ $attributes->merge(['class' => 'bg-' . $color . '-500' . ' hover:bg-' . $color . '-800' . 'text-lg font-semibold w-1/2 text-white rounded-lg px-6 py-3 block shadow-xl']) }}>{{ $value ?? 'Submit Form' }}</button>

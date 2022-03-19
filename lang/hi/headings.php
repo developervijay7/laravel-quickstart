@@ -11,4 +11,5 @@ return [
     */
     'login' => ':application पर लॉगिन करें',
     'register' => ':application पर रजिस्टर करें',
+    'password-reset' => 'पासवर्ड बदली करें?',
 ];

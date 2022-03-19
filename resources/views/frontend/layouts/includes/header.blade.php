@@ -10,15 +10,15 @@
                         <a href="{{ route('frontend.index') }}" class="{{ activeClass(Route::is('frontend.index')) }}">{{ __('Home') }}</a>
                     </li>
                     <li x-data="{showPages: false}" class="relative">
-                        <a href="#" @click.prevent="showPages = !showPages" class="flex items-center {{ activeClass(Route::is('frontend.pages.*')) }}">
+                        <a href="#" @click.prevent="showPages = !showPages" @click.away="showPages = false" class="flex items-center {{ activeClass(Route::is('frontend.pages.*')) }}">
                             {{ __('labels.pages') }}
                             <span>
                                 <x-icons.chevron-down :size="5" class="transform transition origin-center duration-250" ::class="showPages ? '-rotate-180' : ''" />
                             </span>
                         </a>
                         <ul x-show="showPages" class="absolute top-14 right-0 md:left-0 mt-2 w-48 rounded-md shadow-lg z-90 bg-gray-200 dark:bg-gray-600 ring-1 ring-black ring-opacity-5 focus:outline-none">
-                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.login') }}</a></li>
-                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.register') }}</a></li>
+                            <li><a href="{{ route('login') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.login') }}</a></li>
+                            <li><a href="{{ route('register') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.register') }}</a></li>
                             <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.reset-password') }}</a></li>
                             <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.forgot-password') }}</a></li>
                             <li><a href="{{ route('frontend.legal.policy') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.privacy-policy') }}</a></li>
@@ -34,7 +34,9 @@
                 @include('includes.partials.switch')
             </div>
             <nav id="actions-nav" class="flex gap-x-12 items-center" x-cloak>
-                @include('includes.partials.lang')
+                <div class="relative flex items-center rounded-md bg-gray-300 dark:bg-gray-900 py-1 px-3">
+                    @include('includes.partials.lang')
+                </div>
                 <ul class="hidden lg:flex items-center gap-x-5 relative" x-data="{ showUserMenu: false }">
                     @guest
                         <li><a href="{{ route('login') }}">{{ __('labels.login') }}</a></li>

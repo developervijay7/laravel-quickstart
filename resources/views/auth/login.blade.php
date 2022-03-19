@@ -39,7 +39,7 @@
             bg-gray-800 w-1/2 text-white rounded-lg
             px-6 py-3 block shadow-xl hover:text-white hover:bg-black">Login
                         </button>
-                        <a href="#">Forgot password?</a>
+                        <a href="{{ route('password.request') }}">Forgot password?</a>
                     </div>
                 </form>
                 <hr/>
