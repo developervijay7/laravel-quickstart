@@ -21,8 +21,8 @@
                             <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.register') }}</a></li>
                             <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.reset-password') }}</a></li>
                             <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.forgot-password') }}</a></li>
-                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.privacy-policy') }}</a></li>
-                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.terms-of-service') }}</a></li>
+                            <li><a href="{{ route('frontend.legal.policy') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.privacy-policy') }}</a></li>
+                            <li><a href="{{ route('frontend.legal.terms') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.terms-of-service') }}</a></li>
                         </ul>
                     </li>
                     <li>
