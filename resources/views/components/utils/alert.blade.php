@@ -9,7 +9,7 @@
             <b class="capitalize">success!</b> {{ $slot }}
         </span>
         @if ($dismissible)
-            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
+            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-3 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
                 <x-icons.x />
             </button>
         @endif
@@ -23,7 +23,7 @@
             <b class="capitalize">error!</b> {{ $slot }}
         </span>
         @if ($dismissible)
-            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
+            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-3 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
                 <x-icons.x />
             </button>
         @endif
@@ -37,7 +37,7 @@
             <b class="capitalize">info!</b> {{ $slot }}
         </span>
         @if ($dismissible)
-            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
+            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-3 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
                 <x-icons.x />
             </button>
         @endif
@@ -51,7 +51,7 @@
             <b class="capitalize">warning!</b> {{ $slot }}
         </span>
         @if ($dismissible)
-            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
+            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-3 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
                 <x-icons.x />
             </button>
         @endif
@@ -62,7 +62,7 @@
             {{ $slot }}
         </span>
         @if ($dismissible)
-            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
+            <button type="button" @click="showAlert = false" class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-3 mr-6 outline-none focus:outline-none" aria-label="{{ $ariaLabel }}">
                 <x-icons.x />
             </button>
         @endif

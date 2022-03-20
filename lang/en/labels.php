@@ -12,6 +12,8 @@ return [
     'app-name' => config('app.name'),
     'login' => 'Login',
     'register' => 'Register',
+    'email' => 'Email Address',
+    'password' => 'Password',
     'copyright' => 'Copyright',
     'attrix' => 'Attrix Technologies',
     'vijay' => 'Vijay Goswami',

@@ -4,15 +4,17 @@
 
 @section('content')
     <section>
-        <div class="container flex justify-end place-items-center min-h-screen">
+        <div class="container flex justify-end place-items-center min-h-screen dark:text-white">
             <div class="box shadow-xl bg-gray-200 dark:bg-gray-600 rounded-xl p-5 w-[45rem]">
                 <div class="flex items-center justify-between">
                     @include('includes.partials.logo')
-                    @include('includes.partials.lang')
+                    <div class="relative flex items-center rounded-md bg-gray-300 dark:bg-gray-900 py-1 px-3">
+                        @include('includes.partials.lang')
+                    </div>
                     @include('includes.partials.switch')
                 </div>
                 <h1 class="font-bold text-2xl my-3">{{ __('headings.register', ['application' => __('labels.app-name')]) }}</h1>
-
+                @include('includes.partials.messages')
                 <form action="{{ route('register') }}" method="post">
                     @csrf
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-5">

@@ -14,12 +14,6 @@ class LockoutServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__ . '/../config/lockout.php' => config_path('lockout.php'),
-            ], 'config');
-        }
-
         $this->registerBladeExtensions();
     }
 
@@ -40,7 +34,7 @@ class LockoutServiceProvider extends ServiceProvider
     public function register()
     {
         // Register the config file
-        $this->mergeConfigFrom(__DIR__ . '/../config/lockout.php', 'lockout');
+        $this->mergeConfigFrom(config_path() . '/lockout.php', 'lockout');
 
         // Publish the middleware globally
         $this->app

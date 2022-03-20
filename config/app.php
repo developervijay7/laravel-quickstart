@@ -180,6 +180,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\HelperServiceProvider::class,
         App\Providers\LocaleServiceProvider::class,
+        App\Providers\LockoutServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         Lab404\Impersonate\ImpersonateServiceProvider::class,

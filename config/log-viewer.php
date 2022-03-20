@@ -26,7 +26,7 @@ return [
      |  Locale
      | -----------------------------------------------------------------
      |  Supported locales :
-     |    'auto', 'ar', 'bg', 'de', 'en', 'es', 'et', 'fa', 'fr', 'hu', 'hy', 'id', 'it', 'ja', 'ko', 'nl',
+     |    'auto', 'ar', 'bg', 'de', 'en', 'es', 'et', 'fa', 'fr', 'hu', 'hy', 'hi', 'id', 'it', 'ja', 'ko', 'nl',
      |    'pl', 'pt-BR', 'ro', 'ru', 'sv', 'th', 'tr', 'zh-TW', 'zh'
      */
 
@@ -36,11 +36,11 @@ return [
      |  Theme
      | -----------------------------------------------------------------
      |  Supported themes :
-     |    'bootstrap-3', 'bootstrap-4', 'adminator-logviewer'
+     |    'bootstrap-3', 'bootstrap-4', 'adminator'
      |  Make your own theme by adding a folder to the views directory and specifying it here.
      */
 
-    'theme' => 'adminator',
+    'theme' => 'bootstrap-4',
 
     /* -----------------------------------------------------------------
      |  Route settings

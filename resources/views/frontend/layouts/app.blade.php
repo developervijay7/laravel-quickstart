@@ -58,6 +58,9 @@
 @include('includes.partials.google-tag-manager-body')
 <div class="h-5 w-5 hidden h-8 w-8 rotate-45 -rotate-45 origin-center duration-500">temporary just to add class will remove soon</div>
 <div id="app" class="px-5 py-6 dark:bg-gray-900 dark:text-white">
+    <div class="container">
+        @include('includes.partials.read-only')
+    </div>
     @include('frontend.layouts.includes.header')
     @if (Breadcrumbs::has() && !Route::is('frontend.index'))
     <div class="container">

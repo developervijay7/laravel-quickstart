@@ -4,28 +4,23 @@
 
 @section('content')
     <section>
-        <div class="container flex justify-end place-items-center min-h-screen">
+        <div class="container flex justify-end place-items-center min-h-screen dark:text-white">
             <div class="box shadow-xl bg-gray-200 dark:bg-gray-600 rounded-xl p-5 w-[30rem]">
                 <div class="flex items-center justify-between">
                     @include('includes.partials.logo')
-                    @include('includes.partials.lang')
+                    <div class="relative flex items-center rounded-md bg-gray-300 dark:bg-gray-900 py-1 px-3">
+                        @include('includes.partials.lang')
+                    </div>
                     @include('includes.partials.switch')
                 </div>
                 <h1 class="font-bold text-2xl my-3">{{ __('headings.login', ['application' => __('labels.app-name')]) }}</h1>
-
-                <form action="{{ route('login') }}" method="post">
-                    @csrf
+                @include('includes.partials.messages')
+                <x-forms.post action="{{ route('login') }}">
                     <div class="my-3">
-                        <label for="" class="px-1 text-sm text-gray-600">Email Address</label>
-                        <input type="email" name="email" class="text-md block px-3 py-2 rounded-lg w-full
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                               value="admin@admin.com">
+                       <x-forms.inputs.text id="email" label="{{ __('labels.email') }}" name="email" placeholder="{{ __('labels.email') }}" class="w-full rounded-lg" />
                     </div>
                     <div class="my-3">
-                        <label for="" class="px-1 text-sm text-gray-600">Password</label>
-                        <input type="password" name="password" class="text-md block px-3 py-2 rounded-lg w-full
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                               value="cOdE5581">
+                        <x-forms.inputs.password id="password" label="{{ __('labels.password') }}" name="password" placeholder="{{ __('labels.password') }}" class="w-full rounded-lg" />
                     </div>
                     <div class="my-3">
                         <label for="remember" class="block text-gray-500 font-bold my-4 flex items-center">
@@ -41,7 +36,7 @@
                         </button>
                         <a href="{{ route('password.request') }}">Forgot password?</a>
                     </div>
-                </form>
+                </x-forms.post>
                 <hr/>
                 <div class="grid grid-cols-2 gap-3 mt-6">
                     <a href="#" class="facebook rounded py-2">
