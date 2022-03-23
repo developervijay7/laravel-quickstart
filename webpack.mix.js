@@ -29,7 +29,8 @@ mix.setPublicPath('public')
         'laravel-echo',
         'pusher-js',
     ])
-    .sourceMaps();
+    .sourceMaps()
+    .browserSync(process.env.APP_URL);
 
 mix.copyDirectory('resources/images', 'public/images');
 
