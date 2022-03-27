@@ -43,7 +43,7 @@
                         <li><a href="{{ route('register') }}">{{ __('labels.register') }}</a></li>
                     @else
                         <button class="focus:ring-4 focus:ring-blue-300 rounded-full"
-                                @click="showUserMenu = !showUserMenu; sweetalert = true;">
+                                @click="showUserMenu = !showUserMenu">
                             <img src="{{ $logged_in_user->avatar }}"
                                  alt="{{ $logged_in_user->full_name }}" class="rounded-full h-14 w-14">
                         </button>
@@ -54,7 +54,7 @@
                             <div class="px-4 py-3">
                                 <span class="block">{{ ucwords($logged_in_user->full_name) }}</span>
                                 <span
-                                    class="block text-sm font-medium text-gray-900 truncate">{{ $logged_in_user->roles }}</span>
+                                    class="block text-sm font-medium text-gray-900 truncate">{{ $logged_in_user->roles[0]->name }}</span>
                             </div>
                             <ul class="py-1" aria-labelledby="dropdown">
                                 <li>
@@ -70,7 +70,7 @@
                                 </li>
                             </ul>
                             <div>
-                                <x-utils.logout-button />
+                                <x-utils.logout-button :action="route('logout')" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" />
                             </div>
                         </div>
                     @endguest
