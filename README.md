@@ -96,15 +96,15 @@ If you are deploying it on your local development computer run:
 
 Master: master@example.com
 
-Password: M@aster
+Password: Master@123
 
 Admin: admin@example.com
 
-Password: Adm!n
+Password: Admin@123
 
 User: user@example.com
 
-Password: Us@r
+Password: User@123
 
 ##Official Documentation
 [Laravel-QuickStart Documentation]()

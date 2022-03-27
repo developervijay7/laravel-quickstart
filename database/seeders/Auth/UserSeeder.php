@@ -24,17 +24,17 @@ class UserSeeder extends Seeder
         User::create([
             'type' => User::TYPE_ADMIN,
             'first_name' => 'Master',
-            'email' => 'master@admin.com',
-            'password' => 'password',
+            'email' => 'master@example.com',
+            'password' => 'Master@123',
             'email_verified_at' => now(),
             'active' => true,
         ]);
 
         User::create([
             'type' => User::TYPE_ADMIN,
-            'first_name' => 'admin',
-            'email' => 'admin@admin.com',
-            'password' => 'password',
+            'first_name' => 'Admin',
+            'email' => 'admin@example.com',
+            'password' => 'Admin@123',
             'email_verified_at' => now(),
             'active' => true,
         ]);
@@ -42,9 +42,9 @@ class UserSeeder extends Seeder
         if (app()->environment(['local', 'testing'])) {
             User::create([
                 'type' => User::TYPE_USER,
-                'first_name' => 'Test User',
-                'email' => 'user@admin.com',
-                'password' => 'secret',
+                'first_name' => 'User',
+                'email' => 'user@example.com',
+                'password' => 'User@123',
                 'email_verified_at' => now(),
                 'active' => true,
             ]);
