@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 const tailwindcss = require("tailwindcss");
+// Pull the proxy url from dotenv file
+let proxy_url = process.env.BROWSERSYNC_PROXY_URL;
 
 /*
  |--------------------------------------------------------------------------
@@ -30,16 +32,20 @@ mix.setPublicPath('public')
         'pusher-js',
     ])
     .sourceMaps();
-    // .browserSync(process.env.APP_URL);
+    if (proxy_url) {
+        mix.browserSync({
+            proxy: proxy_url,
+            ghostMode: false,
+        })
+    }
+    mix.copyDirectory('resources/images', 'public/images');
 
-mix.copyDirectory('resources/images', 'public/images');
 
-
-if (mix.inProduction()) {
-    mix.version();
-} else {
-    // Uses inline source-maps on development
-    mix.webpackConfig({
-        devtool: 'inline-source-map'
-    });
-}
+    if (mix.inProduction()) {
+        mix.version();
+    } else {
+        // Uses inline source-maps on development
+        mix.webpackConfig({
+            devtool: 'inline-source-map'
+        });
+    }
