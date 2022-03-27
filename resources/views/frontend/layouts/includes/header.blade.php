@@ -53,8 +53,10 @@
                              id="user-menu">
                             <div class="px-4 py-3">
                                 <span class="block">{{ ucwords($logged_in_user->full_name) }}</span>
-                                <span
-                                    class="block text-sm font-medium text-gray-900 truncate">{{ $logged_in_user->roles[0]->name }}</span>
+                                @if(count($logged_in_user->roles))
+                                    <span
+                                        class="block text-sm font-medium text-gray-900 truncate">{{ $logged_in_user->roles[0]->name }}</span>
+                                @endif
                             </div>
                             <ul class="py-1" aria-labelledby="dropdown">
                                 <li>

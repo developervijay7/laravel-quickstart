@@ -80,6 +80,12 @@ class PermissionRoleSeeder extends Seeder
 
         // Assign Permissions to other Roles
         //
+        // Create Roles
+        Role::create([
+            'id' => 2,
+            'type' => User::TYPE_USER,
+            'name' => 'User',
+        ]);
 
         $this->enableForeignKeys();
     }
