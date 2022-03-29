@@ -1,6 +1,12 @@
 
 [<img src="https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg" width="400">](https://laravel-quickstart.co)
 
+https://img.shields.io/github/issues/developervijay7/laravel-quickstart
+https://img.shields.io/github/forks/developervijay7/laravel-quickstart
+https://img.shields.io/github/stars/developervijay7/laravel-quickstart
+https://img.shields.io/github/license/developervijay7/laravel-quickstart
+https://img.shields.io/twitter/url?style=social
+
 # About Laravel Quick-Start
 
 Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.

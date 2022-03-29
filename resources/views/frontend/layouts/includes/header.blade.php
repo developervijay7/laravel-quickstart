@@ -72,7 +72,7 @@
                                 </li>
                             </ul>
                             <div>
-                                <x-utils.logout-button :action="route('logout')" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" />
+                                <x-utils.logout-button :action="route('logout')" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" :hideText="false">{{ __('labels.logout') }}</x-utils.logout-button>
                             </div>
                         </div>
                     @endguest

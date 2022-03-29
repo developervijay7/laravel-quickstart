@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og: https://ogp.me/ns#" @langrtl dir="rtl"
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og:https://ogp.me/ns#" @langrtl dir="rtl"
       @endlangrtl>
 <head>
     <meta charset="utf-8"/>

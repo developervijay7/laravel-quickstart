@@ -12,6 +12,7 @@ return [
     'app-name' => config('app.name'),
     'login' => 'Login',
     'register' => 'Register',
+    'logout' => 'Logout',
     'email' => 'Email Address',
     'password' => 'Password',
     'copyright' => 'Copyright',
