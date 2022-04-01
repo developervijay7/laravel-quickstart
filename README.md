@@ -1,6 +1,10 @@
 
 [<img src="https://github.com/developervijay7/laravel-quickstart/blob/main/resources/images/logo-dark.svg" width="400">](https://laravel-quickstart.co)
 
+<img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/developervijay7/laravel-quickstart/main">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/developervijay7/laravel-quickstart">
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Flaravel-quickstart.co)
+<img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Flaravel-quickstart.co">
 https://img.shields.io/github/issues/developervijay7/laravel-quickstart
 https://img.shields.io/github/forks/developervijay7/laravel-quickstart
 https://img.shields.io/github/stars/developervijay7/laravel-quickstart
