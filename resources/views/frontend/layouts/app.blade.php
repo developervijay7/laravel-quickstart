@@ -51,7 +51,7 @@
     <!-- /Site Styling -->
 </head>
 <body class="overflow-x-hidden antialiased @env('local') debug-screens @endenv"
-      x-data="{currentTheme: localStorage.getItem('theme') || localStorage.setItem('theme', 'system'), sweetalert: false, vijay: true}"
+      x-data="{currentTheme: localStorage.getItem('theme') || 'system', sweetalert: false, vijay: true}"
       x-init="$watch('currentTheme', val => localStorage.setItem('theme', val)); currentScreenWidth = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;"
       :class="{'dark': currentTheme === 'dark' || (currentTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
 >

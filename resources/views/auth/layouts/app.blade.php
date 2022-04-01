@@ -15,7 +15,7 @@
     @stack('after-styles')
 </head>
 <body class="antialiased @env('local') debug-screens @endenv"
-      x-data="{currentTheme: localStorage.getItem('theme') || localStorage.setItem('theme', 'system')}"
+      x-data="{currentTheme: localStorage.getItem('theme') || 'system'}"
       x-init="$watch('currentTheme', val => localStorage.setItem('theme', val))"
       :class="{'dark': currentTheme === 'dark' || (currentTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
 >
