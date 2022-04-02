@@ -143,6 +143,7 @@ User: user@example.com
 
 Password: User@123
 
+
 ## Official Documentation
 [Laravel-QuickStart Documentation]()
 
