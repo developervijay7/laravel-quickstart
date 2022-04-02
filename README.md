@@ -1,7 +1,4 @@
-![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg ':size=400x120')
-
 # Get Started
-
 Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.
 
 ## Installation
