@@ -1,5 +1,5 @@
-# Welcome to Docsify Page!
+# Welcome to Laravel-QuickStart
 
-This site was created using [**Docsify**](https://docsify.js.org), which is an open source documentation site generator, and imported in GitHub page. This site was created for [**Opensource.com**](https://opensource.com) demo.
+Laravel Quick-Start is a laravel application boilerplate that bundles necessary packages, dependencies, scaffolding, authentication to quick start your project out of the box.
 
-![Welcome to Opensource.com](./images/cover.jpg)
+![Welcome to Laravel-QuickStart](./images/cover.png)

@@ -1,3 +1,3 @@
-# About This Site
+# About Laravel-QuickStart
 
-This site content was generated using Docify and went to demo in Opensource.com
+Here goes about laravel-quickstart
