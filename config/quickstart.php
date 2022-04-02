@@ -2,7 +2,7 @@
 
 /*
  * All configuration options for Laravel Quick-Start
- * https://github.com/jlmasi/laravel-quickstart.
+ * https://github.com/developervijay7/laravel-quickstart.
  */
 
 return [
@@ -144,19 +144,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Google Analytics
+    | Google Tag Manager
     |--------------------------------------------------------------------------
     |
-    | Found in views/includes/partials/ga.blade.php
+    | Found in views/includes/partials/google-tag-manager-head and  views/includes/partials/google-tag-manager-body
     */
     'google_tag_manager' => env('GOOGLE_TAG_MANAGER', null),
 
     /*
     |--------------------------------------------------------------------------
-    | Google Analytics
+    | Force HTTPS always
     |--------------------------------------------------------------------------
     |
-    | Found in views/includes/partials/ga.blade.php
+    | Forces your application to run over HTTPS in production
     */
     'force_https' => env('FORCE_HTTPS', false),
 
