@@ -45,6 +45,9 @@ Here are some of its features:
 - User [Timezone](https://github.com/jamesmills/laravel-timezone)
 - Implementation of User and Roles/Permission Factories and Seeders
 - Least JavaScript (No jQuery) as we love working with AlpineJS
+- Utilises SEO Tags (OpenGraph Facebook, Twitter Tags)
+- Progressive Web App (PWA) implementation out of the box
+- Tailor-made plethora of laravel blade components to make your development life a breeze
 
 
 We tried to bootstrap any requirement your application may have, yet we are open to discuss adding more. 
