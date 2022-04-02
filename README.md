@@ -3,7 +3,10 @@
 
 ![GitHub language count](https://img.shields.io/github/languages/count/developervijay7/laravel-quickstart?style=plastic)
 ![GitHub top language](https://img.shields.io/github/languages/top/developervijay7/laravel-quickstart?style=plastic)
-![Discord](https://img.shields.io/discord/959485139354791936/959485139354791939?style=plastic)
+![Discord](https://img.shields.io/discord/959485139354791936?style=plastic)
+
+
+
 # About Laravel Quick-Start
 
 Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.
