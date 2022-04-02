@@ -141,8 +141,17 @@ User: user@example.com
 
 Password: User@123
 
-##Official Documentation
+## Official Documentation
 [Laravel-QuickStart Documentation]()
+
+
+## Project Built Using Laravel-QuickStart
+
+- [Attrix Technologies Global](https://www.attrixtech.com)
+- [Attrix Technologies India](https://www.attrixtech.in)
+- [Vijay Goswami Developer Portfolio](https://vijaygoswami.in)
+- [Pandit Sundarlal Sharma Central Institute of Vocational Education](http://psscive.ac.in)
+- [Laravel-Icons](https://laravel-icons.com)
 
 ## Contributing
 
