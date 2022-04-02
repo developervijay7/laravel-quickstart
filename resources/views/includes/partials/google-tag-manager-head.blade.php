@@ -8,7 +8,7 @@
                 j.async = true;
                 j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
                 f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-TTJKW4L');
+            })(window, document, 'script', 'dataLayer', '{{ config('quickstart.google_tag_manager') }}');
         </script>
     @endproduction
 @endisset
