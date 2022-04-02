@@ -1,5 +1,35 @@
+![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg ':size=400x120')
+
 # Get Started
+
 Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.
+
+Here are some of its features:
+- Separate Views, Routes, Controllers directories for Frontend(Public Interface) and Backend(Admin Interface)
+- Both Frontend and Backend utilizes [TailwindCSSv3](https://tailwindcss.com/) as frontend framework
+- Ready-made pages for Authentication/User Management/ Roles/Permission Management/ Log-viewer/ Notifications Management
+- User Management [Laravel Fortify](https://github.com/laravel/fortify) package, with social login [Socialite](https://github.com/laravel/socialite), API Authentication using [Laravel Sanctum](https://github.com/laravel/sanctum) and Roles and Permissions [Spatie Laravel Permissions](https://github.com/spatie/laravel-permission) package
+- Integrated [Log Viewer](https://github.com/ARCANEDEV/LogViewer)
+- Integrated [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) as dev-dependency
+- Preconfigured [BrowserSync](https://browsersync.io/)
+- User Impersonation using [Laravel Impersonate](https://github.com/404labfr/laravel-impersonate)
+- [UUID Generator](https://github.com/ramsey/uuid)
+- Breadcrumbs implementation using [Laravel Breadcrumbs](https://github.com/tabuna/breadcrumbs)
+- [Icons Library](https://laravel-icons.com) using [Laravel-Icons](https://github.com/developervijay7/laravel-icons)
+- Event Listeners Implementation for Various User Events as example to encourage devs to implement more as required
+- Multiple helper functions
+- Useful Model Traits
+- [User Activity Log](https://github.com/spatie/laravel-activitylog)
+- Multilingual Scaffolding
+- User [Timezone](https://github.com/jamesmills/laravel-timezone)
+- Implementation of User and Roles/Permission Factories and Seeders
+- Least JavaScript (No jQuery) as we love working with AlpineJS
+- Utilises SEO Tags (OpenGraph Facebook, Twitter Tags)
+- Progressive Web App (PWA) implementation out of the box
+- Tailor-made plethora of laravel blade components to make your development life a breeze 
+
+
+We tried to bootstrap any requirement your application may have, yet we are open to discuss adding more. 
 
 ## Installation
 
@@ -94,3 +124,27 @@ Password: Admin@123
 User: user@example.com
 
 Password: User@123
+
+
+## Official Documentation
+[Laravel-QuickStart Documentation](http://docs.laravel-quickstart.co)
+
+
+## Project Built Using Laravel-QuickStart
+
+- [Attrix Technologies Global](https://www.attrixtech.com)
+- [Attrix Technologies India](https://www.attrixtech.in)
+- [Vijay Goswami Developer Portfolio](https://vijaygoswami.in)
+- [Pandit Sundarlal Sharma Central Institute of Vocational Education](http://psscive.ac.in)
+- [Laravel-Icons](https://laravel-icons.com)
+- [Vijay Goswami Blog](https://technovij.com)
+
+## Contributing
+
+Thank you for considering contributing to the Laravel Quick-Start
+project! Please feel free to make any pull requests, or e-mail me a feature request you would like to see in the future to Vijay Goswami at [hexpit@gmail.com](mailto:hexpit@gmail.com).
+
+## License
+
+The Laravel-QuickStart is open-sourced software licensed under the  [MIT license](https://opensource.org/licenses/MIT).
+
