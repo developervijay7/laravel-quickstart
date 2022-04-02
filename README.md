@@ -128,6 +128,8 @@ If you are deploying it on your local development computer run:
 <code>npm run dev</code>
 
 ### 8. Demo Credentials
+For the purpose of demonstration we have seeded 3 users by default that are Master, Admin and User having roles assigned for them respectively.
+To add more refer to Spatie Permission Package Documentation [here](https://spatie.be/docs/laravel-permission/v5/introduction)
 
 Master: master@example.com
 
@@ -152,6 +154,7 @@ Password: User@123
 - [Vijay Goswami Developer Portfolio](https://vijaygoswami.in)
 - [Pandit Sundarlal Sharma Central Institute of Vocational Education](http://psscive.ac.in)
 - [Laravel-Icons](https://laravel-icons.com)
+- [Vijay Goswami Blog](https://technovij.com)
 
 ## Contributing
 
