@@ -1,9 +1,9 @@
 - Getting started
 
-    - [Quick start](.pages/quickstart.md)
-    - [Writing more pages](more-pages.md)
-    - [Custom navbar](custom-navbar.md)
-    - [Cover page](cover.md)
+    - [Quick start]()
+    - [Configuration](configuration.md)
+    - [Events & Listeners](events-listeners.md)
+    - [DarkMode](dark-mode.md)
 
 - [Awesome docsify](awesome.md)
 - [Changelog](changelog.md)
