@@ -20,7 +20,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/developervijay7/laravel-quickstart?style=social)
 ![GitHub User's stars](https://img.shields.io/github/stars/developervijay7?affiliations=OWNER&style=social)
 
-#quickstart
+# About Laravel Quick-Start
 
 Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.
 
