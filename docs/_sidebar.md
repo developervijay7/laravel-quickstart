@@ -1,9 +1,9 @@
 - Getting started
 
-    - [Quick start]()
-    - [Configuration](configuration.md)
-    - [Events & Listeners](events-listeners.md)
-    - [DarkMode](dark-mode.md)
+    - [Installation](/)
+    - [Configuration](/#configuration.md)
+    - [Events & Listeners](/#events-listeners.md)
+    - [DarkMode](#/dark-mode.md)
 
 - [Awesome docsify](awesome.md)
 - [Changelog](changelog.md)

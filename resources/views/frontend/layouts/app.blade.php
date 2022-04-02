@@ -23,7 +23,7 @@
     <meta property="og:description" content="@yield('og:description', appName())"/>
     <meta property="og:url" content="@yield('og:url', config('app.url'))"/>
     <meta property="og:type" content="article"/>
-    <meta property="article:publisher" content="https://www.colbyfayock.com"/>
+    <meta property="article:publisher" content="https://vijaygoswami.in"/>
     <meta property="article:section" content=""/>
     <meta property="article:tag" content=""/>
     <meta property="og:image" content=""/>
@@ -34,7 +34,7 @@
     <meta property="twitter:card" content="@yield('og:url', 'summary_large_image')"/>
     <meta property="twitter:image" content=""/>
     <meta property="twitter:site" content=""/>
-    <meta property="twitter:creator" content="@hexpit"/>
+    <meta property="twitter:creator" content="developervijay7"/>
     <!-- /Opengraph -->
 
     <!-- Search Engine Verifications Tags -->
