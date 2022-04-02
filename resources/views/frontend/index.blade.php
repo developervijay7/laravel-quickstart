@@ -13,6 +13,7 @@
                     <button class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100">Sponsor</button>
                     <button class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100">Contribute</button>
                     <button class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100">Donate</button>
+                    <a href="http://docs.laravel-quickstart.co" class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100" target="_blank">Documentation</a>
                 </div>
             </div>
         </div>

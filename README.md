@@ -145,7 +145,7 @@ Password: User@123
 
 
 ## Official Documentation
-[Laravel-QuickStart Documentation](https://docs.laravel-quickstart.co)
+[Laravel-QuickStart Documentation](http://docs.laravel-quickstart.co)
 
 
 ## Project Built Using Laravel-QuickStart
