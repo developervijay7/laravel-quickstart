@@ -13,4 +13,4 @@
 
 [GitHub](https://github.com/developervijay7/laravel-quickstart)
 [Demo](https://laravel-quickstart.co)
-[Get Started](#/?id=about-laravel-quick-start)
+[Get Started](#about-laravel-quick-start)
