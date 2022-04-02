@@ -138,6 +138,7 @@ Password: User@123
 - [Pandit Sundarlal Sharma Central Institute of Vocational Education](http://psscive.ac.in)
 - [Laravel-Icons](https://laravel-icons.com)
 - [Vijay Goswami Blog](https://technovij.com)
+- [CollegeFind](https://collegefind.in)
 
 ## Contributing
 
