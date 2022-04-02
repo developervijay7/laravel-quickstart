@@ -12,4 +12,4 @@
 
 
 [GitHub](https://github.com/developervijay7/laravel-quickstart)
-[Get Started](#readme)
+[Get Started](#home)
