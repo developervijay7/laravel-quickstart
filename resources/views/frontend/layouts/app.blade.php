@@ -32,7 +32,7 @@
     <meta property="og:image:height" content="640"/>
     <!-- Opengraph / Twitter-->
     <meta property="twitter:card" content="@yield('og:url', 'summary_large_image')"/>
-    <meta property="twitter:image" content="{{ asset('images/opengraph/og-image.png') }}"/>
+    <meta property="twitter:image" content="{{ asset('images/opengraph/twitter-og.png') }}"/>
     <meta property="twitter:site" content="@yield('og:url', config('app.url'))"/>
     <meta property="twitter:creator" content="developervijay7"/>
     <!-- /Opengraph -->
