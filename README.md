@@ -33,6 +33,10 @@ Here are some of its features:
 - Integrated [Log Viewer](https://github.com/ARCANEDEV/LogViewer)
 - Integrated [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) as dev-dependency
 - Preconfigured [BrowserSync](https://browsersync.io/)
+- User Impersonation using [Laravel Impersonate](https://github.com/404labfr/laravel-impersonate)
+- [UUID Generator](https://github.com/ramsey/uuid)
+- Breadcrumbs implementation using [Laravel Breadcrumbs](https://github.com/tabuna/breadcrumbs)
+- [Icons Library](https://laravel-icons.com) using [Laravel-Icons](https://github.com/developervijay7/laravel-icons)
 - Event Listeners Implementation for Various User Events as example to encourage devs to implement more as required
 - Multiple helper functions
 - Useful Model Traits
