@@ -135,10 +135,11 @@ Password: User@123
 - [Attrix Technologies Global](https://www.attrixtech.com)
 - [Attrix Technologies India](https://www.attrixtech.in)
 - [Vijay Goswami Developer Portfolio](https://vijaygoswami.in)
-- [Pandit Sundarlal Sharma Central Institute of Vocational Education](http://psscive.ac.in)
-- [Laravel-Icons](https://laravel-icons.com)
-- [Vijay Goswami Blog](https://technovij.com)
 - [CollegeFind](https://collegefind.in)
+- [Pandit Sundarlal Sharma Central Institute of Vocational Education, Bhopal](http://psscive.ac.in)
+- [PSSCIVE, Bhopal - Staging Server](https://psscive.in)
+- [Laravel-Icons](https://laravel-icons.com)
+- [TechnoVIJ Blog](https://technovij.com)
 
 ## Contributing
 
