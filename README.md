@@ -46,6 +46,7 @@ Here are some of its features:
 - Implementation of User and Roles/Permission Factories and Seeders
 - Least JavaScript (No jQuery) as we love working with AlpineJS
 - Utilises SEO Tags (OpenGraph Facebook, Twitter Tags)
+- Implementation and Scaffolding of SEO Tags using [Google Tags Manager](https://tagmanager.google.com)
 - Progressive Web App (PWA) implementation out of the box
 - Tailor-made plethora of laravel blade components to make your development life a breeze 
 
