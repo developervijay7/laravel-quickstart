@@ -26,14 +26,14 @@
     <meta property="article:publisher" content="https://vijaygoswami.in"/>
     <meta property="article:section" content=""/>
     <meta property="article:tag" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:image:secure_url" content=""/>
+    <meta property="og:image" content="{{ asset('images/opengraph/og-image.png') }}"/>
+    <meta property="og:image:secure_url" content="{{ asset('images/opengraph/og-image.png') }}"/>
     <meta property="og:image:width" content="1280"/>
     <meta property="og:image:height" content="640"/>
     <!-- Opengraph / Twitter-->
     <meta property="twitter:card" content="@yield('og:url', 'summary_large_image')"/>
-    <meta property="twitter:image" content=""/>
-    <meta property="twitter:site" content=""/>
+    <meta property="twitter:image" content="{{ asset('images/opengraph/og-image.png') }}"/>
+    <meta property="twitter:site" content="@yield('og:url', config('app.url'))"/>
     <meta property="twitter:creator" content="developervijay7"/>
     <!-- /Opengraph -->
 
