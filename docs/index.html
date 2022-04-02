@@ -36,6 +36,10 @@
             loadSidebar: true,
             loadNavbar: true,
             coverpage: true,
+            timeUpdater: {
+                text: ">last update time: {docsify-updated}",
+                formatUpdated: "{YYYY}/{MM}/{DD}",
+            },
             share: {
                 options: {
                     theme: 'slide-bar',
@@ -60,10 +64,12 @@
                 },
             }
         }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Docsify Share Plugin -->
-  <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!-- Docsify Share Plugin -->
+    <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
+    <!-- Docsify Last Updated Time Fixer -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-updated@1/src/time-updater.min.js"></script>
 </body>
 </html>
