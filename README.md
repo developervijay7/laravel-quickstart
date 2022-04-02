@@ -1,5 +1,5 @@
-![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg#gh-light-mode-only | width=100)
-![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo-dark.svg#gh-dark-mode-only | width=400)
+![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg#gh-light-mode-only)
+![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo-dark.svg#gh-dark-mode-only)
 
 <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/developervijay7/laravel-quickstart/main">
 <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/developervijay7/laravel-quickstart">
