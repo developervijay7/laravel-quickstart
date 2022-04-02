@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <div class="bg-gray-200 dark:bg-red-600 rounded-xl px-5 py-4 flex items-center justify-between shadow-xl">
+        <div class="bg-gray-200 dark:bg-gray-600 rounded-xl px-5 py-4 flex items-center justify-between shadow-xl">
             <div id="sitelogo">
                 @include('includes.partials.logo')
             </div>
