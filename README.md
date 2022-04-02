@@ -28,11 +28,22 @@ Laravel Quickstart is a boilerplate for Laravel Application with typical package
 Here are some of its features:
 - Separate Views, Routes, Controllers directories for Frontend(Public Interface) and Backend(Admin Interface)
 - Both Frontend and Backend utilizes [TailwindCSSv3](https://tailwindcss.com/) as frontend framework
-- User Management [Laravel Fortify](https://github.com/laravel/fortify) package, with social login [Socialite](https://github.com/laravel/socialite) and Roles and Permissions [Spatie Laravel Permissions](https://github.com/spatie/laravel-permission) package
+- Ready-made pages for Authentication/User Management/ Roles/Permission Management/ Log-viewer/ Notifications Management
+- User Management [Laravel Fortify](https://github.com/laravel/fortify) package, with social login [Socialite](https://github.com/laravel/socialite), API Authentication using [Laravel Sanctum](https://github.com/laravel/sanctum) and Roles and Permissions [Spatie Laravel Permissions](https://github.com/spatie/laravel-permission) package
 - Integrated [Log Viewer](https://github.com/ARCANEDEV/LogViewer)
+- Integrated [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) as dev-dependency
+- Preconfigured [BrowserSync](https://browsersync.io/)
+- Event Listeners Implementation for Various User Events as example to encourage devs to implement more as required
+- Multiple helper functions
+- Useful Model Traits
+- [User Activity Log](https://github.com/spatie/laravel-activitylog)
+- Multilingual Scaffolding
+- User [Timezone](https://github.com/jamesmills/laravel-timezone)
+- Implementation of User and Roles/Permission Factories and Seeders
+- Least JavaScript (No jQuery) as we love working with AlpineJS
 
 
-We are trying to make the package easier to deploy.
+We tried to bootstrap any requirement your application may have, yet we are open to discuss adding more. 
 
 ## How to Install
 
