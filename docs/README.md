@@ -54,7 +54,7 @@ DB_USERNAME=root
 DB_PASSWORD=password
 ```
 
-Also, don't forget to set up mail configuration.
+Also, don't forget to set up mail configuration :100:.
 
 ```dotenv
 MAIL_MAILER=smtp
