@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Laravel-QuickStart</title>
+    <title>Laravel-QuickStart | Documentation</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -40,6 +40,13 @@
     <meta property="twitter:site" content="https://laravel-quickstart.co"/>
     <meta property="twitter:creator" content="@developervijay7"/>
     <!-- /Opengraph -->
+    <!-- Resize logo in Sidebar -->
+    <style>
+        a.app-name-link img{
+            height: 60px;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -52,10 +59,11 @@
         window.$docsify = {
             name: 'Laravel-QuickStart',
             logo: 'https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg',
-            repo: 'developervijay7/laravel-quickstart',
+            repo: 'https://github.com/developervijay7/laravel-quickstart',
             loadSidebar: true,
             loadNavbar: false,
             loadFooter: true,
+            auto2top: true,
             coverpage: true,
             changelog : 'CHANGELOG.md',
             subMaxLevel: 3,
