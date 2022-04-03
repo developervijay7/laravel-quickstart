@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![laravel-quickstart logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg ':size=400x120')
+![laravel-quickstart logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg ':size=200x60')
 
 # Laravel-QuickStart
 
