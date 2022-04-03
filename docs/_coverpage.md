@@ -7,6 +7,7 @@
 ![Website](https://img.shields.io/website?down_color=red&down_message=down&style=plastic&up_color=green&up_message=up&url=https%3A%2F%2Flaravel-quickstart.co)
 ![GitHub Discussions](https://img.shields.io/github/discussions/developervijay7/laravel-quickstart)
 
+
 [GitHub](https://github.com/developervijay7/laravel-quickstart)
 [Demo](https://laravel-quickstart.co)
 [Get Started](#installation)

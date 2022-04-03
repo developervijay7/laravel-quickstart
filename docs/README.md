@@ -126,6 +126,11 @@ User: user@example.com
 Password: User@123
 
 
+<!-- ko-fi :id=hexpit :color=red -->
+    Buy me a coffee
+<!-- ko-fi -->
+
+
 ## Projects
 
 - [Attrix Technologies Global](https://www.attrixtech.com)

@@ -10,6 +10,15 @@
     <!-- docsify-themeable styles-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
     <link rel="stylesheet alternative" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="dark">
+    <!-- docsify-changelog plugin styles-->
+    <link
+        rel="stylesheet"
+        href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css"
+    />
+    <link
+        rel="stylesheet"
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
     <!-- Opengraph / Facebook-->
     <meta property="og:site_name" content="Laravel-QuickStart"/>
     <meta property=“og:title” content=“Laravel-QuickStart"/>
@@ -31,15 +40,21 @@
     <!-- /Opengraph -->
 </head>
 <body>
+    <nav>
+        <a href="#/">EN</a>
+    </nav>
     <div id="app">Please wait while laravel-quickstart documentation is loading...</div>
+    <!-- Docsify Edit on GitHub Plugin -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
     <script>
         window.$docsify = {
             name: 'Laravel-QuickStart',
             repo: 'developervijay7/laravel-quickstart',
             loadSidebar: true,
-            loadNavbar: true,
+            loadNavbar: false,
             loadFooter: true,
             coverpage: true,
+            changelog : 'CHANGELOG.md',
             subMaxLevel: 3,
             timeUpdater: {
                 text: ">last update time: {docsify-updated}",
@@ -56,9 +71,6 @@
                 errorText  : 'Error',
                 successText: 'Copied'
             },
-            plugins: [
-                EditOnGithubPlugin.create('https://github.com/developervijay7/laravel-quickstart/blob/main/docs', null, 'Edit on Github')
-            ],
             darklightTheme: {
                 siteFont : "PT Sans",
                 defaultTheme : 'dark',
@@ -117,7 +129,10 @@
                 telegram: {
                     url: 'https://laravel-quickstart.co'
                 },
-            }
+            },
+            plugins: [
+                EditOnGithubPlugin.create('https://github.com/developervijay7/laravel-quickstart/blob/main/docs/', null, 'Edit on Github')
+            ],
         }
     </script>
     <!-- Docsify v4 -->
@@ -141,7 +156,9 @@
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <!-- Docsify Copy-Code Plugin -->
     <script src="https://unpkg.com/docsify-copy-code"></script>
-    <!-- Docsify Edit on GitHub Plugin -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+    <!-- Docsify Changelog Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/index.js"></script>
+    <!-- docsify-ko-fi (latest) -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-ko-fi"></script>
 </body>
 </html>
