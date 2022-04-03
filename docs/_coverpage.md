@@ -8,8 +8,6 @@
 
 ![GitHub language count](https://img.shields.io/github/languages/count/developervijay7/laravel-quickstart?style=plastic)
 ![GitHub top language](https://img.shields.io/github/languages/top/developervijay7/laravel-quickstart?style=plastic)
-![Discord](https://img.shields.io/discord/959485139354791936?style=plastic)
-![GitHub](https://img.shields.io/github/license/developervijay7/laravel-quickstart)
 ![Website](https://img.shields.io/website?down_color=red&down_message=down&style=plastic&up_color=green&up_message=up&url=https%3A%2F%2Flaravel-quickstart.co)
 ![GitHub Discussions](https://img.shields.io/github/discussions/developervijay7/laravel-quickstart)
 
