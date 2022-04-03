@@ -1,9 +1,8 @@
-![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg#gh-light-mode-only)
-
-# About Laravel Quick-Start
+# QuickStart
 
 Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.
 
+## Features
 Here are some of its features:
 - Separate Views, Routes, Controllers directories for Frontend(Public Interface) and Backend(Admin Interface)
 - Both Frontend and Backend utilizes [TailwindCSSv3](https://tailwindcss.com/) as frontend framework
@@ -32,7 +31,7 @@ Here are some of its features:
 
 We tried to bootstrap any requirement your application may have, yet we are open to discuss adding more. 
 
-## How to Install
+## Installation
 
 ### 1. Download Laravel-QuickStart 
 Choose your preferred method
@@ -127,11 +126,7 @@ User: user@example.com
 Password: User@123
 
 
-## Official Documentation
-[Laravel-QuickStart Documentation](http://docs.laravel-quickstart.co)
-
-
-## Project Built Using Laravel-QuickStart
+## Projects
 
 - [Attrix Technologies Global](https://www.attrixtech.com)
 - [Attrix Technologies India](https://www.attrixtech.in)
@@ -139,13 +134,3 @@ Password: User@123
 - [Pandit Sundarlal Sharma Central Institute of Vocational Education](http://psscive.ac.in)
 - [Laravel-Icons](https://laravel-icons.com)
 - [Vijay Goswami Blog](https://technovij.com)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel Quick-Start
-project! Please feel free to make any pull requests, or e-mail me a feature request you would like to see in the future to James L Masi at [jameslmasi27@gmail.com](mailto:jameslmasi27@gmail.com).
-
-## License
-
-The Laravel framework is open-sourced software licensed under the  [MIT license](https://opensource.org/licenses/MIT).
-

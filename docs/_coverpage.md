@@ -28,4 +28,4 @@
 
 [GitHub](https://github.com/developervijay7/laravel-quickstart)
 [Demo](https://laravel-quickstart.co)
-[Get Started](#get-started)
+[Get Started](#quickstart)
