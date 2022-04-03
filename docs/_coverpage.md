@@ -14,11 +14,6 @@
 ![GitHub Discussions](https://img.shields.io/github/discussions/developervijay7/laravel-quickstart)
 
 
-![GitHub followers](https://img.shields.io/github/followers/developervijay7?style=social)
-![GitHub forks](https://img.shields.io/github/forks/developervijay7/laravel-quickstart?style=social)
-![GitHub Repo stars](https://img.shields.io/github/stars/developervijay7/laravel-quickstart?style=social)
-![GitHub User's stars](https://img.shields.io/github/stars/developervijay7?affiliations=OWNER&style=social)
-
 [GitHub](https://github.com/developervijay7/laravel-quickstart)
 [Demo](https://laravel-quickstart.co)
 [Get Started](#installation)
