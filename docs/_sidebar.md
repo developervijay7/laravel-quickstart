@@ -1,5 +1,5 @@
 - Getting started
-  - [QuickStart](/)
-  - [Configuration](configuration.md)
-  - [Events & Listeners](events-listeners.md)
-  - [DarkMode](dark-mode.md)
+  - [QuickStart](/ "Laravel QuickStart")
+  - [Configuration](configuration.md "Configuration Settings")
+  - [Events & Listeners](events-listeners.md "Events and Listeners in Laravel-QuickStart")
+  - [DarkMode](dark-mode.md "Laravel-QuickStart DarkMode Setting")
