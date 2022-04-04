@@ -1,5 +1,0 @@
-- Getting started
-  - [QuickStart](/)
-  - [Configuration](configuration.md)
-  - [Events & Listeners](events-listeners.md)
-  - [DarkMode](dark-mode.md)
