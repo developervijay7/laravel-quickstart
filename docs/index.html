@@ -59,6 +59,11 @@
             coverpage: true,
             changelog : 'CHANGELOG.md',
             subMaxLevel: 2,
+            search: {
+                depth      : 3,
+                noData     : 'No results!',
+                placeholder: 'Search...'
+            },
             timeUpdater: {
                 text: ">last update time: {docsify-updated}",
                 formatUpdated: "{DD}/{MM}/{YYYY} {HH}:{mm}:{ss}",
@@ -172,5 +177,8 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
     <!-- docsify emoji plugin -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    <!-- docsify search plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
 </body>
 </html>
