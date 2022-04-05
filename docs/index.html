@@ -37,22 +37,6 @@
             height: 60px;
             width: 200px;
         }
-        .sidebar-toggle .sidebar-toggle-button {
-            top: auto;
-            bottom: 0;
-            transition: transform var(--sidebar-transition-duration) ease-out;
-        }
-        body.close .sidebar-toggle .sidebar-toggle-button {
-            transform: translate(calc(0px - var(--sidebar-width)));
-        }
-        @media (min-width: 48em) {
-            .sidebar-toggle .sidebar-toggle-button {
-                transform: translate(calc(0px - var(--sidebar-width)));
-            }
-            body.close .sidebar-toggle .sidebar-toggle-button {
-                transform: translate(0);
-            }
-        }
     </style>
 </head>
 <body>
