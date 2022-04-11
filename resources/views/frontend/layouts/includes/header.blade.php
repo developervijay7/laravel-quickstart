@@ -43,9 +43,7 @@
                 </div>
                 <ul class="hidden lg:flex items-center gap-x-5 relative" x-data="{ showUserMenu: false }">
                     @guest
-                        @if(config('quickstart.access.user.login'))
                         <li><a href="{{ route('login') }}">{{ __('labels.login') }}</a></li>
-                        @endif
                         @if(config('quickstart.access.user.registration'))
                         <li><a href="{{ route('register') }}">{{ __('labels.register') }}</a></li>
                         @endif

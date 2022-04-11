@@ -5,7 +5,7 @@
 @section('content')
     <section>
         <div class="container flex justify-end place-items-center min-h-screen dark:text-white">
-            <div class="box shadow-xl bg-gray-200 dark:bg-gray-600 rounded-xl p-5 w-[45rem]">
+            <div class="box shadow-xl bg-zinc-300 dark:bg-slate-700 rounded-xl p-5 w-[45rem]">
                 <div class="flex items-center justify-between">
                     @include('includes.partials.logo')
                     <div class="relative flex items-center rounded-md bg-gray-300 dark:bg-gray-900 py-1 px-3">
@@ -55,9 +55,9 @@
                                    value="cOdE5581">
                         </div>
                     </div>
-                    <div class="my-6">
+                    <div class="my-4">
                         <div class="my-1">
-                            <label for="agree" class="block text-gray-500 font-bold my-4 flex items-center">
+                            <label for="agree" class="block text-gray-500 font-bold my-4 flex items-center gap-x-1">
                                 <input type="checkbox" class="leading-loose text-pink-600 top-0" id="agree" name="agree"
                                        required> I agree to {{ appName() }} <a href="#">Terms
                                     of Service</a> and <a href="#">Privacy Policy</a>
@@ -72,27 +72,21 @@
                             </label>
                         </div>
                     </div>
-                    <div class="my-6">
+                    <div class="my-4">
                         <button type="submit" class="mt-3 text-lg font-semibold
             bg-gray-800 w-full text-white rounded-lg
             px-6 py-3 block shadow-xl hover:text-white hover:bg-black">Register
                         </button>
                     </div>
                 </form>
-                <hr/>
-                <div class="grid grid-cols-2 gap-3 mt-6">
-                    <a href="#" class="facebook rounded py-2">
-                        <x-icons.facebook/>
-                    </a>
-                    <a href="#" class="twitter rounded py-2">
-                        <x-icons.twitter/>
-                    </a>
-                    <a href="#" class="google rounded py-2">
-                        <x-icons.google />
-                    </a>
-                    <a href="#" class="linkedin rounded py-2">
-                        <x-icons.linkedin/>
-                    </a>
+                <div>
+                    <p>Already have an account? <a href="{{ route('login') }}" class="font-bold">Login Now</a></p>
+                </div>
+                <div class="divider my-4">
+                    <span class="px-2 py-1 rounded-xl bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800">or use social login</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    @include('auth.includes.social')
                 </div>
             </div>
         </div>

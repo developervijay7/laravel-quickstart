@@ -68,6 +68,14 @@ li.google, a.google, div.google {
     background-color: #EA4335;
 }
 
+li.github, a.github, div.github {
+    background-color: #000000;
+}
+
+li.bitbucket, a.bitbucket, div.bitbucket {
+    background-color: #3384ff;
+}
+
 svg.facebook {
     color: #3B5998;
 }
@@ -98,4 +106,37 @@ svg.whatsapp {
 
 svg.google {
     color: #EA4335;
+}
+
+svg.github {
+    color: #000000;
+}
+
+svg.bitbucket {
+    color: #3384ff;
+}
+
+/* Style Separator used in login and register pages */
+.divider {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divider::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    width: 100%;
+    display: block;
+    border-top: 1px solid #1F2937;
+}
+
+.dark .divider::before {
+    border-top: 1px solid #F3F4F6 !important;
+}
+
+.divider, .divider > * {
+    position: relative;
 }
