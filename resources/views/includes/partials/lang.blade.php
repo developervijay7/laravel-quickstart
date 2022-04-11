@@ -9,6 +9,7 @@
         </x-utils.link>
             <x-icons.chevron-down :size="5" class="transform transition origin-center duration-250" ::class="showLang ? '-rotate-180' : ''" />
             <ul x-show="showLang"
+                x-cloak
             class="absolute top-14 right-0 md:left-0 mt-2 w-48 rounded-md shadow-lg z-90 bg-gray-200 dark:bg-gray-600 ring-1 ring-black ring-opacity-5 focus:outline-none"
             role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             @foreach(collect(config('quickstart.locale.languages'))->sortBy('name') as $code => $details)
