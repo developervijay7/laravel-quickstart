@@ -1,4 +1,4 @@
-<label for="{{ $id }}" class="pl-2 text-sm {{ $label ? '' : 'hidden' }} @error($name) text-red-500 @else text-gray-600 :dark-text-gray-200 @enderror">{{ $label ?? $name }}</label>
+<label for="{{ $id }}" class="pl-2 text-sm {{ $label ? '' : 'hidden' }} @error($name) text-red-500 @else text-gray-600 dark:text-gray-200 @enderror">{{ $label ?? $name }}</label>
 @isset($errors)
     @error($name)
     <input id="{{ $id }}" name="{{ $name }}" type="text" {{ $attributes->merge(['class' => 'appearance-none text-md p-2 focus:outline-none border-2 focus:ring-red-600 focus:border-blue-600 bg-red-200 text-red-900 placeholder-purple-300 dark:placeholder-gray-600 font-semibold']) }}>
