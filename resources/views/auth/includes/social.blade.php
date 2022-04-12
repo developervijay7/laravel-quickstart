@@ -20,7 +20,7 @@
 @endif
 @if(config('services.github.active'))
     <a href="{{ route('frontend.auth.social.login', 'github') }}" class="github rounded p-5">
-        <x-icons.github class="text-white dark:text-white"/>
+        <x-icons.github/>
     </a>
 @endif
 @if(config('services.bitbucket.active'))

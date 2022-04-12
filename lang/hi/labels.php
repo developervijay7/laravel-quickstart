@@ -14,8 +14,12 @@ return [
     'register' => 'रजिस्टर करें',
     'logout' => 'लॉगाउट करें',
     'email' => 'ईमेल पता',
+    'mobile' => 'मोबाइल नम्बर',
     'password' => 'पासवर्ड',
+    'password_confirmation' => 'पुनः पासवर्ड',
     'copyright' => 'कॉपीराइट',
+    'first_name' => 'प्रथम नाम',
+    'last_name' => 'उपनाम',
     'attrix' => 'एट्ट्रिक्स टेक्नॉलजीज़',
     'vijay' => 'विजय गोस्वामी',
     'james' => 'जेम्ज़ लूइस मासी',
@@ -27,5 +31,6 @@ return [
     'dark-mode' => 'डार्क मोड',
     'light-mode' => 'लाइट मोड',
     'system-mode' => 'कम्प्यूटर द्वारा नियंत्रित डिस्प्ले मोड',
-    'lang-switch' => 'भाषा बदलें'
+    'lang-switch' => 'भाषा बदलें',
+    'remember' => 'मुझे याद रखना'
 ];

@@ -14,7 +14,11 @@ return [
     'register' => 'Register',
     'logout' => 'Logout',
     'email' => 'Email Address',
+    'mobile' => 'Mobile Number',
     'password' => 'Password',
+    'password_confirmation' => 'Confirm Password',
+    'first_name' => 'First Name',
+    'last_name' => 'Last Name',
     'copyright' => 'Copyright',
     'attrix' => 'Attrix Technologies',
     'vijay' => 'Vijay Goswami',
@@ -27,5 +31,6 @@ return [
     'dark-mode' => 'Dark Mode',
     'light-mode' => 'Light Mode',
     'system-mode' => 'System Controlled Display Mode',
-    'lang-switch' => 'Change Language'
+    'lang-switch' => 'Change Language',
+    'remember' => 'Remember Me'
 ];

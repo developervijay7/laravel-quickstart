@@ -15,44 +15,26 @@
                 </div>
                 <h1 class="font-bold text-2xl my-3">{{ __('headings.register', ['application' => __('labels.app-name')]) }}</h1>
                 @include('includes.partials.messages')
-                <form action="{{ route('register') }}" method="post">
+                <x-forms.post action="{{ route('register') }}">
                     @csrf
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-5">
-                        <div class="my-3">
-                            <label for="" class="px-1 text-sm text-gray-600">First Name</label>
-                            <input type="text" name="first_name" class="text-md block px-3 py-2 rounded-lg w-full
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                                   value="Vijay">
+                        <div class="my-2">
+                            <x-forms.inputs.text id="first-name" label="{{ __('labels.first_name') }}" name="first_name" placeholder="{{ __('labels.first_name') }}" class="w-full rounded-lg" />
                         </div>
-                        <div class="my-3">
-                            <label for="" class="px-1 text-sm text-gray-600">Last Name</label>
-                            <input type="text" name="last_name" class="text-md block px-3 py-2 rounded-lg w-full
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                                   value="Goswami">
+                        <div class="my-2">
+                            <x-forms.inputs.text id="last-name" label="{{ __('labels.last_name') }}" name="last_name" placeholder="{{ __('labels.last_name') }}" class="w-full rounded-lg" />
                         </div>
-                        <div class="my-3">
-                            <label for="" class="px-1 text-sm text-gray-600">Email Address</label>
-                            <input type="email" name="email" class="text-md block px-3 py-2 rounded-lg w-full
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                                   value="admin@admin.com">
+                        <div class="my-2">
+                            <x-forms.inputs.text id="email" label="{{ __('labels.email') }}" name="email" placeholder="{{ __('labels.email') }}" class="w-full rounded-lg" />
                         </div>
-                        <div class="my-3">
-                            <label for="" class="px-1 text-sm text-gray-600">Mobile Number</label>
-                            <input type="tel" name="mobile" class="text-md block px-3 py-2 rounded-lg w-full
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                                   value="9045533427">
+                        <div class="my-2">
+                            <x-forms.inputs.text id="mobile" label="{{ __('labels.mobile') }}" name="mobile" placeholder="{{ __('labels.mobile') }}" class="w-full rounded-lg" />
                         </div>
-                        <div class="my-3">
-                            <label for="" class="px-1 text-sm text-gray-600">Password</label>
-                            <input type="password" name="password" class="text-md block px-3 py-2 rounded-lg w-full
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                                   value="cOdE5581">
+                        <div class="my-2">
+                            <x-forms.inputs.text id="password" label="{{ __('labels.password') }}" name="password" placeholder="{{ __('labels.password') }}" class="w-full rounded-lg" />
                         </div>
-                        <div class="my-3">
-                            <label for="" class="px-1 text-sm text-gray-600">Confirm Password</label>
-                            <input type="password" name="password_confirmation" class="text-md block px-3 py-2 rounded-lg w-full
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none"
-                                   value="cOdE5581">
+                        <div class="my-2">
+                            <x-forms.inputs.text id="password-confirmation" label="{{ __('labels.password_confirmation') }}" name="password_confirmation" placeholder="{{ __('labels.password_confirmation') }}" class="w-full rounded-lg" />
                         </div>
                     </div>
                     <div class="my-4">
@@ -78,14 +60,14 @@
             px-6 py-3 block shadow-xl hover:text-white hover:bg-black">Register
                         </button>
                     </div>
-                </form>
+                </x-forms.post>
                 <div>
                     <p>Already have an account? <a href="{{ route('login') }}" class="font-bold">Login Now</a></p>
                 </div>
                 <div class="divider my-4">
                     <span class="px-2 py-1 rounded-xl bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800">or use social login</span>
                 </div>
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between text-white">
                     @include('auth.includes.social')
                 </div>
             </div>

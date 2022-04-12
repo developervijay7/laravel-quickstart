@@ -26,7 +26,7 @@
                         <label for="remember" class="block text-gray-500 font-bold my-4 flex items-center dark:text-white">
                             <input type="checkbox" class="leading-loose text-pink-600 top-0" id="remember"
                                    name="remember">
-                            Remember me
+                            {{ __('labels.remember') }}
                         </label>
                     </div>
                     <div class="my-3 flex justify-between items-center">
@@ -43,7 +43,7 @@
                 <div class="divider my-6">
                     <span class="px-2 py-1 rounded-xl bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800">or use social login</span>
                 </div>
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between text-white">
                     @include('auth.includes.social')
                 </div>
             </div>
