@@ -172,3 +172,9 @@ project! Please feel free to make any pull requests, or e-mail me a feature requ
 
 The Laravel-QuickStart is open-sourced software licensed under the  [MIT license](https://opensource.org/licenses/MIT).
 
+## Star Gazers
+[![Stargazers repo roster for @developervijay7/laravel-quickstart](https://reporoster.com/stars/developervijay7/laravel-quickstart)](https://github.com/developervijay7/laravel-quickstart/stargazers)
+
+## Forkers
+[![Forkers repo roster for @developervijay7/laravel-quickstart](https://reporoster.com/forks/developervijay7/laravel-quickstart)](https://github.com/developervijay7/laravel-quickstart/network/members)
+
