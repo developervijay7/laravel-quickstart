@@ -20,6 +20,7 @@ class LocaleController extends Controller
         if (array_key_exists($locale, config('quickstart.locale.languages'))) {
             App::setLocale($locale);
             session()->put('locale', $locale);
+
             return redirect()->back();
         } else {
             abort(400);

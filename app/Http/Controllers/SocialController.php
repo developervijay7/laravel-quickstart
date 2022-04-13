@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Events\Auth\UserLoggedIn;
 use App\Services\Auth\UserService;
-use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
 class SocialController extends Controller
@@ -36,6 +35,7 @@ class SocialController extends Controller
 
         if (! $user->isActive()) {
             auth()->logout();
+
             return redirect()->route('login')->withFlashError(__('Your account has been deactivated.'));
         }
 

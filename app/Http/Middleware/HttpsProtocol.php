@@ -17,7 +17,7 @@ class HttpsProtocol
      */
     public function handle($request, Closure $next)
     {
-        if (!$request->secure() && App::environment() === 'production' && config('quickstart.force_https')) {
+        if (! $request->secure() && App::environment() === 'production' && config('quickstart.force_https')) {
             return redirect()->secure($request->getRequestUri());
         }
 

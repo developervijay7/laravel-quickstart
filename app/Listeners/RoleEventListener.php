@@ -5,10 +5,7 @@ namespace App\Listeners;
 use App\Events\Role\RoleCreated;
 use App\Events\Role\RoleDeleted;
 use App\Events\Role\RoleUpdated;
-use Illuminate\Auth\Events\PasswordReset;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Events\Dispatcher;
-use Illuminate\Queue\InteractsWithQueue;
 
 /**
  * Class RoleEventListener.
@@ -69,7 +66,7 @@ class RoleEventListener
         return [
             RoleCreated::class => 'onCreated',
             RoleUpdated::class => 'onUpdated',
-            RoleDeleted::class => 'onDeleted'
+            RoleDeleted::class => 'onDeleted',
         ];
     }
 }

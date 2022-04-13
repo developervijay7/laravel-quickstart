@@ -32,5 +32,5 @@ return [
     'light-mode' => 'Light Mode',
     'system-mode' => 'System Controlled Display Mode',
     'lang-switch' => 'Change Language',
-    'remember' => 'Remember Me'
+    'remember' => 'Remember Me',
 ];

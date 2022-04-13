@@ -19,6 +19,7 @@ class SuperAdminCheck
         if ($request->user() && $request->user()->hasAllAccess()) {
             return $next($request);
         }
+
         return redirect()->back()->withSweetError(__('Sorry! You dont have access to perform this operation. Only a super administrator can do this.'));
     }
 }

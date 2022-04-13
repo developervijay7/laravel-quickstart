@@ -77,4 +77,3 @@ trait DisableForeignKeys
         return $this->getDriverCommands()['enable'];
     }
 }
-

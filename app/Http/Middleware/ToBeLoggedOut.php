@@ -23,6 +23,7 @@ class ToBeLoggedOut
             // Kill the current session and force back to the login screen
             session()->flush();
             auth()->logout();
+
             return redirect()->route('login');
         }
 

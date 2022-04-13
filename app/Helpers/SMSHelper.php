@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('sendsms')) {
+if (! function_exists('sendsms')) {
 
     /**
      * description
@@ -22,7 +22,7 @@ if (!function_exists('sendsms')) {
         $url .= "&senderid=" . config('sms.senderid');
         $url .= "&route=" . config('sms.route');
         //check if message content is in hindi language
-        if (!preg_match($regex, str_replace(' ', '', $msg))) {
+        if (! preg_match($regex, str_replace(' ', '', $msg))) {
             $url .= "&unicode=2";
         }
         $url .= "&number=" . $to;
@@ -38,7 +38,7 @@ if (!function_exists('sendsms')) {
         return $result;
     }
 }
-if (!function_exists('check_smsbalance')) {
+if (! function_exists('check_smsbalance')) {
 
     /**
      * description

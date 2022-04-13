@@ -3,7 +3,6 @@
 use App\Http\Controllers\LocaleController;
 use Illuminate\Support\Facades\Route;
 
-
 ////Redirect route to .well-known forgot password link https://web.dev/change-password-url/
 //Route::get('.well-known/change-password', function() {
 //    return redirect(route('frontend.auth.user.change_password'));

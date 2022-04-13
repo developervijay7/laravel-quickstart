@@ -35,9 +35,10 @@ class Captcha implements Rule
             'form_params' => [
                 'secret' => config('quickstart.access.captcha.configs.secret_key'),
                 'remoteip' => request()->getClientIp(),
-                'response' => $value
+                'response' => $value,
             ],
         ])->getBody(), true);
+
         return isset($response['success']) && $response['success'] === true;
     }
 

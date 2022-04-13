@@ -28,7 +28,7 @@ class CreateNewUser implements CreatesNewUsers
             'email' => ['required', 'string', 'email', 'max:255', Rule::unique(User::class),],
             'mobile' => ['string', 'digits:10', Rule::unique(User::class),],
             'password' => $this->passwordRules(),
-            'g-captcha-response' => ['required_if:captcha_status,true', new Captcha],
+            'g-captcha-response' => ['required_if:captcha_status,true', new Captcha()],
         ], [
             'g-recaptcha-response.require_if' => __('validation.required', ['attribute' => 'captcha']),
         ])->validate();
@@ -43,6 +43,7 @@ class CreateNewUser implements CreatesNewUsers
             'last_login_ip' => request()->getClientIp(),
         ]);
         event(new UserRegistered($user));
+
         return $user;
     }
 }

@@ -12,7 +12,6 @@ Route::group([
     'prefix' => 'auth',
     'as' => 'auth.',
 ], function () {
-
     Route::group(['middleware' => 'guest'], function () {
         // Socialite Routes
         Route::get('login/{provider}', [SocialController::class, 'redirect'])->name('social.login');
@@ -45,5 +44,4 @@ Route::group([
             ->middleware('have_mobile')
             ->name('verify_otp');
     });
-
 });

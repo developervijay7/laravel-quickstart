@@ -18,16 +18,16 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use HasFactory,
-        HasRoles,
-        TwoFactorAuthenticatable,
-        Notifiable,
-        SoftDeletes,
-        HasApiTokens,
-        UserAttribute,
-        UserMethod,
-        Impersonate,
-        UserScope;
+    use HasFactory;
+    use HasRoles;
+    use TwoFactorAuthenticatable;
+    use Notifiable;
+    use SoftDeletes;
+    use HasApiTokens;
+    use UserAttribute;
+    use UserMethod;
+    use Impersonate;
+    use UserScope;
 
     public const TYPE_ADMIN = 'admin';
     public const TYPE_USER = 'user';
@@ -55,7 +55,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'to_be_logged_out',
         'provider',
         'provider_id',
-        'referrer'
+        'referrer',
     ];
 
     /**
@@ -126,7 +126,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     public function canBeImpersonated(): bool
     {
-        return !$this->isMaster();
+        return ! $this->isMaster();
     }
 
     /**
@@ -138,6 +138,4 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return UserFactory::new();
     }
-
-
 }

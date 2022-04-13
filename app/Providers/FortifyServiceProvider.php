@@ -63,7 +63,7 @@ class FortifyServiceProvider extends ServiceProvider
             $validator = Validator::make($request->toArray(), [
                 'email' => ['required', 'string', 'email', 'max:255'],
                 'password' => ['required'],
-                'g-recaptcha-response' => ['required_if:captcha_status,true', new Captcha],
+                'g-recaptcha-response' => ['required_if:captcha_status,true', new Captcha()],
             ], [
                 'g-recaptcha-response.required_if' => __('validation.required', ['attribute' => 'captcha']),
             ])->validate();
@@ -72,6 +72,7 @@ class FortifyServiceProvider extends ServiceProvider
 
             if ($user && Hash::check($request->password, $user->password)) {
                 event(new UserLoggedIn($user));
+
                 return $user;
             }
         });

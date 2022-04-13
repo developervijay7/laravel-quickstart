@@ -6,7 +6,6 @@ use App\Events\Auth\UserCreated;
 use App\Events\Auth\UserRegistered;
 use App\Events\Auth\UserDeleted;
 use App\Events\Auth\UserDestroyed;
-use App\Events\Auth\UserLoggedIn;
 use App\Events\Auth\UserRestored;
 use App\Events\Auth\UserStatusChanged;
 use App\Events\Auth\UserUpdated;
@@ -75,7 +74,7 @@ class UserEventListener
                     'first_name' => $event->user->first_name,
                     'last_name' => $event->user->last_name,
                     'email' => $event->user->email,
-                    'mobile' => $event->user->mobile
+                    'mobile' => $event->user->mobile,
                 ],
             ])
             ->log(':causer.first_name :causer.last_name created an account with' . appName() . ' at ' . now());

@@ -21,7 +21,7 @@ class HelperServiceProvider extends ServiceProvider
 
         while ($it->valid()) {
             if (
-                !$it->isDot() &&
+                ! $it->isDot() &&
                 $it->isFile() &&
                 $it->isReadable() &&
                 $it->current()->getExtension() === 'php' &&
