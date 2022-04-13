@@ -78,7 +78,7 @@ class ChangePasswordTest extends TestCase
                 'password' => 'OC4Nzu270N!QBVi%U%qX',
                 'password_confirmation' => 'OC4Nzu270N!QBVi%U%qX',
             ]);
-
+        $response->dumpSession();
         $response->assertSessionHasErrors();
         $errors = session('errors');
         $this->assertSame($errors->get('password')[0], __('You can not set a password that you have previously used within the last 3 times.'));
