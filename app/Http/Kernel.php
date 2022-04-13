@@ -57,6 +57,7 @@ class Kernel extends HttpKernel
              */
             '2fa:enabled',
             'auth',
+            'password.expires',
             'verified',
             'is_admin',
         ],
@@ -81,7 +82,7 @@ class Kernel extends HttpKernel
         'is_master_admin' => \App\Http\Middleware\MasterCheck::class,
         'is_user' => \App\Http\Middleware\Usercheck::class,
         'password.confirm' => \Illuminate\Auth\Middleware\RequirePassword::class,
-        'password.expires' => \Illuminate\Auth\Middleware\PasswordExpires::class,
+        'password.expires' => \App\Http\Middleware\PasswordExpires::class,
         'permission' => PermissionMiddleware::class,
         'role' => RoleMiddleware::class,
         'role_or_permission' => RoleOrPermissionMiddleware::class,
