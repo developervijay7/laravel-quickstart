@@ -17,11 +17,11 @@ class ToBeLoggedOutTest extends TestCase
 
         $this->actingAs($user);
 
-        $this->get('/admin')->assertOk();
+        $this->get('/user/dashboard')->assertOk();
 
         $user->update(['to_be_logged_out' => true]);
 
-        $this->get('/admin')->assertRedirect('/login');
+        $this->get('/user/dashboard')->assertRedirect('/login');
 
         $this->assertFalse($this->isAuthenticated());
     }
