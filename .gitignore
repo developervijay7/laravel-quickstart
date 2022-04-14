@@ -17,8 +17,8 @@ _ide_helper.php
 .DS_Store
 .env
 .env.backup
-.ideaphp
-.php_cs.cache
+.idea
+.php-cs-fixer.cache
 .phpunit.result.cache
 .phpstorm.meta.php
 .project
