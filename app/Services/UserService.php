@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Auth;
+namespace App\Services;
 
 use App\Events\Auth\UserCreated;
 use App\Events\Auth\UserDeleted;

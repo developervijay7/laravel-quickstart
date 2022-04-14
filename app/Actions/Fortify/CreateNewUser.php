@@ -27,6 +27,7 @@ class CreateNewUser implements CreatesNewUsers
             'last_name' => ['string', 'max:255', 'min:2'],
             'email' => ['required', 'string', 'email', 'max:255', Rule::unique(User::class),],
             'mobile' => ['string', 'digits:10', Rule::unique(User::class),],
+            'terms' => ['required'],
             'password' => $this->passwordRules(),
             'g-captcha-response' => ['required_if:captcha_status,true', new Captcha()],
         ], [

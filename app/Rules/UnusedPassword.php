@@ -3,7 +3,7 @@
 namespace App\Rules;
 
 use App\Models\User;
-use App\Services\Auth\UserService;
+use App\Services\UserService;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Facades\Hash;
 

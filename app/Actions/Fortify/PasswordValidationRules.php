@@ -2,6 +2,7 @@
 
 namespace App\Actions\Fortify;
 
+use App\Rules\UnusedPassword;
 use Laravel\Fortify\Rules\Password;
 
 trait PasswordValidationRules

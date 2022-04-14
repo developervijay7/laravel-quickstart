@@ -39,8 +39,8 @@
                     </div>
                     <div class="my-4">
                         <div class="my-1">
-                            <label for="agree" class="block text-gray-500 font-bold my-4 flex items-center gap-x-1">
-                                <input type="checkbox" class="leading-loose text-pink-600 top-0" id="agree" name="agree"
+                            <label for="terms" class="block text-gray-500 font-bold my-4 flex items-center gap-x-1">
+                                <input type="checkbox" class="leading-loose text-pink-600 top-0" id="terms" name="terms"
                                        required> I agree to {{ appName() }} <a href="#">Terms
                                     of Service</a> and <a href="#">Privacy Policy</a>
                             </label>
