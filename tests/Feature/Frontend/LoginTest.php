@@ -2,9 +2,7 @@
 
 namespace Tests\Feature\Frontend;
 
-use App\Events\Auth\UserLoggedIn;
 use App\Models\User;
-use Illuminate\Support\Facades\Event;
 use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 

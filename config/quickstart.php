@@ -49,14 +49,6 @@ return [
              */
             'password_expires_days' => env('PASSWORD_EXPIRES_DAYS', 365),
 
-            /*
-             * The number of most recent previous passwords to check against when changing/resetting a password
-             * false is off which doesn't log password changes or check against them
-             *
-             * Note: Enabling single_login will have an effect on this as it force changes the users password on login,
-             * which will force a record into the password_histories table. I currently do not have a fix in mind.
-             */
-            'password_history' => env('PASSWORD_HISTORY', 3),
 
             /*
              * Whether a user can be permanently deleted from the system via the backend
