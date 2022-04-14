@@ -19,19 +19,20 @@ Route::group([
             $trail->parent('frontend.index')
                 ->push(__('User Dashboard'), route('frontend.user.dashboard'));
         });
+    Route::get('/profile', function() {
+        return "profile";
+    })
+        ->name('profile')
+        ->breadcrumbs(function (Trail $trail) {
+            $trail->parent('frontend.index')
+                ->push(__('User Profile'), route('frontend.user.profile'));
+        });
 
 //    Route::get('/notifications', [UserController::class, 'notifications'])
 //        ->name('notifications')
 //        ->breadcrumbs(function (Trail $trail) {
 //            $trail->parent('frontend.index')
 //                ->push(__('Notifications'), route('frontend.user.notifications'));
-//        });
-//
-//    Route::get('/profile', [UserController::class, 'profile'])
-//        ->name('profile')
-//        ->breadcrumbs(function (Trail $trail) {
-//            $trail->parent('frontend.index')
-//                ->push(__('User Profile'), route('frontend.user.profile'));
 //        });
 //
 //    Route::patch('/profile/update', [UserController::class, 'update'])

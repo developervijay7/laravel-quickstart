@@ -23,14 +23,14 @@ class VerificationTest extends TestCase
     }
 
     /** @test */
-//    public function an_unverified_user_cannot_access_account()
-//    {
-//        $user = User::factory()->unconfirmed()->create();
-//
-//        $this->actingAs($user);
-//
-//        $this->get('/account')->assertRedirect('/email/verify');
-//    }
+    public function an_unverified_user_cannot_access_account()
+    {
+        $user = User::factory()->unconfirmed()->create();
+
+        $this->actingAs($user);
+
+        $this->get('/user/profile')->assertRedirect('/email/verify');
+    }
 
     /** @test */
 //    public function a_user_can_resend_the_verification_email()
@@ -41,7 +41,7 @@ class VerificationTest extends TestCase
 //
 //        $this->actingAs($user);
 //
-//        $this->get('/account')->assertRedirect('/email/verify');
+//        $this->get('/user/profile')->assertRedirect('/email/verify');
 //
 //        $this->post('/email/resend');
 //

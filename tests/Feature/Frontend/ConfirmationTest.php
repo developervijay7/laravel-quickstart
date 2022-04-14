@@ -17,6 +17,6 @@ class ConfirmationTest extends TestCase
 
         $this->actingAs($user);
 
-        $this->get('/password/confirm')->assertOk();
+        $this->get('/user/confirm-password')->assertOk();
     }
 }

@@ -10,15 +10,15 @@ use Tests\TestCase;
  */
 class UserAccountTest extends TestCase
 {
-//    /** @test */
-//    public function only_authenticated_users_can_access_their_account()
-//    {
-//        $this->get('/account')->assertRedirect('/login');
-//
-//        $this->actingAs(User::factory()->create());
-//
-//        $this->get('/account')->assertOk();
-//    }
+    /** @test */
+    public function only_authenticated_users_can_access_their_account()
+    {
+        $this->get('/user/profile')->assertRedirect('/login');
+
+        $this->actingAs(User::factory()->create());
+
+        $this->get('/user/profile')->assertOk();
+    }
 //
 //    /** @test */
 //    public function profile_update_requires_validation()
