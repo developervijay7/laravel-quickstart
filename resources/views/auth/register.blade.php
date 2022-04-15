@@ -16,25 +16,24 @@
                 <h1 class="font-bold text-2xl my-3">{{ __('headings.register', ['application' => __('labels.app-name')]) }}</h1>
                 @include('includes.partials.messages')
                 <x-forms.post action="{{ route('register') }}">
-                    @csrf
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-5">
                         <div class="my-2">
-                            <x-forms.inputs.text id="first-name" label="{{ __('labels.first_name') }}" name="first_name" placeholder="{{ __('labels.first_name') }}" class="w-full rounded-lg" />
+                            <x-forms.inputs.text id="first-name" label="{{ __('labels.first_name') }}" name="first_name" placeholder="{{ __('labels.first_name') }}" value="{{ old('first_name') }}" class="w-full rounded-lg" autocomplete="first-name" required autofocus />
                         </div>
                         <div class="my-2">
-                            <x-forms.inputs.text id="last-name" label="{{ __('labels.last_name') }}" name="last_name" placeholder="{{ __('labels.last_name') }}" class="w-full rounded-lg" />
+                            <x-forms.inputs.text id="last-name" label="{{ __('labels.last_name') }}" name="last_name" placeholder="{{ __('labels.last_name') }}" value="{{ old('last_name') }}" class="w-full rounded-lg" autocomplete="last-name" />
                         </div>
                         <div class="my-2">
-                            <x-forms.inputs.text id="email" label="{{ __('labels.email') }}" name="email" placeholder="{{ __('labels.email') }}" class="w-full rounded-lg" />
+                            <x-forms.inputs.email id="email" label="{{ __('labels.email') }}" name="email" placeholder="{{ __('labels.email') }}" value="{{ old('email') }}" class="w-full rounded-lg" required />
                         </div>
                         <div class="my-2">
-                            <x-forms.inputs.text id="mobile" label="{{ __('labels.mobile') }}" name="mobile" placeholder="{{ __('labels.mobile') }}" class="w-full rounded-lg" />
+                            <x-forms.inputs.tel id="mobile" label="{{ __('labels.mobile') }}" name="mobile" placeholder="{{ __('labels.mobile') }}" value="{{ old('mobile') }}" class="w-full rounded-lg" maxlength="10" minlength="10" inputmode="numeric" autocomplete="mobile" />
                         </div>
                         <div class="my-2">
-                            <x-forms.inputs.text id="password" label="{{ __('labels.password') }}" name="password" placeholder="{{ __('labels.password') }}" class="w-full rounded-lg" />
+                            <x-forms.inputs.password id="password" label="{{ __('labels.password') }}" name="password" placeholder="{{ __('labels.password') }}" class="w-full rounded-lg" autocomplete="new-password" />
                         </div>
                         <div class="my-2">
-                            <x-forms.inputs.text id="password-confirmation" label="{{ __('labels.password_confirmation') }}" name="password_confirmation" placeholder="{{ __('labels.password_confirmation') }}" class="w-full rounded-lg" />
+                            <x-forms.inputs.password id="password-confirmation" label="{{ __('labels.password_confirmation') }}" name="password_confirmation" placeholder="{{ __('labels.password_confirmation') }}" class="w-full rounded-lg" autocomplete="new-password" />
                         </div>
                     </div>
                     <div class="my-4">
@@ -56,7 +55,7 @@
                     </div>
                     <div class="my-4">
                         <button type="submit" class="mt-3 text-lg font-semibold
-            bg-gray-800 w-full text-white rounded-lg
+            bg-gray-800 w-1/2 text-white rounded-lg
             px-6 py-3 block shadow-xl hover:text-white hover:bg-black">Register
                         </button>
                     </div>
@@ -68,7 +67,7 @@
                     <span class="px-2 py-1 rounded-xl bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800">or use social login</span>
                 </div>
                 <div class="flex items-center justify-between text-white">
-                    @include('auth.includes.social')
+                    @include('auth.layouts.includes.social')
                 </div>
             </div>
         </div>

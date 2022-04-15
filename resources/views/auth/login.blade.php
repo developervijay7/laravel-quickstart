@@ -17,10 +17,10 @@
                 @include('includes.partials.messages')
                 <x-forms.post action="{{ route('login') }}">
                     <div class="my-3">
-                       <x-forms.inputs.text id="email" label="{{ __('labels.email') }}" name="email" placeholder="{{ __('labels.email') }}" class="w-full rounded-lg" />
+                       <x-forms.inputs.email id="email" label="{{ __('labels.email') }}" name="email" placeholder="{{ __('labels.email') }}" value="{{ old('email') }}" class="w-full rounded-lg" autofocus/>
                     </div>
                     <div class="my-3">
-                        <x-forms.inputs.password id="password" label="{{ __('labels.password') }}" name="password" placeholder="{{ __('labels.password') }}" class="w-full rounded-lg" />
+                        <x-forms.inputs.password id="password" label="{{ __('labels.password') }}" name="password" placeholder="{{ __('labels.password') }}" class="w-full rounded-lg" autocomplete="current-password" />
                     </div>
                     <div class="my-3">
                         <label for="remember" class="block text-gray-500 font-bold my-4 flex items-center dark:text-white">
@@ -44,7 +44,7 @@
                     <span class="px-2 py-1 rounded-xl bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800">or use social login</span>
                 </div>
                 <div class="flex items-center justify-between text-white">
-                    @include('auth.includes.social')
+                    @include('auth.layouts.includes.social')
                 </div>
             </div>
         </div>

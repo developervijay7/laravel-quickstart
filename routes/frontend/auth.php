@@ -24,8 +24,9 @@ Route::group([
         'middleware' => ['auth', 'verified'],
     ], function () {
         //Change Password by Auth Route
-        Route::get('change-password', [UserController::class, 'auth_change_password'])
-            ->name('change_password');
+        Route::get('change-password', function () {
+            return view('auth.change-password');
+        })->name('change_password');
 
         //Session Locked
         Route::get('session-locked', [UserController::class, 'session_locked'])

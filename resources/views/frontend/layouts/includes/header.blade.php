@@ -25,6 +25,7 @@
                             @endif
                             <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.reset-password') }}</a></li>
                             <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.forgot-password') }}</a></li>
+                            <li><a href="{{ route('frontend.auth.user.change_password') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.change-password') }}</a></li>
                             <li><a href="{{ route('frontend.legal.policy') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.privacy-policy') }}</a></li>
                             <li><a href="{{ route('frontend.legal.terms') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.terms-of-service') }}</a></li>
                         </ul>
@@ -84,7 +85,7 @@
                     @endguest
                 </ul>
             </nav>
-            <div x-data="{showMobileMenu: false}" class="flex items-center">
+            <div x-data="{showMobileMenu: false}" class="flex items-center" x-cloak>
                 <button @click="showMobileMenu = !showMobileMenu" class="bg-gray-300 dark:bg-gray-900 rounded-md p-1">
                     <svg class="w-6 h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
