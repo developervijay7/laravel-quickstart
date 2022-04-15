@@ -12,7 +12,7 @@
                 <h1 class="font-bold text-2xl my-3">{{ __('headings.change-password') }}</h1>
                 <p>{{ __('You should update your password frequently to ensure security.') }}</p>
                 @include('includes.partials.messages')
-                <x-forms.post :action="route('password.email')">
+                <x-forms.post :action="route('user-password.update')">
                     <div class="my-3">
                         <x-forms.inputs.password label="{{ __('labels.current-password') }}" name="current_password" id="current-password" class="w-full rounded-lg" autocomplete="current-password" placeholder="{{ __('labels.current-password') }}" value="{{ old('current_password') }}" autofocus required />
                     </div>

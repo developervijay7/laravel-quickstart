@@ -12,7 +12,7 @@
                 <h1 class="font-bold text-2xl my-3">{{ __('headings.confirm-password') }}</h1>
                 <p>{{ __('You need to confirm your password to complete this action.') }}</p>
                 @include('includes.partials.messages')
-                <x-forms.post :action="route('password.email')">
+                <x-forms.post :action="route('password.confirm')">
                     <div class="my-3">
                         <x-forms.inputs.password label="{{ __('labels.password-confirmation') }}" name="password" id="password" class="w-full rounded-lg" autocomplete="current-password" placeholder="{{ __('labels.password-confirmation') }}" autofocus />
                     </div>
