@@ -59,19 +59,19 @@
                              class="absolute top-20 right-0 bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
                              id="user-menu">
                             <div class="px-4 py-3">
-                                <span class="block">{{ ucwords($logged_in_user->full_name) }}</span>
+                                <span class="block text-lg">{{ ucwords($logged_in_user->full_name) }}</span>
                                 @if(count($logged_in_user->roles))
                                     <span
-                                        class="block text-sm font-medium text-gray-900 truncate">{{ $logged_in_user->roles[0]->name }}</span>
+                                        class="block text-xs font-medium text-gray-900 truncate text-upper">{{ $logged_in_user->roles[0]->name }}</span>
                                 @endif
                             </div>
-                            <ul class="py-1" aria-labelledby="dropdown">
+                            <ul aria-labelledby="dropdown">
                                 <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Dashboard</a>
+                                    <a href="{{ route('frontend.user.dashboard') }}" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Dashboard</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                       class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Settings</a>
+                                    <a href="{{ route('frontend.user.profile') }}"
+                                       class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Profile</a>
                                 </li>
                                 <li>
                                     <a href="#"

@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\Frontend\UserController;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
-
 
 // All route names are prefixed with 'user.'.
 Route::group([
@@ -10,31 +10,18 @@ Route::group([
     'as' => 'user.',
     'middleware' => ['auth', 'verified'],
 ], function () {
-
-    Route::get('/dashboard', function() {
-        return "hello";
-    })
+    Route::get('/dashboard', [UserController::class, 'dashboard'])
         ->name('dashboard')
         ->breadcrumbs(function (Trail $trail) {
             $trail->parent('frontend.index')
                 ->push(__('User Dashboard'), route('frontend.user.dashboard'));
         });
-    Route::get('/profile', function() {
-        return "profile";
-    })
+    Route::get('/profile', [UserController::class, 'profile'])
         ->name('profile')
         ->breadcrumbs(function (Trail $trail) {
             $trail->parent('frontend.index')
                 ->push(__('User Profile'), route('frontend.user.profile'));
         });
-
-//    Route::get('/notifications', [UserController::class, 'notifications'])
-//        ->name('notifications')
-//        ->breadcrumbs(function (Trail $trail) {
-//            $trail->parent('frontend.index')
-//                ->push(__('Notifications'), route('frontend.user.notifications'));
-//        });
-//
 //    Route::patch('/profile/update', [UserController::class, 'update'])
 //        ->name('profile.update');
 //
