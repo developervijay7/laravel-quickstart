@@ -1,25 +1,25 @@
 /**
  * Place any jQuery/helper plugins in here.
  */
-$(function () {
-    /**
-     * Checkbox tree for permission selecting
-     */
-    let permissionTree = $('.permission-tree :checkbox');
-
-    permissionTree.on('click change', function (){
-        if($(this).is(':checked')) {
-            $(this).siblings('ul').find('input[type="checkbox"]').attr('checked', true).attr('disabled', true);
-        } else {
-            $(this).siblings('ul').find('input[type="checkbox"]').removeAttr('checked').removeAttr('disabled');
-        }
-    });
-
-    permissionTree.each(function () {
-        if($(this).is(':checked')) {
-            $(this).siblings('ul').find('input[type="checkbox"]').attr('checked', true).attr('disabled', true);
-        }
-    });
+(function(){
+//     /**
+//      * Checkbox tree for permission selecting
+//      */
+//     let permissionTree = $('.permission-tree :checkbox');
+//
+//     permissionTree.on('click change', function (){
+//         if($(this).is(':checked')) {
+//             $(this).siblings('ul').find('input[type="checkbox"]').attr('checked', true).attr('disabled', true);
+//         } else {
+//             $(this).siblings('ul').find('input[type="checkbox"]').removeAttr('checked').removeAttr('disabled');
+//         }
+//     });
+//
+//     permissionTree.each(function () {
+//         if($(this).is(':checked')) {
+//             $(this).siblings('ul').find('input[type="checkbox"]').attr('checked', true).attr('disabled', true);
+//         }
+//     });
 
     /**
      * Disable submit inputs in the given form
@@ -44,10 +44,10 @@ $(function () {
     /**
      * Disable all submit buttons once clicked
      */
-    $('form').submit(function () {
-        disableSubmitButtons($(this));
-        return true;
-    });
+    // $('form').submit(function () {
+    //     disableSubmitButtons($(this));
+    //     return true;
+    // });
 
 
     /**
@@ -65,14 +65,7 @@ $(function () {
                 icon: 'question'
             }).then((result) => {
                 if (result.value) {
-                    //if browser supported beams disconnect user first before logging out
-                    if (typeof beamsClient !== 'undefined') {
-                        beamsDisconnectUser();
-                        // .then(() => google.accounts.id.disableAutoSelect())
-                    }
                     document.querySelector("form[name='logout-form']").submit();
-                } else {
-                    enableSubmitButtons($(this));
                 }
             });
         })
@@ -144,4 +137,4 @@ $(function () {
                 result.value && window.location.assign($(this).attr('href'));
             });
         });
-});
+})();

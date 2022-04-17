@@ -72,7 +72,6 @@
     @yield('content')
     @include('frontend.layouts.includes.footer')
 </div>
-@include('includes.partials.sweetalert')
 @stack('before-scripts')
 <script src="{{ mix('js/manifest.js') }}"></script>
 <script src="{{ mix('js/vendor.js') }}"></script>
