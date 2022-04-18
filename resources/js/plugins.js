@@ -27,8 +27,8 @@
      * @param form
      */
     function disableSubmitButtons(form) {
-        form.find('input[type="submit"]').attr('disabled', true);
-        form.find('button[type="submit"]').attr('disabled', true);
+        let x = form.querySelector('button[type="submit"]') || form.querySelector('input[type="submit"]')
+        x && x.setAttribute('disabled', true);
     }
 
     /**
@@ -37,16 +37,16 @@
      * @param form
      */
     function enableSubmitButtons(form) {
-        form.find('input[type="submit"]').removeAttr('disabled');
-        form.find('button[type="submit"]').removeAttr('disabled');
+        let x = form.querySelector('button[type="submit"]') || form.querySelector('input[type="submit"]')
+        x && x.removeAttribute('disabled', true);
     }
 
     /**
      * Disable all submit buttons once clicked
      */
     let form = document.querySelector('form');
-    form && form.submit(function () {
-        disableSubmitButtons(document.querySelector(this));
+    form && form.addEventListener('submit', function (e) {
+        disableSubmitButtons(this);
         return true;
     });
 

@@ -17,10 +17,10 @@
                 @include('includes.partials.messages')
                 <x-forms.post action="{{ route('login') }}">
                     <div class="my-3">
-                       <x-forms.inputs.email id="email" label="{{ __('labels.email') }}" name="email" placeholder="{{ __('labels.email') }}" value="{{ old('email') }}" class="w-full rounded-lg" autofocus/>
+                       <x-forms.inputs.email id="email" label="{{ __('labels.email') }}" name="email" placeholder="{{ __('labels.email') }}" value="{{ old('email') }}" class="w-full rounded-lg" autofocus required/>
                     </div>
                     <div class="my-3">
-                        <x-forms.inputs.password id="password" label="{{ __('labels.password') }}" name="password" placeholder="{{ __('labels.password') }}" class="w-full rounded-lg" autocomplete="current-password" />
+                        <x-forms.inputs.password id="password" label="{{ __('labels.password') }}" name="password" placeholder="{{ __('labels.password') }}" class="w-full rounded-lg" autocomplete="current-password" required />
                     </div>
                     <div class="my-3">
                         <label for="remember" class="block text-gray-500 font-bold my-4 flex items-center dark:text-white">
