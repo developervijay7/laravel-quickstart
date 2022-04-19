@@ -22,7 +22,7 @@
 //     });
 
     /**
-     * Disable submit inputs in the given form
+     * Disable submit inputs in the given form once clicked submit button
      *
      * @param form
      */
@@ -32,7 +32,7 @@
     }
 
     /**
-     * Enable the submit inputs in a given form
+     * Enable submit inputs in a given form
      *
      * @param form
      */
@@ -54,89 +54,100 @@
     /**
      * Add a confirmation to a delete button/form
      */
-    let logOutForm = document.querySelector('form[name="logout-form"]');
-    logOutForm && logOutForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        Swal.fire({
-            title: 'Are you sure you want to logout?',
-            showCancelButton: true,
-            confirmButtonText: 'Logout',
-            cancelButtonText: 'Cancel',
-            icon: 'question'
-        }).then((result) => {
-            if (result.value) {
-                document.querySelector("form[name='logout-form']").submit();
-            }
+    let logOutForms = document.querySelectorAll('form[name="logout-form"]');
+    logOutForms && logOutForms.forEach((element, index) => {
+        element.addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure you want to logout?',
+                showCancelButton: true,
+                confirmButtonText: 'Logout',
+                cancelButtonText: 'Cancel',
+                icon: 'question'
+            }).then((result) => {
+                if (result.value) {
+                    document.querySelector("form[name='logout-form']").submit();
+                }else{
+                    enableSubmitButtons(element);
+                }
+            });
         });
     });
 
-    let deleteForm = document.querySelector('form[name=delete-item]');
-    deleteForm && deleteForm.addEventListener('submit', function (e) {
-        e.preventDefault();
+    let deleteForms = document.querySelectorAll('form[name=delete-item]');
+    deleteForms && deleteForms.forEach((element, index) => {
+        element.addEventListener('submit', function (e) {
+            e.preventDefault();
 
-        Swal.fire({
-            title: 'Are you sure you want to delete this item?',
-            showCancelButton: true,
-            confirmButtonText: 'Confirm Delete',
-            cancelButtonText: 'Cancel',
-            icon: 'warning'
-        }).then((result) => {
-            if (result.value) {
-                this.submit()
-            } else {
-                enableSubmitButtons(document.querySelector(this));
-            }
-        });
-    });
-
-    let permanentlyDeleteForm = document.querySelector('form[name=permanent-delete-item]');
-    permanentlyDeleteForm && permanentlyDeleteForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        Swal.fire({
-            title: 'Are you sure you want to permanently delete this item?',
-            showCancelButton: true,
-            confirmButtonText: 'Confirm Permanent Delete',
-            cancelButtonText: 'Cancel',
-            icon: 'warning'
-        }).then((result) => {
-            if (result.value) {
-                this.submit()
-            } else {
-                enableSubmitButtons(document.querySelector(this));
-            }
-        });
-    });
-
-    let confirmationForm = document.querySelector('form[name=confirm-item]');
-    confirmationForm && confirmationForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        Swal.fire({
-            title: 'Are you sure you want to do this?',
-            showCancelButton: true,
-            confirmButtonText: 'Continue',
-            cancelButtonText: 'Cancel',
-            icon: 'warning'
-        }).then((result) => {
-            if (result.value) {
+            Swal.fire({
+                title: 'Are you sure you want to delete this item?',
+                showCancelButton: true,
+                confirmButtonText: 'Confirm Delete',
+                cancelButtonText: 'Cancel',
+                icon: 'warning'
+            }).then((result) => {
+                if (result.value) {
                     this.submit()
                 } else {
-                enableSubmitButtons(document.querySelector(this));
-            }
+                    enableSubmitButtons(document.querySelector(this));
+                }
+            });
         });
     });
 
-    let confirmationLink = document.querySelector('a[name=confirm-item]');
-    confirmationLink && confirmationLink.addEventListener('submit', function (e) {
-        e.preventDefault();
-        Swal.fire({
-            title: 'Are you sure you want to do this?',
-            showCancelButton: true,
-            confirmButtonText: 'Continue',
-            cancelButtonText: 'Cancel',
-            icon: 'info',
-        }).then((result) => {
-            result.value && window.location.assign(document.querySelector(this).attr('href'));
+    let permanentlyDeleteForms = document.querySelectorAll('form[name=permanent-delete-item]');
+    permanentlyDeleteForms && permanentlyDeleteForms.forEach((element, index) => {
+        element.addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure you want to permanently delete this item?',
+                showCancelButton: true,
+                confirmButtonText: 'Confirm Permanent Delete',
+                cancelButtonText: 'Cancel',
+                icon: 'warning'
+            }).then((result) => {
+                if (result.value) {
+                    this.submit()
+                } else {
+                    enableSubmitButtons(document.querySelector(this));
+                }
+            });
+        });
+    });
+
+    let confirmationForms = document.querySelectorAll('form[name=confirm-item]');
+    confirmationForms && confirmationForms.forEach((element, index) => {
+        element.addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure you want to do this?',
+                showCancelButton: true,
+                confirmButtonText: 'Continue',
+                cancelButtonText: 'Cancel',
+                icon: 'warning'
+            }).then((result) => {
+                if (result.value) {
+                    this.submit()
+                } else {
+                    enableSubmitButtons(document.querySelector(this));
+                }
+            });
+        });
+    });
+
+    let confirmationLinks = document.querySelectorAll('a[name=confirm-item]');
+    confirmationLinks && confirmationLinks.forEach((element, index) => {
+        element.addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure you want to do this?',
+                showCancelButton: true,
+                confirmButtonText: 'Continue',
+                cancelButtonText: 'Cancel',
+                icon: 'info',
+            }).then((result) => {
+                result.value && window.location.assign(document.querySelector(this).attr('href'));
+            });
         });
     });
 

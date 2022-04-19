@@ -67,16 +67,18 @@
                             </div>
                             <ul aria-labelledby="dropdown">
                                 <li>
-                                    <a href="{{ route('frontend.user.dashboard') }}" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Dashboard</a>
+                                    <a href="{{ route('frontend.user.dashboard') }}" class="text-sm hover:bg-gray-100 text-gray-700 block py-2">Dashboard</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('frontend.user.profile') }}"
-                                       class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Profile</a>
+                                       class="text-sm hover:bg-gray-100 text-gray-700 block py-2">Profile</a>
                                 </li>
-                                <li>
-                                    <a href="#"
-                                       class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Earnings</a>
-                                </li>
+                                @if($logged_in_user->type !== 'User')
+                                    <li>
+                                        <a href="{{ route('admin.dashboard') }}"
+                                           class="text-sm hover:bg-gray-100 text-gray-700 block py-2">Administration</a>
+                                    </li>
+                                @endif
                             </ul>
                             <div>
                                 <x-utils.logout-button :action="route('logout')" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" :hideText="false">{{ __('labels.logout') }}</x-utils.logout-button>
