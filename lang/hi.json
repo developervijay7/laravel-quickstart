@@ -1,0 +1,14 @@
+{
+    "The :attribute must contain at least one letter.": ":attribute में कम से कम एक अक्षर होना चाहिए।",
+    "The :attribute must contain at least one number.": ":attribute में कम से कम एक संख्या होनी चाहिए।",
+    "The :attribute must contain at least one symbol.": ":attribute में कम से कम एक प्रतीक होना चाहिए।",
+    "The :attribute must contain at least one uppercase and one lowercase letter.": ":attribute में कम से कम एक अपरकेस और एक लोअरकेस अक्षर होना चाहिए।",
+    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "दी गई :attribute डेटा लीक में दिखाई दी है। कृपया कोई भिन्न चुनें: विशेषता।",
+    "The only laravel boilerplate that you will ever need to start your next laravel project.": "एकमात्र लारावेल बॉयलरप्लेट जिसे आपको अपना अगला लारावेल प्रोजेक्ट शुरू करने की आवश्यकता होगी।",
+    "Laravel Quick-Start is a laravel application boilerplate that bundles necessary packages, dependencies, scaffolding, authentication to quick start your project out of the box.": "लारवेल क्विक-स्टार्ट एक लारवेल एप्लिकेशन बॉयलरप्लेट है जो आपके प्रोजेक्ट को बॉक्स से बाहर जल्दी शुरू करने के लिए आवश्यक पैकेज, निर्भरता, मचान, प्रमाणीकरण को बंडल करता है।",
+    "English": "अंग्रेज़ी",
+    "Hindi": "हिंदी",
+    "Urdu": "उर्दू",
+    "Home": "होम",
+    "Contact": "सम्पर्क"
+}

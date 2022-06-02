@@ -1,0 +1,13 @@
+{
+    "The :attribute must contain at least one letter.": "The :attribute must contain at least one letter.",
+    "The :attribute must contain at least one number.": "The :attribute must contain at least one number.",
+    "The :attribute must contain at least one symbol.": "The :attribute must contain at least one symbol.",
+    "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
+    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute.",
+    "The only laravel boilerplate that you will ever need to start your next laravel project.": "واحد لاریول بوائلر پلیٹ جس کی آپ کو اپنا اگلا لاریول پروجیکٹ شروع کرنے کی ضرورت ہوگی۔",
+    "English": "انگریزی",
+    "Hindi": "ہندی",
+    "Urdu": "اردو",
+    "Home": "گھر",
+    "Contact": "رابطہ"
+}
