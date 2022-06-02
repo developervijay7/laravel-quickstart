@@ -1,102 +1,101 @@
-<header>
-    <div class="container">
-        <div class="bg-gray-200 dark:bg-gray-600 rounded-xl px-5 py-4 flex items-center justify-between shadow-xl">
-            <div id="sitelogo">
-                @include('includes.partials.logo')
-            </div>
-            <nav id="main-nav">
-                <ul class="hidden lg:flex items-center">
-                    <li>
-                        <a href="{{ route('frontend.index') }}" class="{{ activeClass(Route::is('frontend.index')) }}">{{ __('Home') }}</a>
-                    </li>
-                    <li x-data="{showPages: false}" class="relative">
-                        <a href="#" @click.prevent="showPages = !showPages" @click.away="showPages = false" class="flex items-center {{ activeClass(Route::is('frontend.pages.*')) }}">
-                            {{ __('labels.pages') }}
-                            <span>
-                                <x-icons.chevron-down :size="5" class="transform transition origin-center duration-250" ::class="showPages ? '-rotate-180' : ''" />
-                            </span>
-                        </a>
-                        <ul x-show="showPages" x-cloak class="absolute top-14 right-0 md:left-0 mt-2 w-48 rounded-md shadow-lg z-90 bg-gray-200 dark:bg-gray-600 ring-1 ring-black ring-opacity-5 focus:outline-none">
-                            @if(config('quickstart.access.user.login'))
-                                <li><a href="{{ route('login') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.login') }}</a></li>
-                            @endif
-                            @if(config('quickstart.access.user.registration'))
-                                <li><a href="{{ route('register') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.register') }}</a></li>
-                            @endif
-                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.reset-password') }}</a></li>
-                            <li><a href="#" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.forgot-password') }}</a></li>
-                            <li><a href="{{ route('frontend.auth.user.change_password') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.change-password') }}</a></li>
-                            <li><a href="{{ route('frontend.legal.policy') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.privacy-policy') }}</a></li>
-                            <li><a href="{{ route('frontend.legal.terms') }}" class="text-sm hover:bg-accent hover:text-white text-gray-700 block py-2 mx-0 px-6">{{ __('labels.terms-of-service') }}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{{ route('frontend.contact') }}" class="{{ activeClass(Route::is('frontend.contact')) }}">{{ __('Contact') }}</a>
-                    </li>
-                </ul>
-            </nav>
-            <div>
-                @include('includes.partials.switch')
-            </div>
-            <nav id="actions-nav" class="flex gap-x-12 items-center" x-cloak>
-                <div class="relative flex items-center rounded-md bg-gray-300 dark:bg-gray-900 py-1 px-3">
-                    @include('includes.partials.lang')
-                </div>
-                <ul class="hidden lg:flex items-center gap-x-5 relative" x-data="{ showUserMenu: false }">
-                    @guest
-                        <li><a href="{{ route('login') }}">{{ __('labels.login') }}</a></li>
-                        @if(config('quickstart.access.user.registration'))
-                        <li><a href="{{ route('register') }}">{{ __('labels.register') }}</a></li>
-                        @endif
-                    @else
-                        <button class="focus:ring-4 focus:ring-blue-300 rounded-full"
-                                @click="showUserMenu = !showUserMenu">
-                            <img src="{{ $logged_in_user->avatar }}"
-                                 alt="{{ $logged_in_user->full_name }}" class="rounded-full h-14 w-14">
-                        </button>
-                        <!--User Dropdown Menu-->
-                        <div x-show="showUserMenu"
-                             class="absolute top-20 right-0 bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
-                             id="user-menu">
-                            <div class="px-4 py-3">
-                                <span class="block text-lg">{{ ucwords($logged_in_user->full_name) }}</span>
-                                @if(count($logged_in_user->roles))
-                                    <span
-                                        class="block text-xs font-medium text-gray-900 truncate text-upper">{{ $logged_in_user->roles[0]->name }}</span>
-                                @endif
-                            </div>
-                            <ul aria-labelledby="dropdown">
-                                <li>
-                                    <a href="{{ route('frontend.user.dashboard') }}" class="text-sm hover:bg-gray-100 text-gray-700 block py-2">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('frontend.user.profile') }}"
-                                       class="text-sm hover:bg-gray-100 text-gray-700 block py-2">Profile</a>
-                                </li>
-                                @if($logged_in_user->type !== 'User')
-                                    <li>
-                                        <a href="{{ route('admin.dashboard') }}"
-                                           class="text-sm hover:bg-gray-100 text-gray-700 block py-2">Administration</a>
-                                    </li>
-                                @endif
-                            </ul>
-                            <div>
-                                <x-utils.logout-button :action="route('logout')" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" :hideText="false">{{ __('labels.logout') }}</x-utils.logout-button>
-                            </div>
-                        </div>
-                    @endguest
-                </ul>
-            </nav>
-            <div x-data="{showMobileMenu: false}" class="flex items-center" x-cloak>
-                <button @click="showMobileMenu = !showMobileMenu" class="bg-gray-300 dark:bg-gray-900 rounded-md p-1">
-                    <svg class="w-6 h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
-                        <path class="transform transition origin-center duration-250" :class="showMobileMenu ? 'rotate-45 translate-y-2 -translate-x-2' : ''" d="M7.94977 11.9498H39.9498" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path class="transform transition duration-250" :class="showMobileMenu ? 'hidden' : 'block'" d="M7.94977 23.9498H39.9498" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path class="transform transition origin-center duration-250" :class="showMobileMenu ? '-rotate-45 -translate-y-2 -translate-x-2' : ''" d="M7.94977 35.9498H39.9498" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </button>
-            </div>
+<div class="bg-zinc-900">
+    <div class="flex justify-between h-10">
+        <div class="container hwrap">
+            <x-frontend.breaking-news />
+        </div>
+        <div class="flex items-center">
+            <ul class="flex">
+                    @isset($college->facebook)
+                        <li><a href="#">f</a></li>
+                    @endisset
+                    @isset($college->twitter)
+                        <li><a href="#">f</a></li>
+                    @endisset
+                    @isset($college->linkedin)
+                        <li><a href="#">f</a></li>
+                    @endisset
+                    @isset($college->instagram)
+                        <li><a href="#">f</a></li>
+                    @endisset
+                    @isset($college->youtube)
+                        <li><a href="#">f</a></li>
+                    @endisset
+            </ul>
+            <a href="#">Admission 2022-23</a>
         </div>
     </div>
-</header>
+    <header class="bg-indigo-400 text-white">
+        <div class="container flex items-center justify-between">
+            <div id="site-logo" class="flex items-center">
+                <img src="{{ asset($college->logo) }}" alt="{{ $college->name }} Logo" class="h-28">
+                <div>
+                    <h1 class="text-lg md:text-2xl">{{ $college->name }}</h1>
+                    <h1 class="text-lg md:text-2xl">बाबू शिवनाथ अग्रवाल (PG) कॉलेज, मथुरा</h1>
+                    <h2 class="text-xs mt-2">Affiliated to {{ $college->primary_university }} | College Code: {{ $college->code }}</h2>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <form>
+                    <div class="">
+                        <label for="search"></label>
+                        <input type="search" class="rounded px-5 py-1 text-black">
+                        <button type="submit" class="rounded bg-green-500 px-5 py-1 text-white">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="bg-zinc-900 bg-opacity-75 hidden lg:block text-white">
+        <div class="container flex items-center justify-between font-bold">
+            <nav class="py-2">
+                <ul class="flex gap-5 items-center">
+                    <li class="">
+                        <a href="http://psscive.in" class="p-2">Home</a>
+                    </li>
+                    <li class="">
+                        <div class="relative" x-data="{ show: false }" @click.away="show = false">
+                            <a href="#" @click.prevent="show = !show" class="flex items-center">
+                                <div class="flex items-center">
+                                    <div class="">
+                                        About
+                                    </div>
+                                    <div class="ml-1">
+                                        <svg class="fill-current h-4 w-4 transform transition duration-150 ease-in-out" :class="show ? '-rotate-180' : ''" viewBox="0 0 20 20">
+                                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <div x-show="show" class="absolute right-0 mt-2 w-48 bg-white rounded-md overflow-hidden shadow-xl z-10" style="display: none;">
+                                <ul>
+                                    <li class="">
+
+                                        <a href="http://psscive.in/about" class="block px-4 py-2 transition duration-100 text-sm text-gray-800 border-b hover:bg-gray-200 ">About
+                                            Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 transition duration-100 text-sm text-gray-800 border-b hover:bg-gray-200 ">Organogram</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://psscive.in/about/infrastructure" class="block px-4 py-2 transition duration-100 text-sm text-gray-800 border-b hover:bg-gray-200 ">Infrastructure</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="py-2 font-bold">
+                <ul class="flex gap-5">
+                    <li>
+                        <a href="http://psscive.in/register">Register</a>
+                    </li>
+                    <li>
+                        <a href="http://psscive.in/login">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

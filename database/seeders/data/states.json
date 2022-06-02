@@ -1,0 +1,218 @@
+{
+    "1": {
+        "name": "Andhra Pradesh",
+        "short_name": "AP",
+        "capital": "Amaravati",
+        "type": "State"
+    },
+    "2": {
+        "name": "Arunachal Pradesh",
+        "short_name": "AR",
+        "capital": "Itanagar",
+        "type": "State"
+    },
+    "3": {
+        "name": "Assam",
+        "short_name": "AS",
+        "capital": "Dispur",
+        "type": "State"
+    },
+    "4": {
+        "name": "Bihar",
+        "short_name": "BR",
+        "capital": "Patna",
+        "type": "State"
+    },
+    "5": {
+        "name": "Chhattisgarh",
+        "short_name": "CG",
+        "capital": "Raipur",
+        "type": "State"
+    },
+    "6": {
+        "name": "Goa",
+        "short_name": "GA",
+        "capital": "Panji",
+        "type": "State"
+    },
+    "7": {
+        "name": "Gujarat",
+        "short_name": "GJ",
+        "capital": "Gandhi Nagar",
+        "type": "State"
+    },
+    "8": {
+        "name": "Haryana",
+        "short_name": "HR",
+        "capital": "Chandigarh",
+        "type": "State"
+    },
+    "9": {
+        "name": "Himachal Pradesh",
+        "short_name": "HP",
+        "capital": "Shimla",
+        "type": "State"
+    },
+    "10": {
+        "name": "Jharkhand",
+        "short_name": "JH",
+        "capital": "Ranchi",
+        "type": "State"
+    },
+    "11": {
+        "name": "Karnataka",
+        "short_name": "KA",
+        "capital": "Bengaluru",
+        "type": "State"
+    },
+    "12": {
+        "name": "Kerala",
+        "short_name": "KL",
+        "capital": "Thiruvananthapuram",
+        "type": "State"
+    },
+    "13": {
+        "name": "Madhya Pradesh",
+        "short_name": "MP",
+        "capital": "Bhopal",
+        "type": "State"
+    },
+    "14": {
+        "name": "Maharashtra",
+        "short_name": "MH",
+        "capital": "Mumbai",
+        "type": "State"
+    },
+    "15": {
+        "name": "Manipur",
+        "short_name": "MN",
+        "capital": "Imphal",
+        "type": "State"
+    },
+    "16": {
+        "name": "Meghalaya",
+        "short_name": "ML",
+        "capital": "Shilong",
+        "type": "State"
+    },
+    "17": {
+        "name": "Mizoram",
+        "short_name": "MZ",
+        "capital": "Aizawl",
+        "type": "State"
+    },
+    "18": {
+        "name": "Nagaland",
+        "short_name": "NL",
+        "capital": "Kohima",
+        "type": "State"
+    },
+    "19": {
+        "name": "Odisha",
+        "short_name": "OD",
+        "capital": "Bhubaneswar",
+        "type": "State"
+    },
+    "20": {
+        "name": "Punjab",
+        "short_name": "PB",
+        "capital": "Chandigarh",
+        "type": "State"
+    },
+    "21": {
+        "name": "Rajasthan",
+        "short_name": "RJ",
+        "capital": "Jaipur",
+        "type": "State"
+    },
+    "22": {
+        "name": "Sikkim",
+        "short_name": "SK",
+        "capital": "Gangtok",
+        "type": "State"
+    },
+    "23": {
+        "name": "Tamil Nadu",
+        "short_name": "TN",
+        "capital": "Chennai",
+        "type": "State"
+    },
+    "24": {
+        "name": "Telangana",
+        "short_name": "TS",
+        "capital": "Hyderabad",
+        "type": "State"
+    },
+    "25": {
+        "name": "Tripura",
+        "short_name": "TR",
+        "capital": "Agartala",
+        "type": "State"
+    },
+    "26": {
+        "name": "Uttar Pradesh",
+        "short_name": "UP",
+        "capital": "Lucknow",
+        "type": "State"
+    },
+    "27": {
+        "name": "Uttarakhand",
+        "short_name": "UK",
+        "capital": "Dehradun",
+        "type": "State"
+    },
+    "28": {
+        "name": "West Bengal",
+        "short_name": "WB",
+        "capital": "Kolkata",
+        "type": "State"
+    },
+    "29": {
+        "name": "Andaman and Nicobar Islands",
+        "short_name": "AN",
+        "capital": "Port Blair",
+        "type": "Union Territory"
+    },
+    "30": {
+        "name": "Chandigarh",
+        "short_name": "CH",
+        "capital": "Chandigarh",
+        "type": "Union Territory"
+    },
+    "31": {
+        "name": "Dadra & Nagar Haveli and Daman & Diu",
+        "short_name": "DD",
+        "capital": "Daman",
+        "type": "Union Territory"
+    },
+    "32": {
+        "name": "Delhi",
+        "short_name": "DL",
+        "capital": "New Delhi",
+        "type": "Union Territory"
+    },
+    "33": {
+        "name": "Jammu and Kashmir",
+        "short_name": "JK",
+        "capital": "Srinagar",
+        "type": "Union Territory"
+    },
+    "34": {
+        "name": "Lakshadweep",
+        "short_name": "LD",
+        "capital": "Kavaratti",
+        "type": "Union Territory"
+    },
+    "35": {
+        "name": "Puducherry",
+        "short_name": "PY",
+        "capital": "Pondicherry",
+        "type": "Union Territory"
+    },
+    "36": {
+        "name": "Laddakh",
+        "short_name": "LA",
+        "capital": "Leh",
+        "type": "Union Territory"
+    }
+}

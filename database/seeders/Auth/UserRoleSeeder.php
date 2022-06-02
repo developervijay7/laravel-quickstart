@@ -22,7 +22,6 @@ class UserRoleSeeder extends Seeder
 
         User::find(1)->assignRole(config('quickstart.access.role.admin'));
         User::find(2)->assignRole(config('quickstart.access.role.admin'));
-        User::find(3)->assignRole(config('quickstart.access.role.user'));
 
         $this->enableForeignKeys();
     }

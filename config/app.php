@@ -143,6 +143,7 @@ return [
          */
         Illuminate\Auth\AuthServiceProvider::class,
         App\Providers\BladeServiceProvider::class,
+        App\Providers\ViewServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
         Illuminate\Cache\CacheServiceProvider::class,

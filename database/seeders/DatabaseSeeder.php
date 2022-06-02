@@ -23,7 +23,15 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call(AuthSeeder::class);
-
+        $this->call(CollegeSeeder::class);
+        $this->call(StateSeeder::class);
+        $this->call(AddressSeeder::class);
+        $this->call(FacultySeeder::class);
+        $this->call(DepartmentSeeder::class);
+        $this->call(CourseSeeder::class);
+        $this->call(StaffSeeder::class);
+        $this->call(TeacherSeeder::class);
+        $this->call(NewsSeeder::class);
         Model::reguard();
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders\Auth;
 
+use App\Models\Teacher;
 use App\Models\User;
 use Database\Seeders\Traits\DisableForeignKeys;
 use Illuminate\Database\Seeder;
@@ -39,15 +40,7 @@ class UserSeeder extends Seeder
             'active' => true,
         ]);
 
-
-        User::create([
-            'type' => User::TYPE_USER,
-            'first_name' => 'User',
-            'email' => 'user@example.com',
-            'password' => 'User@123',
-            'email_verified_at' => now(),
-            'active' => true,
-        ]);
+        //$user = User::factory()->has(Teacher::factory())->create(100);
 
         $this->enableForeignKeys();
     }

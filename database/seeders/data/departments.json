@@ -1,0 +1,90 @@
+{
+    "1": {
+        "faculty_id": 2,
+        "name": "Department of Accounts & Law",
+        "slug": "department-of-accounts-law",
+        "type": "Academic"
+    },
+    "2": {
+        "faculty_id": 2,
+        "name": "Department of Business Administration",
+        "slug": "department-of-business-administration",
+        "type": "Academic"
+    },
+    "3": {
+        "faculty_id": 2,
+        "name": "Department of Applied Business Economics",
+        "slug": "department-of-applied-business-economics",
+        "type": "Academic"
+    },
+    "4": {
+        "faculty_id": 3,
+        "name": "Department of Physics",
+        "slug": "department-of-physics",
+        "type": "Academic"
+    },
+    "5": {
+        "faculty_id": 3,
+        "name": "Department of Chemistry",
+        "slug": "department-of-chemistry",
+        "type": "Academic"
+    },
+    "6": {
+        "faculty_id": 3,
+        "name": "Department of Mathematics",
+        "slug": "department-of-mathematics",
+        "type": "Academic"
+    },
+    "7": {
+        "faculty_id": 3,
+        "name": "Department of Statistics",
+        "slug": "department-of-statistics",
+        "type": "Academic"
+    },
+    "8": {
+        "faculty_id": 3,
+        "name": "Department of Zoology",
+        "slug": "department-of-zoology",
+        "type": "Academic"
+    },
+    "9": {
+        "faculty_id": 3,
+        "name": "Department of Botany",
+        "slug": "department-of-botany",
+        "type": "Academic"
+    },
+    "10": {
+        "faculty_id": 6,
+        "name": "Department of Industrial Chemistry",
+        "slug": "department-of-industrial-chemistry",
+        "type": "Academic"
+    },
+    "11": {
+        "faculty_id": 6,
+        "name": "Department of Industrial Microbiology",
+        "slug": "department-of-industrial-microbiology",
+        "type": "Academic"
+    },
+    "12": {
+        "faculty_id": 6,
+        "name": "Department of Computer Science",
+        "slug": "department-of-computer-science",
+        "type": "Academic"
+    },
+    "13": {
+        "faculty_id": 6,
+        "name": "Department of Home Science",
+        "slug": "department-of-home-science",
+        "type": "Academic"
+    },
+    "14": {
+        "name": "Accounts Department",
+        "slug": "accounts-department",
+        "type": "Non Academic"
+    },
+    "15": {
+        "name": "Security Department",
+        "slug": "security-department",
+        "type": "Non Academic"
+    }
+}

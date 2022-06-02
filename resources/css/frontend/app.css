@@ -4,3 +4,31 @@
 body {
     background-color: #F1F5F9;
 }
+
+
+/* ==========================PureCSS News Ticker =========================================== */
+/* (A) FIXED WRAPPER */
+.hwrap {
+    overflow: hidden; /* HIDE SCROLL BAR */
+}
+
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 50s infinite; }
+.hmove:hover { animation-play-state: paused; }
+/* ==========================PureCSS News Ticker =========================================== */

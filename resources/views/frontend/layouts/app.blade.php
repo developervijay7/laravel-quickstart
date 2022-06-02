@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
     <!-- SEO Tags -->
-    <title>@yield('title', appName())</title>
+    <title>@yield('title', $college->name)</title>
     <meta name="description" content="@yield('description', '')"/>
     <meta name="robots" content="@yield('robots', 'index,follow')"/>
     <link rel="author" href="{{ asset('humans.txt') }}">
@@ -56,11 +56,7 @@
       :class="{'dark': currentTheme === 'dark' || (currentTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
 >
 @include('includes.partials.google-tag-manager-body')
-<div class="h-5 w-5 hidden h-8 w-8 rotate-45 -rotate-45 origin-center duration-500">temporary just to add class will remove soon</div>
-<div id="app" class="px-5 py-6 dark:bg-gray-900 dark:text-white">
-    <div class="container">
-        @include('includes.partials.read-only')
-    </div>
+<div id="app" class="">
     @include('frontend.layouts.includes.header')
     @if (Breadcrumbs::has() && !Route::is('frontend.index'))
     <div class="container">

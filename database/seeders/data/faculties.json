@@ -1,0 +1,26 @@
+{
+    "1": {
+        "name": "Faculty of Arts & Humanities",
+        "slug": "faculty-of-arts-humanities"
+    },
+    "2": {
+        "name": "Faculty of Commerce",
+        "slug": "faculty-of-commerce"
+    },
+    "3": {
+        "name": "Faculty of Science",
+        "slug": "faculty-of-science"
+    },
+    "4": {
+        "name": "Faculty of Education",
+        "slug": "faculty-of-education"
+    },
+    "5": {
+        "name": "Faculty of Law",
+        "slug": "faculty-of-law"
+    },
+    "6": {
+        "name": "Faculty of Vocational Education",
+        "slug": "faculty-of-vocational-education"
+    }
+}

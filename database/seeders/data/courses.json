@@ -1,0 +1,19 @@
+{
+    "1": {
+        "name": "Bachelor of Arts",
+        "short_name": "B. A.",
+        "slug": "ba-history",
+        "level": "Under Graduate",
+        "subject": "History",
+        "intake": 110,
+        "criterion": "Direct Admission",
+        "years": 3,
+        "months": 0,
+        "type": "Self Financing",
+        "examination": "Annual",
+        "statutory_body": "University Grants Commission",
+        "university": "Dr. Bhim Rao Ambedkar University, Agra",
+        "courseable_id": 1,
+        "courseable_type": "App\\Models\\Faculty"
+    }
+}

@@ -23,8 +23,18 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('mobile')->unique()->nullable();
             $table->enum('gender', ['male', 'female', 'transgender', 'other'])->nullable();
+            $table->string('about')->nullable();
+            $table->date('birth_date')->nullable();
+            $table->enum('social_category', ['General', 'SC', 'ST', 'OBC'])->nullable();
+            $table->enum('religion', ['Hindu', 'Muslim', 'Christian', 'Buddhist', 'Jain', 'Zorastrian (Parsi)', 'Sikh', 'Others'])->nullable();
+            $table->boolean('is_divyangjan')->default(0);
             $table->string('password');
             $table->boolean('active')->default(true);
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('youtube')->nullable();
+            $table->string('instagram')->nullable();
             $table->ipAddress('last_login_ip')->nullable();
             $table->timestamp('last_login_at')->nullable();
             $table->timestamp('email_verified_at')->nullable();

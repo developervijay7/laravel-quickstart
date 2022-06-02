@@ -1,0 +1,13 @@
+{
+    "1": {
+        "address_line_1": "Near New Bus Stand",
+        "address_line_2": "",
+        "city": "Mathura",
+        "state_id": "26",
+        "pin_code": "281004",
+        "latitude": "27.4933575",
+        "longitude": "77.6696494",
+        "addressable_id": "1",
+        "addressable_type": "App\\Models\\College"
+    }
+}

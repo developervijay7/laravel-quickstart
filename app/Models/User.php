@@ -138,4 +138,16 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return UserFactory::new();
     }
+
+
+
+    public function address()
+    {
+        return $this->morphOne(Address::class, 'addressable');
+    }
+
+    public function teacher()
+    {
+        return $this->hasOne(Teacher::class);
+    }
 }
