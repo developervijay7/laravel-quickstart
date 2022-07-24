@@ -27,6 +27,7 @@
         "laravel/socialite": "^5.5",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.10",
+        "mkocansey/bladewind": "^1.2",
         "ramsey/uuid": "^4.2",
         "spatie/laravel-activitylog": "^4.4",
         "spatie/laravel-permission": "^5.5",
