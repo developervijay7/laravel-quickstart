@@ -75,6 +75,10 @@
     // enforces validation if set to true
     'required' => 'false',
 
+    // adds margin after the input box
+    'add_clearing' => 'true',
+    'addClearing' => 'true', 
+    
     // determines if a value passed in the data array should automatically be selected
     // useful when using the component in edit mode or as part of filter options
     // the value you specify should exist in your value_key. If your value_key is 'id', you
@@ -103,6 +107,7 @@
     $data_serialize_as = $dataSerializeAs;
     $selected_value = $selectedValue;
     $show_filter_icon = $showFilterIcon;
+    $add_clearing = $addClearing;
     //-------------------------------------------------------
 
     $data = json_decode(str_replace('&quot;', '"', $data));
@@ -126,8 +131,8 @@
 
 @endphp
 
-<div class="relative {{ $name }}">
-    <button type="button" class="bw-dropdown bg-white cursor-pointer text-left w-full text-gray-400 flex justify-between dark:text-white dark:border-slate-700 dark:bg-slate-600 dark:text-gray-300">
+<div class="relative {{ $name }}@if($add_clearing == 'true') mb-3 @endif">
+    <button type="button" class="bw-dropdown rounded-md bg-white cursor-pointer text-left w-full text-gray-400 flex justify-between dark:text-white dark:border-slate-700 dark:bg-slate-600 dark:text-gray-300">
         <label class="cursor-pointer">
             @if($show_filter_icon == 'true')
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -145,8 +150,12 @@
             class="dropdown-items border border-gray-300 divide-y relative w-full">
             @if($searchable == 'true')
                 <div class="bg-gray-100 dark:bg-slate-500 p-2 sticky top-0 min-w-full">
-                    <input type="text" class="bw-input search-dropdown rounded-full w-full !border-0 !focus:border-0 !placeholder-gray-400 dark:!text-slate-800 !mb-0" 
-                        placeholder="Search" onkeyup="searchDropdown(this.value, '{{ $name }}')" />
+                    <x-bladewind::input
+                        name="search-dropdown"
+                        add_clearing="false"
+                        class="rounded-full w-full !border-0 !focus:border-0"
+                        onkeyup="searchDropdown(this.value, '{{ $name }}')"
+                        placeholder="Search" />
                 </div>
             @endif
             <div 
@@ -154,7 +163,7 @@
                 data-label="" 
                 data-user-function=""
                 data-parent="{{ $name }}" 
-                class="dd-item p-3 cursor-pointer default hidden">{{ $placeholder }}
+                class="dd-item p-4 cursor-pointer default hidden">{{ $placeholder }}
                 @if($required == 'true') &nbsp;<span class="text-red-300">*</span>@endif</div>
             @for ($x=0; $x < count($data); $x++)
                 @php
@@ -166,16 +175,20 @@
                     if($url !== '' && ( Str::contains($url, 'http://') || Str::contains($url, 'https://')) && !Str::contains($url, request()->getHost()) ){
                         $url_target = 'blank';
                     }
+                    $value = $data[$x]->$value_key;
                 @endphp
                 <div 
                     {{ $attributes->merge(['class' => "dd-item p-3 cursor-pointer hover:bg-gray-100 flex items-center dark:text-white dark:border-slate-700 dark:bg-slate-600 dark:hover:bg-slate-700 dark:text-gray-300"]) }}
                     data-href="{{$url}}"
                     data-href-target="{{$url_target}}"
-                    data-value="{{ $data[$x]->$value_key }}" 
-                    data-selected-value="{{ $selected_value }}"
-                    data-label="{{ $data[$x]->$label_key }}" 
-                    data-parent="{{ $name }}" 
-                    data-user-function="{{ $onselect }}">
+                    data-value="{{ $value }}"
+                    @if($selected_value == $value)
+                        data-selected="true"
+                    @else
+                        data-user-function="{{ $onselect }}"
+                    @endif
+                    data-label="{{ $data[$x]->$label_key }}"
+                    data-parent="{{ $name }}">
                     @if ($flag_key != '' && $image_key == '')<i class="{{ $data[$x]->{$flag_key} }} flag"></i>@endif
                     @if ($image_key != '')<x-bladewind::avatar size="tiny" css="!mr-2" image="{{ $data[$x]->{$image_key} }}" />@endif
                     <div>{!! $data[$x]->$label_key !!}</div>
