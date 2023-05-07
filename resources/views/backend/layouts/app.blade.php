@@ -8,10 +8,11 @@
     @vite(['resources/css/backend/app.css', 'resources/js/backend/app.js'])
     @livewireStyles
 </head>
-<body class="overflow-x-hidden antialiased @env('local') debug-screens @endenv"
-      x-data="{currentTheme: localStorage.getItem('theme') || 'system'}"
-      x-init="$watch('currentTheme', val => localStorage.setItem('theme', val))"
+<body class="antialiased @env('local') debug-screens @endenv"
+      x-data="{currentTheme: localStorage.getItem('theme') || 'light'}"
+      x-init="$watch('currentTheme', val => localStorage.setItem('theme', val)); currentScreenWidth = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;"
       :class="{'dark': currentTheme === 'dark' || (currentTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
+      x-cloak
 >
 <div id="app">
     @include('includes.partials.read-only')
