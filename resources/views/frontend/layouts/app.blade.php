@@ -46,7 +46,7 @@
 
     <!-- Site Styling -->
     @stack('before-styles')
-    <link rel="stylesheet" href="{{ mix('css/frontend.css') }}"/>
+    @vite(['resources/css/frontend/app.css', 'resources/js/frontend/app.js'])
     @stack('after-styles')
     <!-- /Site Styling -->
 </head>
@@ -73,9 +73,6 @@
     @include('frontend.layouts.includes.footer')
 </div>
 @stack('before-scripts')
-<script src="{{ mix('js/manifest.js') }}"></script>
-<script src="{{ mix('js/vendor.js') }}"></script>
-<script src="{{ mix('js/frontend.js') }}"></script>
 @stack('after-scripts')
 </body>
 </html>

@@ -1,9 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /*Flag Icon CSS*/
-@import '~flag-icon-css/css/flag-icons.css';
+/*@import '~flag-icon-css/css/flag-icons.css';*/
 
 
 @layer components {

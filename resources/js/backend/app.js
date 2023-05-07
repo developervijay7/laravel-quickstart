@@ -1,3 +1,3 @@
-require('../bootstrap');
-require('../plugins');
-require('../share');
+import('../bootstrap');
+import('../plugins');
+import('../share');

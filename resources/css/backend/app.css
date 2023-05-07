@@ -1,4 +1,9 @@
 @import "../bootstrap.css";
+@config "../../../tailwind-backend.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     background-color: #262626;
 }
