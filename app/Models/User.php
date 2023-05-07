@@ -138,4 +138,11 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return UserFactory::new();
     }
+
+    public function scopeSearch($query, $searchVal)
+    {
+        return $query->where('first_name', 'like', '%' . $searchVal . '%')
+            ->orWhere('last_name', 'like', '%' . $searchVal . '%')
+            ->orWhere('email', 'like', '%' . $searchVal . '%');
+    }
 }
