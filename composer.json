@@ -31,7 +31,9 @@
         "ramsey/uuid": "^4.2",
         "spatie/laravel-activitylog": "^4.4",
         "spatie/laravel-permission": "^5.5",
-        "tabuna/breadcrumbs": "^4.0"
+        "tabuna/breadcrumbs": "^4.0",
+        "maatwebsite/excel": "^3.1",
+        "barryvdh/laravel-dompdf": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
