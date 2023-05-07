@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
-    public function dashboard()
+    public function index()
     {
-        return view('backend.index');
+        return view('backend.index')->withFlashError('My name is Vijay Goswami');
     }
 }
