@@ -40,7 +40,7 @@ return [
      |  Make your own theme by adding a folder to the views directory and specifying it here.
      */
 
-    'theme' => 'bootstrap-4',
+    'theme' => 'adminator',
 
     /* -----------------------------------------------------------------
      |  Route settings
