@@ -10,7 +10,6 @@ use App\Events\Auth\UserStatusChanged;
 use App\Events\Auth\UserUpdated;
 use App\Exceptions\GeneralException;
 use App\Models\User;
-use App\Services\BaseService;
 use Exception;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -278,7 +277,7 @@ class UserService extends BaseService
             throw new GeneralException(__('You can not do that to yourself.'));
         }
 
-        if ($status === 0 && $user->isMasterAdmin()) {
+        if ($status === 0 && $user->isMaster()) {
             throw new GeneralException(__('You can not deactivate the administrator account.'));
         }
 

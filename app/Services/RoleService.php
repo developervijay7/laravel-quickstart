@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Services\Auth;
+namespace App\Services;
 
 use App\Events\Role\RoleCreated;
 use App\Events\Role\RoleDeleted;
 use App\Events\Role\RoleUpdated;
 use App\Exceptions\GeneralException;
 use App\Models\Role;
-use App\Services\BaseService;
 use Exception;
 use Illuminate\Support\Facades\DB;
 use Throwable;
