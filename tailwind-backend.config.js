@@ -8,12 +8,12 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                purple: colors.red,
+                primary: '#00a0e3',
+                secondary: '#ef7f1a',
+                alternate: '#DDDDDD',
+                accent: '#e31e24',
             },
         },
-        container: {
-            center: true,
-        }
     },
     plugins: [
         require('tailwindcss-debug-screens'),
