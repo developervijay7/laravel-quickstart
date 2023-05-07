@@ -1,6 +1,5 @@
 /*Flag Icon CSS*/
-/*@import '~flag-icon-css/css/flag-icons.css';*/
-
+@import 'flag-icon-css/css/flag-icons.css';
 
 @layer components {
     nav ul li a {
