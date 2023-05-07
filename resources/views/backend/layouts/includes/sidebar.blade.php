@@ -1,9 +1,7 @@
 <nav id="side-nav" class="md:w-72 md:block dark:text-white" x-data="{ showMenu: currentScreenWidth >= 768 ? true : false}">
     <div class="flex items-center justify-between">
         <div id="logo" class="pb-2 pr-5">
-            <a href="{{ route('admin.dashboard') }}">
-                <img src="{{ asset('images/logo-light.svg') }}" alt="{{ appName() }}">
-            </a>
+            @include('includes.partials.logo')
         </div>
         <div class="md:hidden">
             <a href="#" @click.prevent="showMenu = !showMenu">
