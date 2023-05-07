@@ -51,11 +51,14 @@ return [
         'enabled' => true,
 
         'attributes' => [
-            'prefix' => 'log-viewer',
+            'prefix' => 'admin/log-viewer',
 
-            'middleware' => env('ARCANEDEV_LOGVIEWER_MIDDLEWARE') ? explode(',', env('ARCANEDEV_LOGVIEWER_MIDDLEWARE')) : null,
+            'middleware' => ['web', 'admin', 'is_super_admin'],
         ],
     ],
+
+
+
 
     /* -----------------------------------------------------------------
      |  Log entries per page

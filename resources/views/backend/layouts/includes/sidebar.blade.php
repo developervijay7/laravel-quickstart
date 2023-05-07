@@ -46,30 +46,6 @@
                 </ul>
             </div>
         </li>
-        @if (
-            $logged_in_user->hasAllAccess() ||
-            (
-                $logged_in_user->can('admin.access.manage.course') ||
-                $logged_in_user->can('admin.access.manage.teacher') ||
-                $logged_in_user->can('admin.access.manage.faculty') ||
-                $logged_in_user->can('admin.access.manage.department') ||
-                $logged_in_user->can('admin.access.manage.cell') ||
-                $logged_in_user->can('admin.access.manage.center') ||
-                $logged_in_user->can('admin.access.manage.committee') ||
-                $logged_in_user->can('admin.access.manage.staff')
-            )
-        )
-            <li class="relative my-2 md:my-5" x-data="{showSubMenu: {{ activeClass(Route::is('admin.administration.*'), 'true', 'false') }}}">
-                <a href="#" class="{{ activeClass(Route::is('admin.administration.*'), 'bg-gray-200 dark:bg-gray-800 menu-vertical', 'hover:bg-purple-600 dark:hover:bg-gray-800') }} flex py-3 md:px-5 items-center space-x-1 relative md:rounded-l-3xl hover:bg-purple-600 dark:hover:bg-gray-800" @click.prevent="showSubMenu = !showSubMenu" :hideText="false">
-                    <x-icons.adjustments />
-                    <span class="pr-20">Administration</span>
-                    <svg class="h-4 w-4 transform transition absolute right-3 md:right-10" fill="none" viewBox="0 0 24 24" stroke="currentColor":class="showSubMenu ? '-rotate-180' : ''" >
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </a>
-            </li>
-        @endif
-
         <div class="md:pr-5">
             <hr>
         </div>
