@@ -25,7 +25,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="{{ Vite::asset('resources/images/favicons/favicon-96x96.png') }}">
 <link rel="icon" type="image/png" sizes="194x194" href="{{ Vite::asset('resources/images/favicons/favicon-194x194.png') }}">
 <link rel="mask-icon" href="{{ Vite::asset('resources/images/favicons/safari-pinned-tab.svg') }}" color="#5bbad5">
-<link rel="manifest" href="{{ Vite::asset('resources/images/favicons/manifest.json') }}">
+<link rel="manifest" href="{{ Vite::asset('resources/images/favicons/site.webmanifest') }}">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="{{ Vite::asset('resources/images/favicons/mstile-144x144.png') }}">
 <meta name="theme-color" content="#ffffff">
