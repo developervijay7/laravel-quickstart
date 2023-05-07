@@ -11,7 +11,7 @@
                     <a href="https://github.com/developervijay7/laravel-quickstart" class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100" target="_blank">View on Github</a>
                     <a href="https://github.com/developervijay7/laravel-quickstart/archive/refs/heads/main.zip" class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100" download>Download Now</a>
                     <a href="https://patreon.com/hexpit" class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100" target="_blank">Sponsor</a>
-                    <a href="http://docs.laravel-quickstart.co" class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100" target="_blank">Documentation</a>
+                    <a href="http://docs.laravel-quickstart.com" class="bg-red-400 px-5 py-2 rounded shadow opacity-80 hover:opacity-100" target="_blank">Documentation</a>
                 </div>
             </div>
         </div>
