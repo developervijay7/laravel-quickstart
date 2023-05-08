@@ -46,19 +46,19 @@ class Handler extends ExceptionHandler
         if ($exception instanceof UnauthorizedException) {
             return redirect()
                 ->route(homeRoute())
-                ->withFlashDanger(__('You do not have access to do that.'));
+                ->withFlashError(__('You do not have access to do that.'));
         }
 
         if ($exception instanceof AuthorizationException) {
             return redirect()
                 ->back()
-                ->withFlashDanger($exception->getMessage() ?? __('You do not have access to do that.'));
+                ->withFlashError($exception->getMessage() ?? __('You do not have access to do that.'));
         }
 
         if ($exception instanceof ModelNotFoundException) {
             return redirect()
                 ->route(homeRoute())
-                ->withFlashDanger(__('The requested resource was not found.'));
+                ->withFlashError(__('The requested resource was not found.'));
         }
 
         return parent::render($request, $exception);

@@ -49,6 +49,6 @@ class GeneralException extends Exception
         return redirect()
             ->back()
             ->withInput()
-            ->withFlashDanger($this->message);
+            ->withFlashError($this->message);
     }
 }
