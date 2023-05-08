@@ -4,6 +4,7 @@ namespace App\Exports;
 
 use App\Models\User;
 use Illuminate\Contracts\Support\Responsable;
+use Illuminate\Support\Facades\Vite;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
@@ -97,7 +98,7 @@ class UsersExport implements
         $drawing = new Drawing();
         $drawing->setName(config(appName()) .' Logo');
         $drawing->setDescription(config(appName()) .' Logo');
-        $drawing->setPath('images/opengraph/og-image.png');
+        $drawing->setPath(Vite::asset('resources/images/opengraph/og-image.png'));
         $drawing->setHeight(90);
         $drawing->setCoordinates('B3');
 
@@ -109,6 +110,6 @@ class UsersExport implements
      */
     public function startCell(): string
     {
-        return 'A5';
+        return 'A20';
     }
 }
