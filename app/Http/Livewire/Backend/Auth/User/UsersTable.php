@@ -65,14 +65,12 @@ class UsersTable extends Component
     public function toExcel()
     {
         $this->dispatchBrowserEvent('toast-alert', ['type' => 'info',  'message' => 'Going Well!']);
-
         return (new UsersExport($this->export))->store(public_path('users.xlsx'));
     }
 
     public function toHtml()
     {
         $this->dispatchBrowserEvent('toast-alert', ['type' => 'info',  'message' => 'Going Well!']);
-
         return (new UsersExport($this->export))->store(public_path('users.html'));
     }
 }

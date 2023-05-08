@@ -98,7 +98,7 @@ class UsersExport implements
         $drawing = new Drawing();
         $drawing->setName(config(appName()) .' Logo');
         $drawing->setDescription(config(appName()) .' Logo');
-        $drawing->setPath(Vite::asset('resources/images/opengraph/og-image.png'));
+        $drawing->setPath(resource_path('images/opengraph/og-image.png'));
         $drawing->setHeight(90);
         $drawing->setCoordinates('B3');
 
