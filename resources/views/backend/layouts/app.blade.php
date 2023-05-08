@@ -25,7 +25,6 @@
 <div id="app">
     @include('includes.partials.read-only')
     @include('includes.partials.logged-in-as')
-    @include('includes.partials.messages')
     <x-bladewind.notification position="top right" />
     <div class="bg-purple-500 dark:bg-gray-900 min-h-screen px-3 md:p-5">
         <div class="md:flex">
@@ -34,6 +33,7 @@
                 @include('backend.layouts.includes.header')
                 <div class="grid min-h-screen rounded-b-3xl content-start">
                     <div class="mt-2">
+                        @include('includes.partials.messages')
                     </div>
                     @yield('content')
                 </div>
