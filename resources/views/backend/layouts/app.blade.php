@@ -9,9 +9,12 @@
     <meta name="robots" content="nofollow"/>
     @include('includes.partials.favicons')
     @stack('before-styles')
-    @vite(['resources/css/backend/app.css', 'resources/js/backend/app.js'])
-    @stack('after-styles')
+    <link rel="stylesheet" href="{{ asset('bladewind/css/animate.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bladewind/css/bladewind-ui.min.css') }}" />
     @livewireStyles
+    @vite(['resources/css/backend/app.css', 'resources/js/backend/app.js'])
+    <script src="{{ asset('bladewind/js/helpers.js') }}"></script>
+    @stack('after-styles')
 </head>
 <body class="antialiased @env('local') debug-screens @endenv"
       x-data="{currentTheme: localStorage.getItem('theme') || 'light'}"
@@ -22,6 +25,7 @@
 <div id="app">
     @include('includes.partials.read-only')
     @include('includes.partials.logged-in-as')
+    @include('includes.partials.messages')
     <x-bladewind.notification position="top right" />
     <div class="bg-purple-500 dark:bg-gray-900 min-h-screen px-3 md:p-5">
         <div class="md:flex">
@@ -30,7 +34,6 @@
                 @include('backend.layouts.includes.header')
                 <div class="grid min-h-screen rounded-b-3xl content-start">
                     <div class="mt-2">
-                        @include('includes.partials.messages')
                     </div>
                     @yield('content')
                 </div>
@@ -39,9 +42,9 @@
         </div>
     </div>
 </div>
+@livewireScripts
 @stack('before-scripts')
 @stack('after-scripts')
-@livewireScripts
 @include('includes.partials.sweet-alert')
 @include('includes.partials.confirm-modals')
 </body>
