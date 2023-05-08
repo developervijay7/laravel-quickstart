@@ -21,6 +21,7 @@
   "dependencies": {
     "alpinejs": "^3.9.1",
     "flag-icon-css": "^4.1.7",
-    "sweetalert2": "^11.4.8"
+    "sweetalert2": "^11.4.8",
+    "toastr": "^2.1.4"
   }
 }
