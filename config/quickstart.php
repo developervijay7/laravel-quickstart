@@ -60,7 +60,7 @@ return [
             /*
              * Whether the login and register route and view are active
              */
-            'login' => env('ENABLE_LOGIN', false),
+            'login' => env('ENABLE_LOGIN', true),
             'registration' => env('ENABLE_REGISTRATION', false),
 
             /*
