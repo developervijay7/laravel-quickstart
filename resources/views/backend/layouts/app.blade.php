@@ -11,7 +11,6 @@
     @stack('before-styles')
     <link rel="stylesheet" href="{{ asset('bladewind/css/animate.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('bladewind/css/bladewind-ui.min.css') }}" />
-    @livewireStyles
     @vite(['resources/css/backend/app.css', 'resources/js/backend/app.js'])
     <script src="{{ asset('bladewind/js/helpers.js') }}"></script>
     @stack('after-styles')
@@ -42,7 +41,6 @@
         </div>
     </div>
 </div>
-@livewireScripts
 @stack('before-scripts')
 @stack('after-scripts')
 @include('includes.partials.sweet-alert')
