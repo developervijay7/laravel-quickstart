@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', appName()) Administration</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}"/>
+    <meta name="robots" content="nofollow"/>
+    @include('includes.partials.favicons')
+    @stack('before-styles')
     @vite(['resources/css/backend/app.css', 'resources/js/backend/app.js'])
+    @stack('after-styles')
     @livewireStyles
 </head>
 <body class="antialiased @env('local') debug-screens @endenv"
@@ -35,8 +40,8 @@
     </div>
 </div>
 @stack('before-scripts')
-@livewireScripts
 @stack('after-scripts')
+@livewireScripts
 @include('includes.partials.sweet-alert')
 @include('includes.partials.confirm-modals')
 </body>

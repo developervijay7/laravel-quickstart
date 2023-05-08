@@ -145,4 +145,14 @@ class User extends Authenticatable implements MustVerifyEmail
             ->orWhere('last_name', 'like', '%' . $searchVal . '%')
             ->orWhere('email', 'like', '%' . $searchVal . '%');
     }
+
+    /**
+     * Delete relationships on deleting model
+     * @return bool|null
+     */
+    public function delete(): ?bool
+    {
+        //$this->student()->delete();
+        return parent::delete();
+    }
 }
