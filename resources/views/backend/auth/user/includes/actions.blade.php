@@ -29,7 +29,7 @@
             <x-utils.delete-button :action="route('admin.auth.user.destroy', $user)" title="Delete User" class="rounded p-1 text-sm" />
         @endif
 
-{{--         The logged in user is the master admin, and the row is the master admin. Only the master admin can do anything to themselves--}}
+        {{-- The logged in user is the master admin, and the row is the master admin. Only the master admin can do anything to themselves --}}
         @if ($user->isMaster() && $logged_in_user->isMaster())
             <x-utils.link :href="route('admin.auth.user.change-password', $user)" title="Change Password for User" class="rounded p-1 text-sm bg-pink-500" :text="__('Change Password')" permission="admin.access.user.change-password">
                 <x-slot name="icon">
@@ -37,10 +37,7 @@
                 </x-slot>
             </x-utils.link>
         @elseif (
-            !$user->isMaster() && // This is not the master admin
-            $user->isActive() && // The account is active
-            $user->id !== $logged_in_user->id && // It's not the person logged in
-            // Any they have at lease one of the abilities in this dropdown
+            !$user->isMaster() && $user->isActive() && $user->id !== $logged_in_user->id &&
             (
                 $logged_in_user->can('admin.access.user.change-password') ||
                 $logged_in_user->can('admin.access.user.clear-session') ||
@@ -48,7 +45,6 @@
                 $logged_in_user->can('admin.access.user.deactivate')
             )
         )
-
             <div x-data="{showMenu: false}" class="relative">
                 <a href="#" @click.prevent="showMenu = !showMenu" @click.away="showMenu = false">
                     <x-icons.chevron-down />
