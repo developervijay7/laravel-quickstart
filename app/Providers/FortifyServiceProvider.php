@@ -41,10 +41,18 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
         Fortify::loginView(function () {
-            return view('auth.login');
+            if (config('quickstart.access.user.login')) {
+                return view('auth.login');
+            } else {
+                return (abort(404));
+            }
         });
         Fortify::registerView(function () {
-            return view('auth.register');
+            if (config('quickstart.access.user.login')) {
+                return view('auth.register');
+            } else {
+                return (abort(404));
+            }
         });
         Fortify::requestPasswordResetLinkView(function () {
             return view('auth.forgot-password');

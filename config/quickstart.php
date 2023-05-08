@@ -58,8 +58,9 @@ return [
             'permanently_delete' => false,
 
             /*
-             * Whether the register route and view are active
+             * Whether the login and register route and view are active
              */
+            'login' => env('ENABLE_LOGIN', false),
             'registration' => env('ENABLE_REGISTRATION', false),
 
             /*
