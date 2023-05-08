@@ -1,5 +1,6 @@
 /*Flag Icon CSS*/
 @import 'flag-icon-css/css/flag-icons.css';
+@import 'sweetalert2/dist/sweetalert2.css';
 
 /*AlpineJS helper to hide floating elements during page load*/
 [x-cloak] {
