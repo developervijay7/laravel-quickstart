@@ -21,6 +21,6 @@ class AdminCheck
             return $next($request);
         }
 
-        return redirect()->back()->withFlashDanger(__('Sorry! You dont have access to perform this operation. Only an administrator can perform this operation.'))->withSweetError(__('Sorry! You dont have access to perform this operation. Only an administrator can perform this operation.'));
+        return redirect()->back()->withFlashError(__('Sorry! You dont have access to perform this operation. Only an administrator can perform this operation.'))->withSweetError(__('Sorry! You dont have access to perform this operation. Only an administrator can perform this operation.'));
     }
 }
