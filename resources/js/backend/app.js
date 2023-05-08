@@ -4,6 +4,6 @@ import('../share');
 
 //Processing Static Assets With Vite
 import.meta.glob([
-    '../..images/**',
+    '../../images/**',
     '../../fonts/**',
 ]);
