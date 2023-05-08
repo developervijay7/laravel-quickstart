@@ -27,10 +27,10 @@ class TwoFactorAuthentication
 
         // Page requires 2fa, but user is not enabled or page does not require 2fa, but it is enabled
         if (
-            ($status === 'enabled' && ! $request->user()->hasTwoFactorEnabled()) ||
-            ($status === 'disabled' && $request->user()->hasTwoFactorEnabled())
+            ($status === 'enabled' && ! $request->user()->hasEnabledTwoFactorAuthentication()) ||
+            ($status === 'disabled' && $request->user()->hasEnabledTwoFactorAuthentication())
         ) {
-            return redirect()->route('frontend.auth.account.2fa.create')->withFlashError(__('Two-factor Authentication must be :status to view this page.', ['status' => $status]));
+            return redirect()->route('frontend.user.two_factor.index')->withFlashError(__('Two-factor Authentication must be :status to view this page.', ['status' => $status]));
         }
 
 
