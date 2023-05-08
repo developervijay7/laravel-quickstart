@@ -61,6 +61,12 @@
     <div class="container">
         @include('includes.partials.read-only')
     </div>
+    <div class="container">
+        @include('includes.partials.logged-in-as')
+    </div>
+    <div class="container">
+        @include('includes.partials.messages')
+    </div>
     @include('frontend.layouts.includes.header')
     @if (Breadcrumbs::has() && !Route::is('frontend.index'))
     <div class="container">
