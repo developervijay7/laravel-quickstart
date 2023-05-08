@@ -54,3 +54,10 @@
         </x-slot>
     </x-backend.card>
 @endsection
+
+@push('before-scripts')
+    @livewireScripts
+@endpush
+@push('after-styles')
+    @livewireStyles
+@endpush
