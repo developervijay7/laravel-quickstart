@@ -26,43 +26,43 @@ class LoginTest extends TestCase
     }
 
     /** @test */
-//    public function a_user_can_login_with_email_and_password()
-//    {
-//        Event::fake();
-//
-//        $user = User::factory()->create([
-//            'email' => 'developervijay27@example.com',
-//            'password' => 'password',
-//        ]);
-//
-//        $this->post('/login', [
-//            'email' => 'developervijay27@example.com',
-//            'password' => 'password',
-//        ])->assertRedirect(route(homeRoute()));
-//
-//        Event::assertDispatched(function (UserLoggedIn $event) use ($user) {
-//            return $event->user->id === $user->id;
-//        });
-//
-//        $this->assertAuthenticatedAs($user);
-//    }
+    public function a_user_can_login_with_email_and_password()
+    {
+        Event::fake();
+
+        $user = User::factory()->create([
+            'email' => 'master@example.com',
+            'password' => 'Master@123',
+        ]);
+
+        $this->post('/login', [
+            'email' => 'master@example.com',
+            'password' => 'Master@123',
+        ])->assertRedirect(route(homeRoute()));
+
+        Event::assertDispatched(function (UserLoggedIn $event) use ($user) {
+            return $event->user->id === $user->id;
+        });
+
+        $this->assertAuthenticatedAs($user);
+    }
 
     /** @test */
-//    public function inactive_users_cant_login()
-//    {
-//        User::factory()->inactive()->create([
-//            'email' => 'developervijay27@example.com',
-//            'password' => 'password',
-//        ]);
-//
-//        $response = $this->post('/login', [
-//            'email' => 'developervijay27@example.com',
-//            'password' => 'password',
-//        ]);
-//
-//        $response->assertSessionHas('flash_danger', __('Your account has been deactivated.'));
-//        $this->assertFalse($this->isAuthenticated());
-//    }
+    public function inactive_users_cant_login()
+    {
+        User::factory()->inactive()->create([
+            'email' => 'master@example.com',
+            'password' => 'Master@123',
+        ]);
+
+        $response = $this->post('/login', [
+            'email' => 'master@example.com',
+            'password' => 'Master@123',
+        ]);
+
+        $response->assertSessionHas('flash_error', __('Your account has been deactivated.'));
+        $this->assertFalse($this->isAuthenticated());
+    }
 
     /** @test */
     public function cant_login_with_invalid_credentials()
@@ -75,31 +75,31 @@ class LoginTest extends TestCase
             'password' => '9s8gy8s9diguh4iev',
         ]);
 
-        $response->assertSessionHas('flash_danger', __('These credentials do not match our records.'));
+        $response->assertSessionHas('flash_error', __('These credentials do not match our records.'));
         $this->assertFalse($this->isAuthenticated());
     }
 
     /** @test */
-//    public function a_users_ip_and_login_time_is_updated_on_login()
-//    {
-//        $user = User::factory()->create([
-//            'email' => 'developervijay27@example.com',
-//            'password' => 'password',
-//            'last_login_at' => null,
-//            'last_login_ip' => null,
-//        ]);
-//
-//        $this->post('/login', [
-//            'email' => 'developervijay27@example.com',
-//            'password' => 'password',
-//        ]);
-//
-//        $this->assertDatabaseMissing('users', [
-//            'id' => $user->id,
-//            'last_login_at' => null,
-//            'last_login_ip' => null,
-//        ]);
-//    }
+    public function a_users_ip_and_login_time_is_updated_on_login()
+    {
+        $user = User::factory()->create([
+            'email' => 'master@example.com',
+            'password' => 'Master@123',
+            'last_login_at' => null,
+            'last_login_ip' => null,
+        ]);
+
+        $this->post('/login', [
+            'email' => 'master@example.com',
+            'password' => 'Master@123',
+        ]);
+
+        $this->assertDatabaseMissing('users', [
+            'id' => $user->id,
+            'last_login_at' => null,
+            'last_login_ip' => null,
+        ]);
+    }
 
     /** @test */
     public function a_user_can_log_out()
