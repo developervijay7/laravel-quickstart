@@ -1,5 +1,5 @@
 <?php
-
+//remove it as we are no longer using laravel-lockout
 return [
 
     /*
