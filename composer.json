@@ -22,7 +22,7 @@
         "jamesmills/laravel-timezone": "^1.11",
         "lab404/laravel-impersonate": "^1.7.4",
         "laravel/fortify": "^1.17",
-        "laravel/framework": "^10.0",
+        "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.8",
