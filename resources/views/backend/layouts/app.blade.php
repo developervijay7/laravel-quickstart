@@ -9,10 +9,7 @@
     <meta name="robots" content="nofollow"/>
     @include('includes.partials.favicons')
     @stack('before-styles')
-    <link rel="stylesheet" href="{{ asset('bladewind/css/animate.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('bladewind/css/bladewind-ui.min.css') }}" />
     @vite(['resources/css/backend/app.css', 'resources/js/backend/app.js'])
-    <script src="{{ asset('bladewind/js/helpers.js') }}"></script>
     @stack('after-styles')
 </head>
 <body class="antialiased @env('local') debug-screens @endenv"
@@ -24,7 +21,6 @@
 <div id="app">
     @include('includes.partials.read-only')
     @include('includes.partials.logged-in-as')
-    <x-bladewind.notification position="top right" />
     <div class="bg-purple-500 dark:bg-gray-900 min-h-screen px-3 md:p-5">
         <div class="md:flex">
             @include('backend.layouts.includes.sidebar')
