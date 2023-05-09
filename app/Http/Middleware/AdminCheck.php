@@ -20,7 +20,6 @@ class AdminCheck
         if ($request->user() && $request->user()->type == User::TYPE_ADMIN) {
             return $next($request);
         }
-
         return redirect()->route('frontend.user.dashboard')->withFlashError(__('Sorry! You dont have access to perform this operation. Only an administrator can perform this operation.'))->withSweetError(__('Sorry! You dont have access to perform this operation. Only an administrator can perform this operation.'));
     }
 }
