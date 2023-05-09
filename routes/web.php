@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\LocaleController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 // Switch between the included languages
 Route::get('/lang/{lang}', [LocaleController::class, 'change'])->name('locale.change');
 
+//Redirect user after login
+Route::get('redirects', [HomeController::class, 'redirects'])
+    ->name('redirects');
 
 /*
  * Frontend Routes
