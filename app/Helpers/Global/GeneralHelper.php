@@ -28,25 +28,3 @@ if (! function_exists('carbon')) {
         return new Carbon($time);
     }
 }
-
-if (! function_exists('homeRoute')) {
-    /**
-     * Return the route to the "home" page depending on authentication/authorization status.
-     *
-     * @return string
-     */
-    function homeRoute()
-    {
-//        if (auth()->check()) {
-//            if (auth()->user()->isAdmin()) {
-//                return 'admin.dashboard';
-//            }
-//
-//            if (auth()->user()->isUser()) {
-//                return 'frontend.index';
-//            }
-//        }
-
-        return 'frontend.index';
-    }
-}
