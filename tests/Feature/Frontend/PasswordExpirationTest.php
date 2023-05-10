@@ -10,6 +10,12 @@ use Tests\TestCase;
  */
 class PasswordExpirationTest extends TestCase
 {
+    //delete this important (unnecessary here)
+    /** @test */
+    public function the_farzi_test()
+    {
+        $this->get('/login')->assertStatus(200);
+    }
 //    /** @test */
 //    public function a_user_can_access_the_password_expired()
 //    {
@@ -79,11 +85,4 @@ class PasswordExpirationTest extends TestCase
 //
 //        $this->get('/account')->assertOk();
 //    }
-
-
-    //delete this important (unnecessary here)
-    public function farzi_test()
-    {
-        $this->get('/')->assertOk();
-    }
 }
