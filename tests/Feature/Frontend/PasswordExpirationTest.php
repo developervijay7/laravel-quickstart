@@ -82,7 +82,7 @@ class PasswordExpirationTest extends TestCase
 
 
     //delete this important (unnecessary here)
-    public function the_home_page_exists()
+    public function farzi_test()
     {
         $this->get('/')->assertOk();
     }
