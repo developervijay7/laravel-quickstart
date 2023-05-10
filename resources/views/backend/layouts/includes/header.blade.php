@@ -8,21 +8,8 @@
             <meta itemprop="url" content="{{ route('frontend.index') }}"/>
             <x-forms.get class="flex items-center gap-x-2" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" role="search">
                 <meta itemprop="target" content="?q={q}"/>
-                <x-bladewind.input
-                    type="search"
-                    name="q"
-                    placeholder="Search"
-                    value="{{ request()->get('q') ?? '' }}"
-                    minlength="1"
-                    itemprop="query-input"
-                    aria-label="Search"
-                    required="true" />
-                <x-bladewind.button
-                    value="Search"
-                    color="blue"
-                    size="tiny"
-                >Search
-                </x-bladewind.button>
+                <x-forms.inputs.text id="search" label="{{ __('labels.search') }}" name="search" placeholder="{{ __('labels.search') }}" value="{{ request()->get('q') ?? '' }}" class="w-full rounded-lg"  itemprop="query-input" aria-label="Search"/>
+                <x-forms.inputs.submit color="green" />
             </x-forms.get>
         </div>
         <div class="relative">
@@ -44,10 +31,11 @@
         <div class="flex-shrink-0">
             <div class="relative" x-data="{ showUserMenu: false }">
                 <a href="#" @click="showUserMenu = !showUserMenu" @click.away="showUserMenu = false">
-                    <x-bladewind.avatar
-                        image="{{ asset($logged_in_user->dp ?? $logged_in_user->avatar) }}"
-                        alt="{{ $logged_in_user->complete_name }}"
-                    />
+                    <button class="focus:ring-4 focus:ring-blue-300 rounded-full"
+                            @click="showUserMenu = !showUserMenu">
+                        <img src="{{ $logged_in_user->avatar }}"
+                             alt="{{ $logged_in_user->full_name }}" class="rounded-full h-14 w-14">
+                    </button>
                 </a>
                 <nav x-show="showUserMenu" class="absolute right-0 mt-2 w-52 bg-primary dark:bg-gray-900 rounded-md overflow-hidden shadow-xl z-20 text-black dark:text-white p-2" aria-label="User Navigation">
                     <ul>
