@@ -40,5 +40,6 @@
 @stack('before-scripts')
 @stack('after-scripts')
 @include('includes.partials.sweet-alert')
+@include('includes.partials.toasts')
 </body>
 </html>
