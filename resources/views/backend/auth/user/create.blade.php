@@ -31,36 +31,34 @@
                         </div>
 
                         <div class="py-2">
-                            <x-bladewind.input type="text" placeholder="{{ __('First Name') }}" name="first_name" value="{{ old('first_name') }}" required maxlength="100" />
+                            <x-forms.inputs.text id="first-name" label="{{ __('First Name') }}" name="first_name" placeholder="{{ __('First Name') }}" value="{{ old('first_name') }}" class="w-full rounded-lg"  required maxlength="100" />
                         </div>
 
                         <div class="py-2">
                             <label for="last_name" class="@error('last_name') text-red-600 dark:text-red-600 @else text-gray-900 dark:text-gray-100 @enderror">@lang('Last Name')</label>
-                            <x-bladewind.input type="text" placeholder="{{ __('Last Name') }}" name="last_name" value="{{ old('last_name') }}" maxlength="100" />
+                            <x-forms.inputs.text id="last-name" label="{{ __('Last Name') }}" name="last_name" placeholder="{{ __('Last Name') }}" value="{{ old('last_name') }}" class="w-full rounded-lg" maxlength="100" />
                         </div>
 
                         <div class="py-2">
                             <label for="email" class="@error('email') text-red-600 dark:text-red-600 @else text-gray-900 dark:text-gray-100 @enderror">@lang('E-mail Address*')</label>
-                            <x-bladewind.input type="email" placeholder="{{ __('E-mail Address') }}" name="email" value="{{ old('email') }}" maxlength="255" required />
+                            <x-forms.inputs.email id="email" label="{{ __('Email Address') }}" name="email" placeholder="{{ __('Email Address') }}" value="{{ old('email') }}" class="w-full rounded-lg" maxlength="255" required />
                         </div>
 
                         <div class="py-2">
                             <label for="mobile" class="@error('mobile') text-red-600 dark:text-red-600 @else text-gray-900 dark:text-gray-100 @enderror">@lang('Mobile Number')</label>
-                            <x-bladewind.input type="tel" placeholder="{{ __('Mobile Number') }}" name="mobile" value="{{ old('mobile') }}" minlength="10" maxlength="10" />
+                            <x-forms.inputs.tel id="mobile" label="{{ __('Mobile Number') }}" name="mobile" placeholder="{{ __('Mobile Number') }}" value="{{ old('mobile') }}" class="w-full rounded-lg" minlength="10" maxlength="10" />
                         </div>
 
                         <div class="py-2">
-                            <label for="password" class="@error('password') text-red-600 dark:text-red-600 @else text-gray-900 dark:text-gray-100 @enderror">@lang('Password*')</label>
-                            <x-bladewind.input type="password" name="password" autocomplete="new-password" placeholder="{{ __('Password') }}" required />
+                            <x-forms.inputs.password id="password" label="{{ __('Password') }}" name="password" placeholder="{{ __('Password') }}" class="w-full rounded-lg" autocomplete="new-password" required />
                         </div>
 
                         <div class="py-2">
-                            <label for="password_confirmation" class="@error('password_confirmation') text-red-600 dark:text-red-600 @else text-gray-900 dark:text-gray-100 @enderror">@lang('Password Confirmation*')</label>
-                            <x-bladewind.input type="password" name="password_confirmation" autocomplete="new-password" placeholder="{{ __('Password Confirmation') }}" maxlength="100" required />
+                            <x-forms.inputs.password id="password-confirmation" label="{{ __('Password Confirmation') }}" name="password_confirmation" placeholder="{{ __('Password Confirmation') }}" class="w-full rounded-lg" autocomplete="new-password" required />
                         </div>
 
                         <div class="py-2">
-                            <x-bladewind.toggle
+                            <x-forms.inputs.checkbox
                                 name="active"
                                 label="Active?"
                                 alpineVariable="emailVerified"
@@ -71,7 +69,7 @@
 
                         <div x-data="{ emailVerified : false }">
                             <div class="py-2">
-                                <x-bladewind.toggle
+                                <x-forms.inputs.checkbox
                                     name="email_verified"
                                     label="E-mail Verified?"
                                     alpineVariable="emailVerified"
@@ -81,7 +79,7 @@
 
                             <div x-show="!emailVerified">
                                 <div class="py-2">
-                                    <x-bladewind.toggle
+                                    <x-forms.inputs.checkbox
                                         name="send_confirmation_email"
                                         label="Send Confirmation E-mail?"
                                         alpineVariable="emailVerified"
@@ -100,11 +98,7 @@
                 </x-slot>
 
                 <x-slot name="footer">
-                    <x-bladewind.button
-                        can_submit="true"
-                        color="green">
-                        {{ __('Create User') }}
-                    </x-bladewind.button>
+                    <x-forms.inputs.submit color="green">Update User</x-forms.inputs.submit>
                 </x-slot>
             </x-backend.card>
         </x-forms.post>

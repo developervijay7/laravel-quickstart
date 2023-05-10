@@ -22,7 +22,7 @@
 
                 <x-slot name="body">
                     <div x-data="{userType : '{{ $user->type }}'}">
-                        @if ($user->isMaster())
+                        @if (!$user->isMaster())
                             <div class="py-2">
                                 <label for="type" class="@error('type') text-red-600 dark:text-red-600 @else text-gray-900 dark:text-gray-100 @enderror">@lang('Type*')</label>
                                 <select name="type" id="type" x-on:change="userType = $event.target.value" class="rounded w-full appearance-none text-md py-1 px-2 focus:outline-none border-2 border-transparent focus:ring-blue-600 focus:border-blue-600 dark:bg-gray-900 text-purple-900 dark:text-gray-100 placeholder-purple-300 dark:placeholder-gray-600 font-semibold" required autofocus>
