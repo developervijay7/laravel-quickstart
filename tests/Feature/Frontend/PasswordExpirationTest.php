@@ -79,4 +79,11 @@ class PasswordExpirationTest extends TestCase
 //
 //        $this->get('/account')->assertOk();
 //    }
+
+
+    //delete this important (unnecessary here)
+    public function the_home_page_exists()
+    {
+        $this->get('/')->assertOk();
+    }
 }
