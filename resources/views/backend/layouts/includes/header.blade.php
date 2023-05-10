@@ -8,8 +8,8 @@
             <meta itemprop="url" content="{{ route('frontend.index') }}"/>
             <x-forms.get class="flex items-center gap-x-2" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" role="search">
                 <meta itemprop="target" content="?q={q}"/>
-                <x-forms.inputs.text id="search" label="{{ __('labels.search') }}" name="search" placeholder="{{ __('labels.search') }}" value="{{ request()->get('q') ?? '' }}" class="w-full rounded-lg"  itemprop="query-input" aria-label="Search"/>
-                <x-forms.inputs.submit color="green" />
+                <x-forms.inputs.text id="header-search" label="{{ __('labels.search') }}" name="header-search" placeholder="{{ __('labels.search') }}" value="{{ request()->get('q') ?? '' }}" class="w-full rounded-lg"  itemprop="query-input" aria-label="Search"/>
+                <x-forms.inputs.submit color="green">Search</x-forms.inputs.submit>
             </x-forms.get>
         </div>
         <div class="relative">

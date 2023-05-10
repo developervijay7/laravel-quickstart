@@ -3,7 +3,7 @@
         <x-slot name="tableFilters">
             <div class="py-2 col-start-1 col-end-4">
                 <label for="search-users">@lang('Search Users')</label>
-                <x-bladewind.input wire:model.debounce.300ms="search" type="text" class="w-full rounded" placeholder="Search Users" name="search" id="search-users" />
+                <x-forms.inputs.text wire:model.debounce.300ms="search" type="text" class="w-full rounded" label="{{ __('labels.search') }}" placeholder="Search Users" name="search" id="search-users" />
             </div>
             <div class="py-2 text-center">
                 <label for="">Export Users</label>
