@@ -29,14 +29,14 @@ class RegistrationTest extends TestCase
     /** @test */
     public function email_must_be_unique()
     {
-        User::factory()->create(['email' => 'developervijay27@example.com']);
+        User::factory()->create(['email' => 'developervijay7@example.com']);
 
         $response = $this->post('/register', [
             'first_name' => 'Vijay',
             'last_name' => 'Goswami',
-            'email' => 'developervijay27@example.com',
-            'password' => 'password',
-            'password_confirmation' => 'password',
+            'email' => 'developervijay7@example.com',
+            'password' => 'Password@123',
+            'password_confirmation' => 'Password@123',
         ]);
 
         $response->assertSessionHasErrors('email');
@@ -48,8 +48,8 @@ class RegistrationTest extends TestCase
         $response = $this->post('/register', [
             'first_name' => 'Vijay',
             'last_name' => 'Goswami',
-            'email' => 'vijaygoswam27@example.com',
-            'password' => 'password',
+            'email' => 'developervijay7@example.com',
+            'password' => 'Password@123',
         ]);
 
         $response->assertSessionHasErrors('password');
@@ -61,8 +61,8 @@ class RegistrationTest extends TestCase
         $response = $this->post('/register', [
             'first_name' => 'Vijay',
             'last_name' => 'Goswami',
-            'email' => 'developervijay27@example.com',
-            'password' => 'password',
+            'email' => 'developervijay7@example.com',
+            'password' => 'Password@123',
             'password_confirmation' => 'not_the_same',
         ]);
 
@@ -82,19 +82,19 @@ class RegistrationTest extends TestCase
         $this->post('/register', [
             'first_name' => 'Vijay',
             'last_name' => 'Goswami',
-            'email' => 'developervijay27@example.com',
+            'email' => 'developervijay7@example.com',
             'mobile' => '9045533427',
-            'password' => 'OC4Nzu270N!QBVi%U%qX',
-            'password_confirmation' => 'OC4Nzu270N!QBVi%U%qX',
+            'password' => 'Password@123',
+            'password_confirmation' => 'Password@123',
             'terms' => '1',
-        ])->assertRedirect(route(homeRoute()));
+        ])->assertRedirect('/redirects');
 
         $user = resolve(UserService::class)
-            ->where('email', 'developervijay27@example.com')
+            ->where('email', 'developervijay7@example.com')
             ->firstOrFail();
 
         $this->assertSame($user->first_name, 'Vijay');
-        $this->assertTrue(Hash::check('OC4Nzu270N!QBVi%U%qX', $user->password));
+        $this->assertTrue(Hash::check('Password@123', $user->password));
     }
 
     /** @test */
@@ -103,9 +103,9 @@ class RegistrationTest extends TestCase
         $response = $this->post('/register', [
             'first_name' => 'Vijay',
             'last_name' => 'Goswami',
-            'email' => 'developervijay27@example.com',
-            'password' => 'OC4Nzu270N!QBVi%U%qX',
-            'password_confirmation' => 'OC4Nzu270N!QBVi%U%qX',
+            'email' => 'developervijay7@example.com',
+            'password' => 'Password@123',
+            'password_confirmation' => 'Password@123',
         ]);
 
         $response->assertSessionHasErrors(['terms']);
