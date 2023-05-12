@@ -125,11 +125,11 @@ or if you want to install using yarn run:
 ### 7. NPM run prod/dev
 If you are deploying Laravel-QuickStart on your production environment run:
 
-<code>npm run prod</code>
+<code>npm run build</code>
 
 If you are deploying it on your local development computer run:
 
-<code>npm run build</code>
+<code>npm run dev</code>
 
 ### 8. Demo Credentials
 For the purpose of demonstration we have seeded 3 users by default that are Master, Admin and User having roles assigned for them respectively.
