@@ -89,7 +89,7 @@ MAIL_FROM_ADDRESS="hello@laravel-quickstart.co"
 MAIL_TO_ADDRESS="${APP_NAME}"
 ```
 
-**Note:** Make sure your operating system is not configured to display hidden files to show **.env** file.
+**Note:** Make sure your operating system is configured to display hidden files to show **.env** file.
 
 ### 3. Composer
 In order to install php [composer]() dependencies you first need to [set up composer on your operating system]().
