@@ -25,7 +25,7 @@
 
 Laravel Quickstart is a boilerplate for Laravel Application with typical packages preinstalled and configured to extend a full-fledged application. We tried to make it as minimal as possible.
 
-## Why is matters?
+## Why it matters?
 - Separate Views, Routes, Controllers directories for Frontend(Public Interface) and Backend(Admin Interface)
 - Both Frontend and Backend utilizes [TailwindCSSv3](https://tailwindcss.com/) as frontend framework
 - Ready-made pages for Authentication/User Management/ Roles/Permission Management/ Log-viewer/ Notifications Management
