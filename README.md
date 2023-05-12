@@ -129,7 +129,7 @@ If you are deploying Laravel-QuickStart on your production environment run:
 
 If you are deploying it on your local development computer run:
 
-<code>npm run dev</code>
+<code>npm run build</code>
 
 ### 8. Demo Credentials
 For the purpose of demonstration we have seeded 3 users by default that are Master, Admin and User having roles assigned for them respectively.
