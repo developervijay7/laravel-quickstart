@@ -9,8 +9,8 @@
                     @include('includes.partials.lang')
                     @include('includes.partials.switch')
                 </div>
-                <h1 class="font-bold text-2xl my-3">{{ __('headings.confirm-password') }}</h1>
-                <p>{{ __('You need to confirm your password to complete this action.') }}</p>
+                <h1 class="font-bold text-2xl my-3 dark:text-white">{{ __('headings.confirm-password') }}</h1>
+                <p class="dark:text-white">{{ __('You need to confirm your password to complete this action.') }}</p>
                 @include('includes.partials.messages')
                 <x-forms.post :action="route('password.confirm')">
                     <div class="my-3">

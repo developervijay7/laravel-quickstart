@@ -48,10 +48,10 @@ class FortifyServiceProvider extends ServiceProvider
             }
         });
         Fortify::registerView(function () {
-            if (config('quickstart.access.user.login')) {
+            if (config('quickstart.access.user.login') && config('quickstart.access.user.registration')) {
                 return view('auth.register');
             } else {
-                return (abort(404));
+                abort(404);
             }
         });
         Fortify::requestPasswordResetLinkView(function () {

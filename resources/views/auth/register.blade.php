@@ -60,9 +60,11 @@
                         </button>
                     </div>
                 </x-forms.post>
-                <div>
-                    <p>Already have an account? <a href="{{ route('login') }}" class="font-bold">Login Now</a></p>
-                </div>
+                @if(config('quickstart.access.user.login'))
+                    <div>
+                        <p>Already have an account? <a href="{{ route('login') }}" class="font-bold">Login Now</a></p>
+                    </div>
+                @endif
                 <div class="divider my-4">
                     <span class="px-2 py-1 rounded-xl bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800">or use social login</span>
                 </div>

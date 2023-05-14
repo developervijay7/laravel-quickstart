@@ -36,9 +36,11 @@
                         </button>
                         <a href="{{ route('password.request') }}">Forgot password?</a>
                     </div>
-                    <div>
-                        <p>Don't have an account yet? <a href="{{ route('register') }}" class="font-bold">Register Now</a></p>
-                    </div>
+                    @if(config('quickstart.access.user.registration'))
+                        <div>
+                            <p>Don't have an account yet? <a href="{{ route('register') }}" class="font-bold">Register Now</a></p>
+                        </div>
+                    @endif
                 </x-forms.post>
                 <div class="divider my-6">
                     <span class="px-2 py-1 rounded-xl bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800">or use social login</span>
