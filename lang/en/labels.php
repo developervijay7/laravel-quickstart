@@ -34,6 +34,8 @@ return [
     'lang-switch' => 'Change Language',
     'remember' => 'Remember Me',
     'search' => 'Search',
+    'search-users' => 'Search Users',
+    'search-roles' => 'Search Roles',
     'current-password' => 'Current Password',
     'new-password' => 'New Password',
     'password-confirmation' => 'Password Confirmation',

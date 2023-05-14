@@ -2,8 +2,7 @@
     <x-utils.dynamic-table>
         <x-slot name="tableFilters">
             <div class="py-2 col-start-1 col-end-4">
-                <label for="search-users">@lang('Search Roles')</label>
-                <x-forms.inputs.text wire:model.debounce.300ms="search" type="text" class="w-full rounded" label="{{ __('labels.search') }}" placeholder="Search Roles" name="search" id="search-roles" />
+                <x-forms.inputs.text wire:model.debounce.300ms="search" type="text" class="w-full rounded" label="{{ __('labels.search-roles') }}" placeholder="{{ __('labels.search-roles') }}" name="search" id="search-roles" />
             </div>
             <div class="py-2 col-start-12">
                 <label for="perPage">@lang('Show')</label>
