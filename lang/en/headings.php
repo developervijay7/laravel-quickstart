@@ -13,4 +13,5 @@ return [
     'register' => 'Register at :application',
     'password-reset' => 'Reset Password?',
     'change-password' => 'Change Password',
+    'confirm-password' => 'Confirm Password',
 ];

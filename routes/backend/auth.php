@@ -15,6 +15,7 @@ use Tabuna\Breadcrumbs\Trail;
 Route::group([
     'prefix' => 'auth',
     'as' => 'auth.',
+    'middleware' => 'password.confirm'
 ], function () {
     Route::group([
         'prefix' => 'user',
