@@ -9,8 +9,8 @@
                     @include('includes.partials.lang')
                     @include('includes.partials.switch')
                 </div>
-                <h1 class="font-bold text-2xl my-3">{{ __('headings.change-password') }}</h1>
-                <p>{{ __('You should update your password frequently to ensure security.') }}</p>
+                <h1 class="font-bold text-2xl my-3 dark:text-white">{{ __('headings.change-password') }}</h1>
+                <p class="dark:text-white">{{ __('You should update your password frequently to ensure security.') }}</p>
                 @include('includes.partials.messages')
                 <x-forms.post :action="route('user-password.update')">
                     <div class="my-3">

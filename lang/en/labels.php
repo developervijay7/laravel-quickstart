@@ -33,4 +33,8 @@ return [
     'system-mode' => 'System Controlled Display Mode',
     'lang-switch' => 'Change Language',
     'remember' => 'Remember Me',
+    'search' => 'Search',
+    'current-password' => 'Current Password',
+    'new-password' => 'New Password',
+    'password-confirmation' => 'Password Confirmation',
 ];

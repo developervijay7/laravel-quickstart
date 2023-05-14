@@ -12,4 +12,5 @@ return [
     'login' => 'Login to :application account',
     'register' => 'Register at :application',
     'password-reset' => 'Reset Password?',
+    'change-password' => 'Change Password',
 ];

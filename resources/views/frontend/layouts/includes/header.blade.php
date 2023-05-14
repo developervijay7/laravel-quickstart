@@ -10,7 +10,7 @@
                         <a href="{{ route('frontend.index') }}" class="{{ activeClass(Route::is('frontend.index')) }}">{{ __('Home') }}</a>
                     </li>
                     <li x-data="{showPages: false}" class="relative">
-                        <a href="#" @click.prevent="showPages = !showPages" @click.away="showPages = false" class="flex items-center {{ activeClass(Route::is('frontend.pages.*')) }}">
+                        <a href="#" @click.prevent="showPages = !showPages" @click.away="showPages = false" class="flex items-center {{ activeClass(Route::is('frontend.legal.*')) }}">
                             {{ __('labels.pages') }}
                             <span>
                                 <x-icons.chevron-down :size="5" class="transform transition origin-center duration-250" ::class="showPages ? '-rotate-180' : ''" />
@@ -65,6 +65,10 @@
                                 <li>
                                     <a href="{{ route('frontend.user.profile') }}"
                                        class="text-sm hover:bg-gray-100 text-gray-700 block py-2">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('frontend.auth.user.change_password') }}"
+                                       class="text-sm hover:bg-gray-100 text-gray-700 block py-2">Change Password</a>
                                 </li>
                                 @if($logged_in_user->type !== 'User')
                                     <li>
