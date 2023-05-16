@@ -9,5 +9,5 @@
 
 
 [GitHub](https://github.com/developervijay7/laravel-quickstart)
-[Demo](https://laravel-quickstart.co)
+[Demo](https://laravel-quickstart.com)
 [Get Started](#installation)
