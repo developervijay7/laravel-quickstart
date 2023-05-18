@@ -28,3 +28,15 @@ if (! function_exists('carbon')) {
         return new Carbon($time);
     }
 }
+
+if (! function_exists('homeRoute')) {
+    /**
+     * Return the route to the "home" page depending on authentication/authorization status.
+     *
+     * @return string
+     */
+    function homeRoute()
+    {
+        return 'frontend.index';
+    }
+}
