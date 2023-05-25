@@ -48,7 +48,10 @@
                     <livewire:backend.auth.user.users-table />
                 </div>
                 <div x-show="activeTab === 'cards'">
-
+                    <x-forms.inputs.select2 wire:model="users">
+                        <option value="create-users">Create Users</option>
+                        <option value="edit-users">Edit Users</option>
+                    </x-forms.inputs.select2>
                 </div>
             </div>
         </x-slot>
