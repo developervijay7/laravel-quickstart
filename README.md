@@ -1,4 +1,4 @@
-![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo.svg#gh-light-mode-only)
+![Laravel-QuickStart Logo](https://https://raw.githubusercontent.com/attrixtech/attrixtech/f3f4d75a9e70382a98eb6cade91dc6eae9a6ad99/logo-light.svg#gh-light-mode-only)
 ![Laravel-QuickStart Logo](https://raw.githubusercontent.com/developervijay7/laravel-quickstart/2c97a0c0e46f48dd3f10989292bd4f824fdbce52/resources/images/logo-dark.svg#gh-dark-mode-only)
 
 ![GitHub language count](https://img.shields.io/github/languages/count/developervijay7/laravel-quickstart?style=plastic)
